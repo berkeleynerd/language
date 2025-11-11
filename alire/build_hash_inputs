@@ -1,0 +1,8 @@
+dependency:gnatcoll_sqlite=25.0.0=5650091a3a56e65ff169ebbfc044d5f0188a882c8b861430da8009eef47a7092
+dependency:gnatcoll_xref=25.0.0=91ea7344adc1a232489e04ae954b8acd7e025cdc952dbbb7bd253bde5d3c7482
+external:BUILD=default
+external:LANGUAGE_LIBRARY_TYPE=default
+external:LIBRARY_TYPE=static
+profile:language=RELEASE
+switches:language=-O3,-fdata-sections,-ffunction-sections,-gnatW8,-gnatn
+version:gnat_native=15.1.2

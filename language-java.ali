@@ -1,0 +1,338 @@
+V "GNAT Lib v15"
+A -gnatA
+A -mmacosx-version-min=26.0
+A -mcpu=apple-m1
+A -mlittle-endian
+A -mabi=lp64
+A -fPIC
+P SS ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_DISPATCHING_CALLS
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_IMPLICIT_HEAP_ALLOCATIONS
+RV NO_LOCAL_ALLOCATORS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+
+U language.java%b	language-java.adb	93a28c82 OO PK
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W gnat%s		gnat.ads		gnat.ali
+W gnat.regpat%s		g-regpat.ads		g-regpat.ali
+W gnat.strings%s	g-string.ads		g-string.ali
+W language%s		language.adb		language.ali
+W language.c%s		language-c.adb		language-c.ali
+Z system.concat_3%s	s-conca3.adb		s-conca3.ali
+Z system.concat_4%s	s-conca4.adb		s-conca4.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+U language.java%s	language-java.ads	ecf39e4e EE OO PF PK
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W language%s		language.adb		language.ali
+Z system%s		system.ads		system.ali
+Z system.finalization_primitives%s  s-finpri.adb  s-finpri.ali
+Z system.put_images%s	s-putima.adb		s-putima.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.storage_elements%s  s-stoele.ads	s-stoele.ali
+Z system.storage_pools%s  s-stopoo.adb		s-stopoo.ali
+Z system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
+
+D ada.ads		20250419085653 76789da1 ada%s
+D a-calend.ads		20250419085653 bf7f3cc9 ada.calendar%s
+D a-calfor.ads		20250419085653 0f4707d1 ada.calendar.formatting%s
+D a-catizo.ads		20250419085653 eaa56756 ada.calendar.time_zones%s
+D a-charac.ads		20250419085653 2d3ec45b ada.characters%s
+D a-chahan.ads		20250419085653 bf752ff6 ada.characters.handling%s
+D a-chlat1.ads		20250419085653 e0d72e76 ada.characters.latin_1%s
+D a-contai.ads		20250419085653 61e5e089 ada.containers%s
+D a-cdlili.ads		20250419085653 2434d8f6 ada.containers.doubly_linked_lists%s
+D a-cohata.ads		20250419085653 bea783e3 ada.containers.hash_tables%s
+D a-cohama.ads		20250419085653 de9aa0f2 ada.containers.hashed_maps%s
+D a-cohase.ads		20250419085653 4c12bfe7 ada.containers.hashed_sets%s
+D a-conhel.ads		20250419085653 46fe1ce3 ada.containers.helpers%s
+D a-cihama.ads		20250419085653 42861819 ada.containers.indefinite_hashed_maps%s
+D a-cihase.ads		20250419085653 b5cdb105 ada.containers.indefinite_hashed_sets%s
+D a-ciorse.ads		20250419085653 d80fbfe7 ada.containers.indefinite_ordered_sets%s
+D a-coinve.ads		20250419085653 b20d0098 ada.containers.indefinite_vectors%s
+D a-coorma.ads		20250419085653 3edf5cc0 ada.containers.ordered_maps%s
+D a-coorse.ads		20250419085653 d90cfee3 ada.containers.ordered_sets%s
+D a-crbltr.ads		20250419085653 d3d16ba4 ada.containers.red_black_trees%s
+D a-convec.ads		20250419085653 91fb49f3 ada.containers.vectors%s
+D a-except.ads		20250419085653 e7970cd9 ada.exceptions%s
+D a-finali.ads		20250419085653 bf4f806b ada.finalization%s
+D a-ioexce.ads		20250419085653 40018c65 ada.io_exceptions%s
+D a-iteint.ads		20250419085653 49a8bee2 ada.iterator_interfaces%s
+D a-stream.ads		20250419085653 17477cbd ada.streams%s
+D a-string.ads		20250419085653 90ac6797 ada.strings%s
+D a-secain.ads		20250419085653 37402117 ada.strings.equal_case_insensitive%s
+D a-strhas.ads		20250419085653 e06866e7 ada.strings.hash%s
+D a-shcain.ads		20250419085653 08af52df ada.strings.hash_case_insensitive%s
+D a-strmap.ads		20250419085653 1f91ebb6 ada.strings.maps%s
+D a-strsea.ads		20250419085653 18c3c634 ada.strings.search%s
+D a-sttebu.ads		20250419085653 f1ad67a2 ada.strings.text_buffers%s
+D a-strunb.ads		20250419085653 b10770ab ada.strings.unbounded%s
+D a-stuten.ads		20250419085653 c6ced0ae ada.strings.utf_encoding%s
+D a-stzhas.ads		20250419085653 471757ed ada.strings.wide_wide_hash%s
+D a-stzmap.ads		20250419085653 f60a1f4d ada.strings.wide_wide_maps%s
+D a-tags.ads		20250419085653 fbca0ad5 ada.tags%s
+D a-textio.ads		20250419085653 34ef47de ada.text_io%s
+D a-unccon.ads		20250419085653 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20250419085653 c3a8ac65 ada.unchecked_deallocation%s
+D basic_types.ads	20251111131459 05e1b880 basic_types%s
+D case_handling.ads	20251111131459 d0aa370a case_handling%s
+D gnat.ads		20250419085653 b5988c27 gnat%s
+D g-bytswa.ads		20250419085653 a4d21639 gnat.byte_swapping%s
+D g-calend.ads		20250419085653 cad86fa7 gnat.calendar%s
+D g-dynhta.ads		20250419085653 968f1a08 gnat.dynamic_htables%s
+D g-dyntab.ads		20250419085653 f1e98b14 gnat.dynamic_tables%s
+D g-expect.ads		20250419085653 e4246c0f gnat.expect%s
+D g-md5.ads		20250419085653 bb55398e gnat.md5%s
+D g-os_lib.ads		20250419085653 0db74523 gnat.os_lib%s
+D g-regpat.ads		20250419085653 b85d88ef gnat.regpat%s
+D g-sechas.ads		20250419085653 302163b5 gnat.secure_hashes%s
+D g-sehamd.ads		20250419085653 d714f185 gnat.secure_hashes.md5%s
+D g-souinf.ads		20250419085653 470146ee gnat.source_info%s
+D g-string.ads		20250419085653 c6abc540 gnat.strings%s
+D g-table.ads		20250419085653 b4b07c4d gnat.table%s
+D gnatcoll.ads		20251104164843 6a5da479 gnatcoll%s
+D gnatcoll-atomic.ads	20251104164843 a760a918 gnatcoll.atomic%s
+D gnatcoll-iconv.ads	20251104164843 1d85b850 gnatcoll.iconv%s
+D gnatcoll-io.ads	20251104164842 40b00e79 gnatcoll.io%s
+D gnatcoll-io-native.ads  20251104164842 60c7703b gnatcoll.io.native%s
+D gnatcoll-path.ads	20251104164842 44783065 gnatcoll.path%s
+D gnatcoll-plugins.ads	20251104164842 d4c6371e gnatcoll.plugins%s
+D gnatcoll-projects.ads	20251104164843 8fb54a86 gnatcoll.projects%s
+D gnatcoll-refcount.ads	20251104164843 b4dda25c gnatcoll.refcount%s
+D gnatcoll-sql.ads	20251104164843 151b58bf gnatcoll.sql%s
+D gnatcoll-sql-exec.ads	20251104164843 75bf9dca gnatcoll.sql.exec%s
+D gnatcoll-sql_impl.ads	20251104164843 e4a6d3b2 gnatcoll.sql_impl%s
+D gnatcoll-storage_pools.ads  20251104164843 f82e283b gnatcoll.storage_pools%s
+D gnatcoll-storage_pools-headers.ads  20251104164843 968b2c2e gnatcoll.storage_pools.headers%s
+D gnatcoll-strings.ads	20251104164842 014a3fb6 gnatcoll.strings%s
+D gnatcoll-strings_impl.ads  20251104164842 3722c4b1 gnatcoll.strings_impl%s
+D gnatcoll-symbols.ads	20251104164842 c9c62a05 gnatcoll.symbols%s
+D gnatcoll-terminal.ads	20251104164842 b19fb5ba gnatcoll.terminal%s
+D gnatcoll-traces.ads	20251104164842 4e81b8c9 gnatcoll.traces%s
+D gnatcoll-utils.ads	20251104164842 8cd28764 gnatcoll.utils%s
+D gnatcoll-vfs.ads	20251104164842 1efc72f6 gnatcoll.vfs%s
+D gnatcoll-vfs_types.ads  20251104164842 14be4a8d gnatcoll.vfs_types%s
+D gnatcoll-xref.ads	20251104164843 ddd64576 gnatcoll.xref%s
+D gpr.ads		20251104164842 8e79990e gpr%s
+D gpr-ali.ads		20251104164842 96520699 gpr.ali%s
+D gpr-env.ads		20251104164842 8725813f gpr.env%s
+D gpr-ext.ads		20251104164842 b6f5e132 gpr.ext%s
+D gpr-names.ads		20251104164842 f36cddd2 gpr.names%s
+D gpr-osint.ads		20251104164842 ab7f8710 gpr.osint%s
+D gpr-scans.ads		20251104164842 a9e8e657 gpr.scans%s
+D gpr-tree.ads		20251104164842 dd4e11ae gpr.tree%s
+D gpr-util.ads		20251104164842 1b46d32f gpr.util%s
+D interfac.ads		20250419085653 9111f9c1 interfaces%s
+D i-c.ads		20250419085653 e94c966a interfaces.c%s
+D i-cstrin.ads		20250419085653 5409c1a4 interfaces.c.strings%s
+D i-cstrea.ads		20250419085653 ffd01b9d interfaces.c_streams%s
+D language.ads		20251111131459 8a951656 language%s
+D language-c.ads	20251111131459 e1fe181b language.c%s
+D language-java.ads	20251111131459 66668818 language.java%s
+D language-java.adb	20251111131459 6acc512e language.java%b
+D system.ads		20250419085653 70765b54 system%s
+D s-atacco.ads		20250419085653 5868e3ba system.address_to_access_conversions%s
+D s-atocou.ads		20250419085653 dc18efc3 system.atomic_counters%s
+D s-conca3.ads		20250419085653 8a7a19a2 system.concat_3%s
+D s-conca4.ads		20250419085653 33f85f3e system.concat_4%s
+D s-conca6.ads		20250419085653 8252f108 system.concat_6%s
+D s-crtl.ads		20250419085653 beb39b9e system.crtl%s
+D s-exctab.ads		20250419085653 91bef6ef system.exception_table%s
+D s-ficobl.ads		20250419085653 dc5161d4 system.file_control_block%s
+D s-finpri.ads		20250419085653 5970d55a system.finalization_primitives%s
+D s-finroo.ads		20250419085653 0a7c3ed4 system.finalization_root%s
+D s-multip.ads		20250419085653 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20250522142959 16132a6a system.os_constants%s
+D s-osinte.ads		20250419085653 76797b0c system.os_interface%s
+D s-os_lib.ads		20250419085653 dd4133ed system.os_lib%s
+D s-oslock.ads		20250419085653 13fa6b78 system.os_locks%s
+D s-parame.ads		20250419085653 3597fc11 system.parameters%s
+D s-pooglo.ads		20250419085653 91708d21 system.pool_global%s
+D s-putima.ads		20250419085653 17291fe4 system.put_images%s
+D s-regpat.ads		20250419085653 3f91c1d3 system.regpat%s
+D s-retsta.ads		20250419085653 0f6b06cb system.return_stack%s
+D s-rident.ads		20250419085653 5eec7ad4 system.rident%s
+D s-secsta.ads		20250419085653 578279f5 system.secondary_stack%s
+D s-soflin.ads		20250419085653 5d88fdea system.soft_links%s
+D s-stache.ads		20250419085653 0b81c1fe system.stack_checking%s
+D s-stausa.ads		20250419085653 5be75682 system.stack_usage%s
+D s-stalib.ads		20250419085653 1c9580f6 system.standard_library%s
+D s-stoele.ads		20250419085653 ccded4e8 system.storage_elements%s
+D s-stopoo.ads		20250419085653 e9fa2dd8 system.storage_pools%s
+D s-stposu.ads		20250419085653 e0b9fefd system.storage_pools.subpools%s
+D s-stratt.ads		20250419085653 516607ae system.stream_attributes%s
+D s-string.ads		20250419085653 582aac7d system.strings%s
+D s-ststop.ads		20250419085653 c569db7c system.strings.stream_ops%s
+D s-tasinf.ads		20250419085653 801abd01 system.task_info%s
+D s-taspri.ads		20250419085653 1e109e82 system.task_primitives%s
+D s-taskin.ads		20250419085653 38289021 system.tasking%s
+D s-traent.ads		20250419085653 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20250419085653 fa2a7f59 system.unsigned_types%s
+D s-wchcon.ads		20250419085653 d9032363 system.wch_con%s
+G a e
+G c s s s [s language__java 21 1 none]
+G c Z s b [is_simple_type language__java 28 24 none]
+G c Z s b [keywords language__java 32 24 none]
+G c Z s b [keywords language__java 35 24 none]
+G c Z s b [keywords language__java 38 24 none]
+G c Z s b [get_language_context language__java 41 24 none]
+G c Z s b [dereference_name language__java 44 24 none]
+G c Z s b [array_item_name language__java 48 24 none]
+G c Z s b [record_field_name language__java 53 24 none]
+G c Z s b [get_name language__java 61 24 none]
+G c Z s s [is_interpolation_char language__java 64 24 none]
+G c Z s s [java_languageDF language__java 59 9 none]
+G c Z s s [java_languageIP language__java 59 9 none]
+G r s language_root [s language__java 21 1 none] [language_rootIP language 938 9 none]
+G r s language_root [java_languageIP language__java 59 9 none] [language_rootIP language 938 9 none]
+X 6 a-chahan.ads
+209V13*To_Lower{character} 73|283i21
+224V13*To_Upper{character} 73|285i21
+X 9 a-cdlili.ads
+54R9*List<23|43R9>
+X 13 a-conhel.ads
+84R12 Reference_Control_Type<23|43R9>
+X 16 a-ciorse.ads
+57R9*Set<23|43R9>
+X 25 a-iteint.ads
+24h9 Forward_Iterator
+32h9 Reversible_Iterator<24R9[17|84]>
+X 44 gnat.ads
+40K9*GNAT 63e9 96|36r43 39r43 97|18r6 18r23 21r6 21r24 39r28 40r21 118r43
+. 126r43
+X 49 g-expect.ads
+126K14*Expect 651e16 96|36r48 97|118r48
+405P9*Pattern_Matcher_Access(117|383R9) 96|36r55 97|118r55
+X 52 g-regpat.ads
+72K14*Regpat=72:36 97|18w11 18r28
+X 56 g-string.ads
+38K14*Strings=38:37 96|33r43 39r48 97|21w11 21r29 39r33 40r26 110r43 126r48
+X 65 gnatcoll-projects.ads
+468V25*"="{boolean} 21|65i19
+X 66 gnatcoll-refcount.ads
+123R12*Ref<23|43R9>
+351R12*Ref<23|43R9>
+X 69 gnatcoll-sql_impl.ads
+457H12 Base_Field<333R9>
+607R12*Field<333R9>
+X 74 gnatcoll-symbols.ads
+42P9*Symbol<77|46P9>
+X 77 gnatcoll-utils.ads
+46P9*Cst_String_Access(string)
+X 78 gnatcoll-vfs.ads
+334V25*"="{boolean} 12|50i19
+X 80 gnatcoll-xref.ads
+189V14*"<"{boolean} 19|45i19
+190V14*"="{boolean} 19|46i19
+417p7*Comment_Start{129|43P9} 97|139m10
+421p7*Comment_End{129|43P9} 97|140m10
+424p7*New_Line_Comment_Start{129|43P9} 97|141m10
+428p7*New_Line_Comment_Start_Regexp{49|405P9} 97|142m10
+X 94 language.ads
+30K9*Language 978e13 96|21r9 69r5 97|19r6 19r23 23r14 40r47 170r5
+35H9*Language_Root 942e14 96|23r30 59r30
+36P9*Language_Access(35R9) 96|25r25 68r25
+40U14*Free
+57V13*Entities_Indexed{boolean}
+114U14*Looking_At
+142V13*Is_Word_Char{boolean}
+148y13*Keywords{129|52A9} 97|40R56
+160V13*Is_Entity_Name{boolean}
+170V13*Can_Tooltip_On_Entity{boolean}
+204V13*Scope_Separator{string}
+231R9*Language_Context 264e14 97|137r28
+232r7*Syntax{80|416R9} 97|138m7
+236e7*String_Delimiter{character} 97|143m7
+239e7*Quote_Character{character} 97|144m7
+244e7*Constant_Character{character} 97|145m7
+247b7*Can_Indent{boolean} 97|146m7
+250b7*Syntax_Highlighting{boolean} 97|147m7
+253b7*Case_Sensitive{boolean} 97|148m7
+256b7*Accurate_Xref{boolean} 97|149m7
+261b7*Use_Semicolon{boolean} 97|150m7
+269P9*Language_Context_Access(231R9) 96|42r43 97|153r43
+389U14*Get_Indentation_Parameters
+395U14*Set_Indentation_Parameters
+403V13*Get_Indentation_Level{integer}
+408V13*Get_Indentation_Style{383E9}
+526V13*Is_Foldable_Block{boolean}
+687U14*Parse_Constructs
+695V13*Should_Refresh_Constructs_Tree{boolean}
+705V13*Clicked_On_Construct{boolean}
+718V13*Get_Last_Selected_Construct_ID{74|42P9}
+734V13*Word_Character_Set{37|45R9}
+738V13*Completion_Trigger_Character_Set{37|45R9}
+744V13*Comment_Block{string}
+765U14*Format_Buffer
+792U14*Parse_Entities
+802U14*Get_Referenced_Entity
+848A9*Explorer_Categories(826R9)<integer>
+858V13*Explorer_Regexps{848A9}
+863V13*Is_System_File{boolean}
+915U14*Parse_Tokens_Backwards
+926V13*Parse_Reference_Backwards{string}
+944V13 Comment_Line{string}
+X 95 language-c.ads
+21K18*C 142e15 97|19w15 19r32
+25p4*C_Lang{94|36P9} 97|40r66
+X 96 language-java.ads
+21K18*Java 94|30k9 96|59E9 69l14 69e18 97|23b23 170l14 170t18
+23R9*Java_Language<94|35R9> 94|40p14 57p13 114p14 142p13 160p13 170p13 204p13
+. 389p14 395p14 403p13 408p13 526p13 687p14 695p13 705p13 718p13 734p13 738p13
+. 744p13 765p14 792p14 802p14 858p13 863p13 915p14 926p13 944p13 96|28P24
+. 29r21 32P24 33r21 35P24 36r21 38P24 39r21 41P24 42r21 44P24 45r21 48P24
+. 49r22 53P24 54r22 59c9 59e60 61P24 61r48 64P24 65r21 68r48 97|55r21 67r21
+. 82r22 96r22 110r21 118r21 126r21 153r21 164r48
+25p4*Java_Lang{94|36P9} 68c4
+28V24*Is_Simple_Type{boolean}<94|69p13> 29^7 30>7 97|54b24 60l8 60t22
+29p7 Lang(23R9) 97|55b7 57r28
+30a7 Str{string} 97|55b36 57r34
+32V24*Keywords{129|43P9}<94|127p13> 33^7 97|109b24 115l8 115t16
+33p7 Lang(23R9) 97|110b7 112r28
+35V24*Keywords{49|405P9}<94|134p13> 36^7 97|117b24 123l8 123t16
+36p7 Lang(23R9) 97|118b7 120r28
+38V24*Keywords{129|52A9}<94|148p13> 39^7 97|125b24 131l8 131t16
+39p7 Lang(23R9) 97|126b7 128r28
+41V24*Get_Language_Context{94|269P9}<94|271p13> 42^7 97|152b24 158l8 158t28
+42p7 Lang(23R9) 97|153b7 155r28
+44V24*Dereference_Name{string}<94|183p13> 45^7 46>7 97|66b24 75l8 75t24
+45p7 Lang(23R9) 97|67b7 70r28
+46a7 Name{string} 97|68b7 72r14
+48V24*Array_Item_Name{string}<94|190p13> 49^7 50>7 51>7 97|81b24 89l8 89t23
+49p7 Lang(23R9) 97|82b7 86r28
+50a7 Name{string} 97|83b7 88r14
+51a7 Index{string} 97|84b7 88r27
+53V24*Record_Field_Name{string}<94|198p13> 54^7 55>7 56>7 97|95b24 103l8
+. 103t25
+54p7 Lang(23R9) 97|96b7 100r28
+55a7 Name{string} 97|97b7 102r14
+56a7 Field{string} 97|98b7 102r27
+61V24 Get_Name{string}<94|44p13> 61^34 97|164b24 168l8 168t16
+61p34 Lang(23R9) 97|164b34 165r28
+64V24 Is_Interpolation_Char{boolean}<94|154p13> 64b24 65^7 65>36
+65p7 Lang(23R9)
+65e36 Char{wide_wide_character}
+X 97 language-java.adb
+25a4 Keywords_Regexp{string} 37r38 114m14 114r14
+36r4 Keywords_List{117|383R9} 122m14 122r14
+39a4 The_Keywords=40:75{129|52A9} 130r14
+137r4 Java_Context{94|231R9} 157m14 157r14
+X 117 s-regpat.ads
+383R9*Pattern_Matcher 97|36r28 117|662e14
+389V13*Compile{383R9} 97|37s22
+X 123 s-stausa.ads
+207U14*Initialize 208i<c,__gnat_stack_usage_initialize>22
+272U14*Output_Results 276i<c,__gnat_stack_usage_output_results>22
+X 129 s-string.ads
+43P9*String_Access(string) 96|33r51 97|110r51
+52A9*String_List(43P9)<integer> 96|39r56 97|39r41 40r34 126r56
+

@@ -1,0 +1,342 @@
+V "GNAT Lib v15"
+A -gnatA
+A -mmacosx-version-min=26.0
+A -mcpu=apple-m1
+A -mlittle-endian
+A -mabi=lp64
+A -fPIC
+P SS ZX
+
+RN
+RV NO_DISPATCHING_CALLS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_NESTED_FINALIZATION
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV NO_OBSOLESCENT_FEATURES
+
+U language.profile_formaters%b  language-profile_formaters.adb  5bb6e924 OO PK
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.fixed%s	a-strfix.adb		a-strfix.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+W language%s		language.adb		language.ali
+Z system%s		system.ads		system.ali
+Z system.concat_3%s	s-conca3.adb		s-conca3.ali
+Z system.finalization_primitives%s  s-finpri.adb  s-finpri.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+
+U language.profile_formaters%s  language-profile_formaters.ads  635bfa44 EE OO PF PK
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.streams%s		a-stream.adb		a-stream.ali
+W ada.strings%s		a-string.ads		a-string.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W language%s		language.adb		language.ali
+Z system%s		system.ads		system.ali
+Z system.finalization_primitives%s  s-finpri.adb  s-finpri.ali
+Z system.put_images%s	s-putima.adb		s-putima.ali
+Z system.return_stack%s	s-retsta.ads		s-retsta.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.stream_attributes%s  s-stratt.adb	s-stratt.ali
+Z system.strings.stream_ops%s  s-ststop.adb	s-ststop.ali
+
+D ada.ads		20250419085653 76789da1 ada%s
+D a-calend.ads		20250419085653 bf7f3cc9 ada.calendar%s
+D a-calfor.ads		20250419085653 0f4707d1 ada.calendar.formatting%s
+D a-catizo.ads		20250419085653 eaa56756 ada.calendar.time_zones%s
+D a-charac.ads		20250419085653 2d3ec45b ada.characters%s
+D a-chahan.ads		20250419085653 bf752ff6 ada.characters.handling%s
+D a-chlat1.ads		20250419085653 e0d72e76 ada.characters.latin_1%s
+D a-contai.ads		20250419085653 61e5e089 ada.containers%s
+D a-cdlili.ads		20250419085653 2434d8f6 ada.containers.doubly_linked_lists%s
+D a-cohata.ads		20250419085653 bea783e3 ada.containers.hash_tables%s
+D a-cohama.ads		20250419085653 de9aa0f2 ada.containers.hashed_maps%s
+D a-cohase.ads		20250419085653 4c12bfe7 ada.containers.hashed_sets%s
+D a-conhel.ads		20250419085653 46fe1ce3 ada.containers.helpers%s
+D a-cihama.ads		20250419085653 42861819 ada.containers.indefinite_hashed_maps%s
+D a-cihase.ads		20250419085653 b5cdb105 ada.containers.indefinite_hashed_sets%s
+D a-ciorse.ads		20250419085653 d80fbfe7 ada.containers.indefinite_ordered_sets%s
+D a-coinve.ads		20250419085653 b20d0098 ada.containers.indefinite_vectors%s
+D a-coorma.ads		20250419085653 3edf5cc0 ada.containers.ordered_maps%s
+D a-coorse.ads		20250419085653 d90cfee3 ada.containers.ordered_sets%s
+D a-crbltr.ads		20250419085653 d3d16ba4 ada.containers.red_black_trees%s
+D a-convec.ads		20250419085653 91fb49f3 ada.containers.vectors%s
+D a-except.ads		20250419085653 e7970cd9 ada.exceptions%s
+D a-finali.ads		20250419085653 bf4f806b ada.finalization%s
+D a-ioexce.ads		20250419085653 40018c65 ada.io_exceptions%s
+D a-iteint.ads		20250419085653 49a8bee2 ada.iterator_interfaces%s
+D a-stream.ads		20250419085653 17477cbd ada.streams%s
+D a-string.ads		20250419085653 90ac6797 ada.strings%s
+D a-secain.ads		20250419085653 37402117 ada.strings.equal_case_insensitive%s
+D a-strfix.ads		20250419085653 8648dedb ada.strings.fixed%s
+D a-strhas.ads		20250419085653 e06866e7 ada.strings.hash%s
+D a-shcain.ads		20250419085653 08af52df ada.strings.hash_case_insensitive%s
+D a-strmap.ads		20250419085653 1f91ebb6 ada.strings.maps%s
+D a-strsea.ads		20250419085653 18c3c634 ada.strings.search%s
+D a-sttebu.ads		20250419085653 f1ad67a2 ada.strings.text_buffers%s
+D a-strunb.ads		20250419085653 b10770ab ada.strings.unbounded%s
+D a-stuten.ads		20250419085653 c6ced0ae ada.strings.utf_encoding%s
+D a-stzhas.ads		20250419085653 471757ed ada.strings.wide_wide_hash%s
+D a-stzmap.ads		20250419085653 f60a1f4d ada.strings.wide_wide_maps%s
+D a-tags.ads		20250419085653 fbca0ad5 ada.tags%s
+D a-textio.ads		20250419085653 34ef47de ada.text_io%s
+D a-unccon.ads		20250419085653 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20250419085653 c3a8ac65 ada.unchecked_deallocation%s
+D basic_types.ads	20251111131459 05e1b880 basic_types%s
+D case_handling.ads	20251111131459 d0aa370a case_handling%s
+D gnat.ads		20250419085653 b5988c27 gnat%s
+D g-bytswa.ads		20250419085653 a4d21639 gnat.byte_swapping%s
+D g-calend.ads		20250419085653 cad86fa7 gnat.calendar%s
+D g-dynhta.ads		20250419085653 968f1a08 gnat.dynamic_htables%s
+D g-dyntab.ads		20250419085653 f1e98b14 gnat.dynamic_tables%s
+D g-expect.ads		20250419085653 e4246c0f gnat.expect%s
+D g-md5.ads		20250419085653 bb55398e gnat.md5%s
+D g-os_lib.ads		20250419085653 0db74523 gnat.os_lib%s
+D g-regpat.ads		20250419085653 b85d88ef gnat.regpat%s
+D g-sechas.ads		20250419085653 302163b5 gnat.secure_hashes%s
+D g-sehamd.ads		20250419085653 d714f185 gnat.secure_hashes.md5%s
+D g-souinf.ads		20250419085653 470146ee gnat.source_info%s
+D g-string.ads		20250419085653 c6abc540 gnat.strings%s
+D g-table.ads		20250419085653 b4b07c4d gnat.table%s
+D gnatcoll.ads		20251104164843 6a5da479 gnatcoll%s
+D gnatcoll-atomic.ads	20251104164843 a760a918 gnatcoll.atomic%s
+D gnatcoll-iconv.ads	20251104164843 1d85b850 gnatcoll.iconv%s
+D gnatcoll-io.ads	20251104164842 40b00e79 gnatcoll.io%s
+D gnatcoll-io-native.ads  20251104164842 60c7703b gnatcoll.io.native%s
+D gnatcoll-path.ads	20251104164842 44783065 gnatcoll.path%s
+D gnatcoll-plugins.ads	20251104164842 d4c6371e gnatcoll.plugins%s
+D gnatcoll-projects.ads	20251104164843 8fb54a86 gnatcoll.projects%s
+D gnatcoll-refcount.ads	20251104164843 b4dda25c gnatcoll.refcount%s
+D gnatcoll-sql.ads	20251104164843 151b58bf gnatcoll.sql%s
+D gnatcoll-sql-exec.ads	20251104164843 75bf9dca gnatcoll.sql.exec%s
+D gnatcoll-sql_impl.ads	20251104164843 e4a6d3b2 gnatcoll.sql_impl%s
+D gnatcoll-storage_pools.ads  20251104164843 f82e283b gnatcoll.storage_pools%s
+D gnatcoll-storage_pools-headers.ads  20251104164843 968b2c2e gnatcoll.storage_pools.headers%s
+D gnatcoll-strings.ads	20251104164842 014a3fb6 gnatcoll.strings%s
+D gnatcoll-strings_impl.ads  20251104164842 3722c4b1 gnatcoll.strings_impl%s
+D gnatcoll-symbols.ads	20251104164842 c9c62a05 gnatcoll.symbols%s
+D gnatcoll-terminal.ads	20251104164842 b19fb5ba gnatcoll.terminal%s
+D gnatcoll-traces.ads	20251104164842 4e81b8c9 gnatcoll.traces%s
+D gnatcoll-utils.ads	20251104164842 8cd28764 gnatcoll.utils%s
+D gnatcoll-vfs.ads	20251104164842 1efc72f6 gnatcoll.vfs%s
+D gnatcoll-vfs_types.ads  20251104164842 14be4a8d gnatcoll.vfs_types%s
+D gnatcoll-xref.ads	20251104164843 ddd64576 gnatcoll.xref%s
+D gpr.ads		20251104164842 8e79990e gpr%s
+D gpr-ali.ads		20251104164842 96520699 gpr.ali%s
+D gpr-env.ads		20251104164842 8725813f gpr.env%s
+D gpr-ext.ads		20251104164842 b6f5e132 gpr.ext%s
+D gpr-names.ads		20251104164842 f36cddd2 gpr.names%s
+D gpr-osint.ads		20251104164842 ab7f8710 gpr.osint%s
+D gpr-scans.ads		20251104164842 a9e8e657 gpr.scans%s
+D gpr-tree.ads		20251104164842 dd4e11ae gpr.tree%s
+D gpr-util.ads		20251104164842 1b46d32f gpr.util%s
+D interfac.ads		20250419085653 9111f9c1 interfaces%s
+D i-c.ads		20250419085653 e94c966a interfaces.c%s
+D i-cstrin.ads		20250419085653 5409c1a4 interfaces.c.strings%s
+D i-cstrea.ads		20250419085653 ffd01b9d interfaces.c_streams%s
+D language.ads		20251111131459 8a951656 language%s
+D language-profile_formaters.ads  20251111131459 58c99cb9 language.profile_formaters%s
+D language-profile_formaters.adb  20251111131459 3430dbed language.profile_formaters%b
+D system.ads		20250419085653 70765b54 system%s
+D s-atacco.ads		20250419085653 5868e3ba system.address_to_access_conversions%s
+D s-atocou.ads		20250419085653 dc18efc3 system.atomic_counters%s
+D s-conca3.ads		20250419085653 8a7a19a2 system.concat_3%s
+D s-conca6.ads		20250419085653 8252f108 system.concat_6%s
+D s-crtl.ads		20250419085653 beb39b9e system.crtl%s
+D s-exctab.ads		20250419085653 91bef6ef system.exception_table%s
+D s-ficobl.ads		20250419085653 dc5161d4 system.file_control_block%s
+D s-finpri.ads		20250419085653 5970d55a system.finalization_primitives%s
+D s-finroo.ads		20250419085653 0a7c3ed4 system.finalization_root%s
+D s-memory.ads		20250419085653 18949c1a system.memory%s
+D s-multip.ads		20250419085653 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20250522142959 16132a6a system.os_constants%s
+D s-osinte.ads		20250419085653 76797b0c system.os_interface%s
+D s-os_lib.ads		20250419085653 dd4133ed system.os_lib%s
+D s-oslock.ads		20250419085653 13fa6b78 system.os_locks%s
+D s-parame.ads		20250419085653 3597fc11 system.parameters%s
+D s-pooglo.ads		20250419085653 91708d21 system.pool_global%s
+D s-putima.ads		20250419085653 17291fe4 system.put_images%s
+D s-regpat.ads		20250419085653 3f91c1d3 system.regpat%s
+D s-retsta.ads		20250419085653 0f6b06cb system.return_stack%s
+D s-rident.ads		20250419085653 5eec7ad4 system.rident%s
+D s-secsta.ads		20250419085653 578279f5 system.secondary_stack%s
+D s-soflin.ads		20250419085653 5d88fdea system.soft_links%s
+D s-stache.ads		20250419085653 0b81c1fe system.stack_checking%s
+D s-stausa.ads		20250419085653 5be75682 system.stack_usage%s
+D s-stalib.ads		20250419085653 1c9580f6 system.standard_library%s
+D s-stalib.adb		20250419085653 eb464a47 system.standard_library%b
+D s-stoele.ads		20250419085653 ccded4e8 system.storage_elements%s
+D s-stopoo.ads		20250419085653 e9fa2dd8 system.storage_pools%s
+D s-stposu.ads		20250419085653 e0b9fefd system.storage_pools.subpools%s
+D s-stratt.ads		20250419085653 516607ae system.stream_attributes%s
+D s-string.ads		20250419085653 582aac7d system.strings%s
+D s-ststop.ads		20250419085653 c569db7c system.strings.stream_ops%s
+D s-tasinf.ads		20250419085653 801abd01 system.task_info%s
+D s-taspri.ads		20250419085653 1e109e82 system.task_primitives%s
+D s-taskin.ads		20250419085653 38289021 system.tasking%s
+D s-traent.ads		20250419085653 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20250419085653 fa2a7f59 system.unsigned_types%s
+D s-wchcon.ads		20250419085653 d9032363 system.wch_con%s
+G a e
+G c Z s b [configure language__profile_formaters 74 14 none]
+G c Z s s [profile_formaterDA language__profile_formaters 24 9 none]
+G c Z s s [profile_formaterDF language__profile_formaters 24 9 none]
+G c Z s s [profile_formaterIP language__profile_formaters 24 9 none]
+G c Z s b [add_parameter language__profile_formaters 87 25 none]
+G c Z s b [add_result language__profile_formaters 93 25 none]
+G c Z s b [add_variable language__profile_formaters 97 25 none]
+G c Z s b [add_aspects language__profile_formaters 101 25 none]
+G c Z s b [add_comments language__profile_formaters 104 25 none]
+G c Z s b [add_generic_parameter language__profile_formaters 107 25 none]
+G c Z s b [get_text language__profile_formaters 113 24 none]
+G c Z s s [text_profile_formaterDA language__profile_formaters 81 9 none]
+G c Z s s [text_profile_formaterDF language__profile_formaters 81 9 none]
+G c Z s s [text_profile_formaterDI language__profile_formaters 81 9 none]
+G c Z s s [text_profile_formaterIP language__profile_formaters 81 9 none]
+X 1 ada.ads
+18K9*Ada 22e8 96|20r6 82r26 97|18r6 18r33 19r6 19r33 60r51 70r41 88r44
+X 6 a-chahan.ads
+209V13*To_Lower{character} 74|283i21
+224V13*To_Upper{character} 74|285i21
+X 9 a-cdlili.ads
+54R9*List<23|43R9>
+X 13 a-conhel.ads
+84R12 Reference_Control_Type<23|43R9>
+X 16 a-ciorse.ads
+57R9*Set<23|43R9>
+X 25 a-iteint.ads
+24h9 Forward_Iterator
+32h9 Reversible_Iterator<24R9[18|78]>
+X 27 a-string.ads
+16K13*Strings 35e16 96|20r10 82r30 97|18r10 18r37 19r10 19r37 60r55 70r45
+. 88r48
+33n30*Right{33E9} 97|60r63 70r53 88r56
+X 29 a-strfix.ads
+49K21*Fixed 1390e22 97|18w18 18r45
+1133V13*Trim{string} 97|60s39 70s29 88s29
+X 35 a-strunb.ads
+91K21*Unbounded 1641e26 96|20w18 82r38 97|19w18 19r45
+105R9*Unbounded_String<23|43R9> 1620e15 96|82r48
+111V13*Length{natural} 97|154s10
+135V13*To_String{string} 97|174s14
+159U14*Append 97|63s10 66s10 70s10 75s13 84s13 85s13 88s10 92s10 93s10 108s10
+. 111s7 112s7 113s7 125s7 126s7 127s7 151s10 155s10 170s10
+193V14*"&"{105R9} 97|157s50
+X 66 gnatcoll-projects.ads
+468V25*"="{boolean} 21|65i19
+X 67 gnatcoll-refcount.ads
+123R12*Ref<23|43R9>
+351R12*Ref<23|43R9>
+X 70 gnatcoll-sql_impl.ads
+457H12 Base_Field<333R9>
+607R12*Field<333R9>
+X 79 gnatcoll-vfs.ads
+334V25*"="{boolean} 12|50i19
+X 81 gnatcoll-xref.ads
+189V14*"<"{boolean} 19|45i19
+190V14*"="{boolean} 19|46i19
+X 95 language.ads
+30K9*Language 978e13 96|22r9 116r5 97|21r14 177r5
+X 96 language-profile_formaters.ads
+22K18*Profile_Formaters 95|30k9 96|81E9 116l14 116e31 97|21b23 177l14 177t31
+24H9*Profile_Formater 24e56 27p14 28r24 37p14 38r24 45p14 46r24 51p14 52r24
+. 57p14 58r21 62p14 63r21 67p13 68r21 71r38 81r38
+27x14*Add_Parameter 28^7 29>7 30>7 31>7 32>7
+28p7 Self(24R9)
+29a7 Name{string}
+30a7 Mode{string}
+31a7 Of_Type{string}
+32a7 Default{string}
+37x14*Add_Generic_Parameter 38^7 39>7 40>7 41>7 42>7
+38p7 Self(24R9)
+39a7 Name{string}
+40a7 Mode{string}
+41a7 Of_Type{string}
+42a7 Default{string}
+45x14*Add_Result 46^7 47>7 48>7
+46p7 Self(24R9)
+47a7 Mode{string}
+48a7 Of_Type{string}
+51x14*Add_Variable 52^7 53>7 54>7
+52p7 Self(24R9)
+53a7 Mode{string}
+54a7 Of_Type{string}
+57x14*Add_Aspects 58^7 59>7
+58p7 Self(24R9)
+59a7 Text{string}
+62x14*Add_Comments 63^7 64>7
+63p7 Self(24R9)
+64a7 Text{string}
+67y13*Get_Text{string} 68^7
+68p7 Self(24R9)
+71R9*Text_Profile_Formater<24R9> 74p14 75r33 81c9 85e14 87P25 88r24 93P25
+. 94r24 97P25 98r24 101P25 102r21 104P25 105r21 107P25 108r24 113P24 114r21
+. 97|28r21 40r24 54r24 102r24 121r24 135r21 147r21 166r21
+74U14*Configure 75=7 76>7 97|27b14 33l8 33t17
+75r7 Self{71R9} 97|28b7 32m7
+76b7 Show_Param_Names{boolean} 97|29b7 32r32
+82r7 Text{35|105R9} 97|63m23 66m23 70m23 75m26 84m26 85m26 88m23 92m23 93m23
+. 108m23 111m20 112m20 113m20 125m20 126m20 127m20 151m23 154r23 155m23 157m15
+. 157r57 170m23 174r30
+83b7 Has_Parameter{boolean} 97|62r19 64m15 107r15 109m15 150r15 152m15 169r15
+. 171m15
+84b7 Show_Param_Names{boolean} 97|32m12 69r15 74r18 81r27
+87U25 Add_Parameter<27p14> 88^7 89>7 90>7 91>7 92>7 97|46s7 53b25 95l8 95t21
+88p7 Self(71R9) 97|54b7 62r14 63r18 64r10 66r18 69r10 70r18 74r13 75r21 81r22
+. 84r21 85r21 88r18 92r18 93r18
+89a7 Name{string} 97|55b7 70r35
+90a7 Mode{string} 97|56b7 60r45
+91a7 Of_Type{string} 97|57b7 73r10 88r35
+92a7 Default{string} 97|58b7 91r10 93r29
+93U25 Add_Result<45p14> 94^7 95>7 96>7 97|101b25 114l8 114t18
+94p7 Self(71R9) 97|102b7 107r10 108r18 109r10 111r15 112r15 113r15
+95a7 Mode{string} 97|103b7 112r26
+96a7 Of_Type{string} 97|104b7 113r26
+97U25 Add_Variable<51p14> 98^7 99>7 100>7 97|120b25 128l8 128t20
+98p7 Self(71R9) 97|121b7 125r15 126r15 127r15
+99a7 Mode{string} 97|122b7 126r26
+100a7 Of_Type{string} 97|123b7 127r26
+101U25 Add_Aspects<57p14> 102^7 103>7 97|134b25 140l8 140t19
+102p7 Self(71R9) 97|135b7
+103a7 Text{string} 97|136b7
+104U25 Add_Comments<62p14> 105^7 106>7 97|146b25 159l8 159t20
+105p7 Self(71R9) 97|147b7 150r10 151r18 152r10 154r18 155r18 157r10 157r52
+106a7 Text{string} 97|148b7 155r29 157r23
+107U25 Add_Generic_Parameter<37p14> 108^7 109>7 110>7 111>7 112>7 97|39b25
+. 47l8 47t29
+108p7 Self(71R9) 97|40b7 46r22
+109a7 Name{string} 97|41b7 46r28
+110a7 Mode{string} 97|42b7 46r34
+111a7 Of_Type{string} 97|43b7 46r40
+112a7 Default{string} 97|44b7 46r49
+113V24 Get_Text{string}<67p13> 114^7 97|165b24 175l8 175t16
+114p7 Self(71R9) 97|166b7 169r10 170r18 171r10 174r25
+X 97 language-profile_formaters.adb
+60a7 Mode_Image{string} 80r13 82r30 84r32
+X 98 system.ads
+67M9*Address
+X 108 s-memory.ads
+51V13*Alloc{98|67M9} 101i<c,__gnat_malloc>22
+66U14*Free 102i<c,__gnat_free>22
+74V13*Realloc{98|67M9} 103i<c,__gnat_realloc>22
+X 123 s-stausa.ads
+207U14*Initialize 208i<c,__gnat_stack_usage_initialize>22
+272U14*Output_Results 276i<c,__gnat_stack_usage_output_results>22
+X 125 s-stalib.adb
+87U14 Break_Start 88i<c,__gnat_break_start>22
+

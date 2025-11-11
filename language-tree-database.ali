@@ -1,0 +1,2551 @@
+V "GNAT Lib v15"
+A -gnatA
+A -mmacosx-version-min=26.0
+A -mcpu=apple-m1
+A -mlittle-endian
+A -mabi=lp64
+A -fPIC
+P SS ZX
+
+RN
+RV NO_ACCESS_SUBPROGRAMS
+RV NO_ALLOCATORS
+RV NO_CALENDAR
+RV NO_DELAY
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_DISPATCH
+RV NO_DISPATCHING_CALLS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_FINALIZATION
+RV NO_FIXED_POINT
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_ALLOCATORS
+RV NO_NESTED_FINALIZATION
+RV NO_RECURSION
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_STREAMS
+RV NO_UNCHECKED_ACCESS
+RV NO_UNCHECKED_DEALLOCATION
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_ALIASING
+RV NO_IMPLICIT_LOOPS
+RV NO_ELABORATION_CODE
+RV NO_OBSOLESCENT_FEATURES
+
+U language.tree.database%b  language-tree-database.adb  a68c3e84 OO PF PK
+W ada%s			ada.ads			ada.ali
+W ada.calendar%s	a-calend.adb		a-calend.ali
+W ada.containers%s	a-contai.ads		a-contai.ali
+Z ada.containers.helpers%s  a-conhel.adb	a-conhel.ali
+Z ada.containers.stable_sorting%s  a-costso.adb	a-costso.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.finalization%s	a-finali.ads		a-finali.ali
+Z ada.iterator_interfaces%s
+Z ada.streams%s		a-stream.adb		a-stream.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.fixed%s	a-strfix.adb		a-strfix.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z ada.unchecked_deallocation%s
+Z construct_tries%s	construct_tries.adb	construct_tries.ali  ED
+W gnatcoll%s		gnatcoll.ads		gnatcoll.ali
+Z gnatcoll.traces%s	gnatcoll-traces.adb	gnatcoll-traces.ali  AD
+W gnatcoll.utils%s	gnatcoll-utils.adb	gnatcoll-utils.ali
+W language.tree%s	language-tree.adb	language-tree.ali
+Z lazy_vectors%s	lazy_vectors.adb	lazy_vectors.ali  ED
+W string_utils%s	string_utils.adb	string_utils.ali
+W system%s		system.ads		system.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.concat_3%s	s-conca3.adb		s-conca3.ali
+Z system.finalization_primitives%s  s-finpri.adb  s-finpri.ali
+Z system.pool_global%s	s-pooglo.adb		s-pooglo.ali
+Z system.put_images%s	s-putima.adb		s-putima.ali
+Z system.return_stack%s	s-retsta.ads		s-retsta.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.storage_elements%s  s-stoele.ads	s-stoele.ali
+Z system.storage_pools%s  s-stopoo.adb		s-stopoo.ali
+Z system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
+Z system.stream_attributes%s  s-stratt.adb	s-stratt.ali
+Z tries%s		tries.adb		tries.ali  ED
+W utf8_utils%s		utf8_utils.adb		utf8_utils.ali
+Z vector_tries%s	vector_tries.adb	vector_tries.ali  ED
+
+U language.tree.database%s  language-tree-database.ads  15350ef8 BN EE OO PF PK
+W ada%s			ada.ads			ada.ali
+W ada.characters%s	a-charac.ads		a-charac.ali
+Z ada.characters.handling%s  a-chahan.adb	a-chahan.ali
+W ada.containers%s	a-contai.ads		a-contai.ali
+W ada.containers.doubly_linked_lists%s
+Z ada.containers.hash_tables%s  a-cohata.ads	a-cohata.ali
+Z ada.containers.hash_tables.generic_keys%s
+Z ada.containers.hash_tables.generic_operations%s
+W ada.containers.hashed_maps%s
+Z ada.containers.helpers%s  a-conhel.adb	a-conhel.ali
+W ada.containers.indefinite_ordered_maps%s
+W ada.containers.ordered_multisets%s
+Z ada.containers.prime_numbers%s  a-coprnu.adb	a-coprnu.ali
+Z ada.containers.red_black_trees%s  a-crbltr.ads  a-crbltr.ali
+Z ada.containers.red_black_trees.generic_keys%s
+Z ada.containers.red_black_trees.generic_operations%s
+Z ada.containers.red_black_trees.generic_set_operations%s
+Z ada.containers.stable_sorting%s  a-costso.adb	a-costso.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W ada.finalization%s	a-finali.ads		a-finali.ali
+Z ada.iterator_interfaces%s
+Z ada.streams%s		a-stream.adb		a-stream.ali
+W ada.strings%s		a-string.ads		a-string.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+Z ada.unchecked_conversion%s
+W ada.unchecked_deallocation%s
+W construct_tries%s	construct_tries.adb	construct_tries.ali
+W gnat%s		gnat.ads		gnat.ali
+Z gnat.os_lib%s		g-os_lib.ads		g-os_lib.ali
+W gnat.strings%s	g-string.ads		g-string.ali
+W gnatcoll%s		gnatcoll.ads		gnatcoll.ali
+W gnatcoll.projects%s	gnatcoll-projects.adb	gnatcoll-projects.ali
+W gnatcoll.symbols%s	gnatcoll-symbols.adb	gnatcoll-symbols.ali
+Z gnatcoll.traces%s	gnatcoll-traces.adb	gnatcoll-traces.ali
+Z gnatcoll.utils%s	gnatcoll-utils.adb	gnatcoll-utils.ali
+W gnatcoll.vfs%s	gnatcoll-vfs.adb	gnatcoll-vfs.ali
+W language%s		language.adb		language.ali
+W language.profile_formaters%s  language-profile_formaters.adb  language-profile_formaters.ali
+W language.tree%s	language-tree.adb	language-tree.ali
+W language.unknown%s	language-unknown.adb	language-unknown.ali
+Z lazy_vectors%s	lazy_vectors.adb	lazy_vectors.ali
+Z system%s		system.ads		system.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.finalization_primitives%s  s-finpri.adb  s-finpri.ali
+Z system.img_int%s	s-imgint.ads		s-imgint.ali
+Z system.memory%s	s-memory.adb		s-memory.ali
+Z system.pool_global%s	s-pooglo.adb		s-pooglo.ali
+Z system.put_images%s	s-putima.adb		s-putima.ali
+Z system.return_stack%s	s-retsta.ads		s-retsta.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.storage_elements%s  s-stoele.ads	s-stoele.ali
+Z system.storage_pools%s  s-stopoo.adb		s-stopoo.ali
+Z system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
+Z system.stream_attributes%s  s-stratt.adb	s-stratt.ali
+Z system.strings.stream_ops%s  s-ststop.adb	s-ststop.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z tries%s		tries.adb		tries.ali
+Z vector_tries%s	vector_tries.adb	vector_tries.ali
+
+D ada.ads		20250419085653 76789da1 ada%s
+D a-calend.ads		20250419085653 bf7f3cc9 ada.calendar%s
+D a-calfor.ads		20250419085653 0f4707d1 ada.calendar.formatting%s
+D a-catizo.ads		20250419085653 eaa56756 ada.calendar.time_zones%s
+D a-charac.ads		20250419085653 2d3ec45b ada.characters%s
+D a-chahan.ads		20250419085653 bf752ff6 ada.characters.handling%s
+D a-chlat1.ads		20250419085653 e0d72e76 ada.characters.latin_1%s
+D a-contai.ads		20250419085653 61e5e089 ada.containers%s
+D a-cdlili.ads		20250419085653 2434d8f6 ada.containers.doubly_linked_lists%s
+D a-cdlili.adb		20250419085653 777aaced ada.containers.doubly_linked_lists%b
+D a-cohata.ads		20250419085653 bea783e3 ada.containers.hash_tables%s
+D a-chtgke.ads		20250419085653 20177f7b ada.containers.hash_tables.generic_keys%s
+D a-chtgke.adb		20250419085653 fdf2dddc ada.containers.hash_tables.generic_keys%b
+D a-chtgop.ads		20250419085653 11c5978a ada.containers.hash_tables.generic_operations%s
+D a-chtgop.adb		20250419085653 c3ccdc4f ada.containers.hash_tables.generic_operations%b
+D a-cohama.ads		20250419085653 de9aa0f2 ada.containers.hashed_maps%s
+D a-cohama.adb		20250419085653 768389f7 ada.containers.hashed_maps%b
+D a-cohase.ads		20250419085653 4c12bfe7 ada.containers.hashed_sets%s
+D a-conhel.ads		20250419085653 46fe1ce3 ada.containers.helpers%s
+D a-conhel.adb		20250419085653 854d323e ada.containers.helpers%b
+D a-cihama.ads		20250419085653 42861819 ada.containers.indefinite_hashed_maps%s
+D a-cihase.ads		20250419085653 b5cdb105 ada.containers.indefinite_hashed_sets%s
+D a-ciorma.ads		20250419085653 1fd25f9a ada.containers.indefinite_ordered_maps%s
+D a-ciorma.adb		20250419085653 64a7f1a0 ada.containers.indefinite_ordered_maps%b
+D a-ciorse.ads		20250419085653 d80fbfe7 ada.containers.indefinite_ordered_sets%s
+D a-coinve.ads		20250419085653 b20d0098 ada.containers.indefinite_vectors%s
+D a-coorma.ads		20250419085653 3edf5cc0 ada.containers.ordered_maps%s
+D a-coormu.ads		20250419085653 78ac6a10 ada.containers.ordered_multisets%s
+D a-coormu.adb		20250419085653 d64bb4fd ada.containers.ordered_multisets%b
+D a-coorse.ads		20250419085653 d90cfee3 ada.containers.ordered_sets%s
+D a-coprnu.ads		20250419085653 24215258 ada.containers.prime_numbers%s
+D a-crbltr.ads		20250419085653 d3d16ba4 ada.containers.red_black_trees%s
+D a-crbtgk.ads		20250419085653 ab25d217 ada.containers.red_black_trees.generic_keys%s
+D a-crbtgk.adb		20250419085653 35f47ece ada.containers.red_black_trees.generic_keys%b
+D a-crbtgo.ads		20250419085653 8b968904 ada.containers.red_black_trees.generic_operations%s
+D a-crbtgo.adb		20250419085653 f35252d8 ada.containers.red_black_trees.generic_operations%b
+D a-rbtgso.ads		20250419085653 2f314542 ada.containers.red_black_trees.generic_set_operations%s
+D a-rbtgso.adb		20250419085653 baf61b9f ada.containers.red_black_trees.generic_set_operations%b
+D a-costso.ads		20250419085653 937a171b ada.containers.stable_sorting%s
+D a-costso.adb		20250419085653 d34bf6bb ada.containers.stable_sorting%b
+D a-convec.ads		20250419085653 91fb49f3 ada.containers.vectors%s
+D a-except.ads		20250419085653 e7970cd9 ada.exceptions%s
+D a-finali.ads		20250419085653 bf4f806b ada.finalization%s
+D a-ioexce.ads		20250419085653 40018c65 ada.io_exceptions%s
+D a-iteint.ads		20250419085653 49a8bee2 ada.iterator_interfaces%s
+D a-stream.ads		20250419085653 17477cbd ada.streams%s
+D a-string.ads		20250419085653 90ac6797 ada.strings%s
+D a-secain.ads		20250419085653 37402117 ada.strings.equal_case_insensitive%s
+D a-strfix.ads		20250419085653 8648dedb ada.strings.fixed%s
+D a-strhas.ads		20250419085653 e06866e7 ada.strings.hash%s
+D a-shcain.ads		20250419085653 08af52df ada.strings.hash_case_insensitive%s
+D a-strmap.ads		20250419085653 1f91ebb6 ada.strings.maps%s
+D a-strsea.ads		20250419085653 18c3c634 ada.strings.search%s
+D a-sttebu.ads		20250419085653 f1ad67a2 ada.strings.text_buffers%s
+D a-strunb.ads		20250419085653 b10770ab ada.strings.unbounded%s
+D a-stuten.ads		20250419085653 c6ced0ae ada.strings.utf_encoding%s
+D a-stzhas.ads		20250419085653 471757ed ada.strings.wide_wide_hash%s
+D a-stzmap.ads		20250419085653 f60a1f4d ada.strings.wide_wide_maps%s
+D a-tags.ads		20250419085653 fbca0ad5 ada.tags%s
+D a-textio.ads		20250419085653 34ef47de ada.text_io%s
+D a-unccon.ads		20250419085653 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20250419085653 c3a8ac65 ada.unchecked_deallocation%s
+D annotations.ads	20251111131459 55ef9546 annotations%s
+D basic_types.ads	20251111131459 05e1b880 basic_types%s
+D case_handling.ads	20251111131459 d0aa370a case_handling%s
+D construct_tries.ads	20251111131459 e4f9dce2 construct_tries%s
+D construct_tries.adb	20251111131459 d553ee72 construct_tries%b
+D gnat.ads		20250419085653 b5988c27 gnat%s
+D g-bytswa.ads		20250419085653 a4d21639 gnat.byte_swapping%s
+D g-calend.ads		20250419085653 cad86fa7 gnat.calendar%s
+D g-dynhta.ads		20250419085653 968f1a08 gnat.dynamic_htables%s
+D g-dyntab.ads		20250419085653 f1e98b14 gnat.dynamic_tables%s
+D g-expect.ads		20250419085653 e4246c0f gnat.expect%s
+D g-io.ads		20250419085653 9f0d3ab2 gnat.io%s
+D g-md5.ads		20250419085653 bb55398e gnat.md5%s
+D g-os_lib.ads		20250419085653 0db74523 gnat.os_lib%s
+D g-regpat.ads		20250419085653 b85d88ef gnat.regpat%s
+D g-sechas.ads		20250419085653 302163b5 gnat.secure_hashes%s
+D g-sehamd.ads		20250419085653 d714f185 gnat.secure_hashes.md5%s
+D g-souinf.ads		20250419085653 470146ee gnat.source_info%s
+D g-string.ads		20250419085653 c6abc540 gnat.strings%s
+D g-table.ads		20250419085653 b4b07c4d gnat.table%s
+D gnatcoll.ads		20251104164843 6a5da479 gnatcoll%s
+D gnatcoll-atomic.ads	20251104164843 a760a918 gnatcoll.atomic%s
+D gnatcoll-iconv.ads	20251104164843 1d85b850 gnatcoll.iconv%s
+D gnatcoll-io.ads	20251104164842 40b00e79 gnatcoll.io%s
+D gnatcoll-io-native.ads  20251104164842 60c7703b gnatcoll.io.native%s
+D gnatcoll-path.ads	20251104164842 44783065 gnatcoll.path%s
+D gnatcoll-plugins.ads	20251104164842 d4c6371e gnatcoll.plugins%s
+D gnatcoll-projects.ads	20251104164843 8fb54a86 gnatcoll.projects%s
+D gnatcoll-refcount.ads	20251104164843 b4dda25c gnatcoll.refcount%s
+D gnatcoll-sql.ads	20251104164843 151b58bf gnatcoll.sql%s
+D gnatcoll-sql-exec.ads	20251104164843 75bf9dca gnatcoll.sql.exec%s
+D gnatcoll-sql_impl.ads	20251104164843 e4a6d3b2 gnatcoll.sql_impl%s
+D gnatcoll-storage_pools.ads  20251104164843 f82e283b gnatcoll.storage_pools%s
+D gnatcoll-storage_pools-headers.ads  20251104164843 968b2c2e gnatcoll.storage_pools.headers%s
+D gnatcoll-strings.ads	20251104164842 014a3fb6 gnatcoll.strings%s
+D gnatcoll-strings_impl.ads  20251104164842 3722c4b1 gnatcoll.strings_impl%s
+D gnatcoll-symbols.ads	20251104164842 c9c62a05 gnatcoll.symbols%s
+D gnatcoll-symbols.adb	20251104164842 2934c17d gnatcoll.symbols%b
+D gnatcoll-terminal.ads	20251104164842 b19fb5ba gnatcoll.terminal%s
+D gnatcoll-traces.ads	20251104164842 4e81b8c9 gnatcoll.traces%s
+D gnatcoll-utils.ads	20251104164842 8cd28764 gnatcoll.utils%s
+D gnatcoll-vfs.ads	20251104164842 1efc72f6 gnatcoll.vfs%s
+D gnatcoll-vfs_types.ads  20251104164842 14be4a8d gnatcoll.vfs_types%s
+D gnatcoll-xref.ads	20251104164843 ddd64576 gnatcoll.xref%s
+D gpr.ads		20251104164842 8e79990e gpr%s
+D gpr-ali.ads		20251104164842 96520699 gpr.ali%s
+D gpr-env.ads		20251104164842 8725813f gpr.env%s
+D gpr-ext.ads		20251104164842 b6f5e132 gpr.ext%s
+D gpr-names.ads		20251104164842 f36cddd2 gpr.names%s
+D gpr-osint.ads		20251104164842 ab7f8710 gpr.osint%s
+D gpr-scans.ads		20251104164842 a9e8e657 gpr.scans%s
+D gpr-tree.ads		20251104164842 dd4e11ae gpr.tree%s
+D gpr-util.ads		20251104164842 1b46d32f gpr.util%s
+D interfac.ads		20250419085653 9111f9c1 interfaces%s
+D i-c.ads		20250419085653 e94c966a interfaces.c%s
+D i-cstrin.ads		20250419085653 5409c1a4 interfaces.c.strings%s
+D i-cstrea.ads		20250419085653 ffd01b9d interfaces.c_streams%s
+D language.ads		20251111131459 8a951656 language%s
+D language-profile_formaters.ads  20251111131459 58c99cb9 language.profile_formaters%s
+D language-tree.ads	20251111131459 b5caa0f7 language.tree%s
+D language-tree-database.ads  20251111131459 e5be7291 language.tree.database%s
+D language-tree-database.adb  20251111131459 3fc68c10 language.tree.database%b
+D language-unknown.ads	20251111131459 e787caf9 language.unknown%s
+D lazy_vectors.ads	20251111131459 230bfb1c lazy_vectors%s
+D lazy_vectors.adb	20251111131459 e94b2dd9 lazy_vectors%b
+D string_utils.ads	20251111131459 85454839 string_utils%s
+D system.ads		20250419085653 70765b54 system%s
+D s-addima.ads		20250419085653 a1ec9d3a system.address_image%s
+D s-atacco.ads		20250419085653 5868e3ba system.address_to_access_conversions%s
+D s-atocou.ads		20250419085653 dc18efc3 system.atomic_counters%s
+D s-atocou.adb		20250419085653 6fe685de system.atomic_counters%b
+D s-atopri.ads		20250419085653 e19c1d89 system.atomic_primitives%s
+D s-conca2.ads		20250419085653 b5fb73f7 system.concat_2%s
+D s-conca3.ads		20250419085653 8a7a19a2 system.concat_3%s
+D s-conca5.ads		20250419085653 4099d1db system.concat_5%s
+D s-conca6.ads		20250419085653 8252f108 system.concat_6%s
+D s-crtl.ads		20250419085653 beb39b9e system.crtl%s
+D s-exctab.ads		20250419085653 91bef6ef system.exception_table%s
+D s-ficobl.ads		20250419085653 dc5161d4 system.file_control_block%s
+D s-finpri.ads		20250419085653 5970d55a system.finalization_primitives%s
+D s-finroo.ads		20250419085653 0a7c3ed4 system.finalization_root%s
+D s-imagei.ads		20250419085653 5e131ce0 system.image_i%s
+D s-imageu.ads		20250419085653 b0b50650 system.image_u%s
+D s-imgint.ads		20250419085653 67e4edfb system.img_int%s
+D s-imglli.ads		20250419085653 d88f4f3b system.img_lli%s
+D s-imguns.ads		20250419085653 c4e23690 system.img_uns%s
+D s-memory.ads		20250419085653 18949c1a system.memory%s
+D s-multip.ads		20250419085653 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20250522142959 16132a6a system.os_constants%s
+D s-osinte.ads		20250419085653 76797b0c system.os_interface%s
+D s-os_lib.ads		20250419085653 dd4133ed system.os_lib%s
+D s-oslock.ads		20250419085653 13fa6b78 system.os_locks%s
+D s-parame.ads		20250419085653 3597fc11 system.parameters%s
+D s-pooglo.ads		20250419085653 91708d21 system.pool_global%s
+D s-putima.ads		20250419085653 17291fe4 system.put_images%s
+D s-regpat.ads		20250419085653 3f91c1d3 system.regpat%s
+D s-retsta.ads		20250419085653 0f6b06cb system.return_stack%s
+D s-rident.ads		20250419085653 5eec7ad4 system.rident%s
+D s-secsta.ads		20250419085653 578279f5 system.secondary_stack%s
+D s-soflin.ads		20250419085653 5d88fdea system.soft_links%s
+D s-stache.ads		20250419085653 0b81c1fe system.stack_checking%s
+D s-stausa.ads		20250419085653 5be75682 system.stack_usage%s
+D s-stalib.ads		20250419085653 1c9580f6 system.standard_library%s
+D s-stalib.adb		20250419085653 eb464a47 system.standard_library%b
+D s-stoele.ads		20250419085653 ccded4e8 system.storage_elements%s
+D s-stopoo.ads		20250419085653 e9fa2dd8 system.storage_pools%s
+D s-stposu.ads		20250419085653 e0b9fefd system.storage_pools.subpools%s
+D s-stratt.ads		20250419085653 516607ae system.stream_attributes%s
+D s-string.ads		20250419085653 582aac7d system.strings%s
+D s-ststop.ads		20250419085653 c569db7c system.strings.stream_ops%s
+D s-tasinf.ads		20250419085653 801abd01 system.task_info%s
+D s-taspri.ads		20250419085653 1e109e82 system.task_primitives%s
+D s-taskin.ads		20250419085653 38289021 system.tasking%s
+D s-traent.ads		20250419085653 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20250419085653 fa2a7f59 system.unsigned_types%s
+D s-valspe.ads		20250419085653 f810d31c system.val_spec%s
+D s-vaispe.ads		20250419085653 8280550e system.value_i_spec%s
+D s-vauspe.ads		20250419085653 89269ba5 system.value_u_spec%s
+D s-vs_int.ads		20250419085653 06b6b724 system.vs_int%s
+D s-vs_lli.ads		20250419085653 b945cf7d system.vs_lli%s
+D s-vs_llu.ads		20250419085653 8f3536c5 system.vs_llu%s
+D s-vs_uns.ads		20250419085653 e7f47a27 system.vs_uns%s
+D s-wchcon.ads		20250419085653 d9032363 system.wch_con%s
+D tries.ads		20251111131459 be5b91a8 tries%s
+D tries.adb		20251111131459 cf559cbf tries%b
+D utf8_utils.ads	20251111131459 3c22b61e utf8_utils%s
+D vector_tries.ads	20251111131459 10e668e1 vector_tries%s
+D vector_tries.adb	20251111131459 f05d4c14 vector_tries%b
+G a e
+G c b b b [b language__tree__database 26 1 none]
+G c s s s [s language__tree__database 38 1 none]
+G c Z s b [get_profile language__tree__database 69 14 none]
+G c Z s b [get_profile language__tree__database 81 13 none]
+G c Z s b [get_declaration language__tree__database 89 13 none]
+G c Z s b [get_name_index language__tree__database 94 24 none]
+G c Z s b [diff language__tree__database 101 25 none]
+G c Z s b [find_declaration language__tree__database 106 13 none]
+G c Z s b [find_first_part language__tree__database 141 13 none]
+G c Z s b [find_next_part language__tree__database 147 13 none]
+G c Z s b [get_language language__tree__database 155 24 none]
+G c Z s b [find_reference_details language__tree__database 159 24 none]
+G c Z s b [free language__tree__database 219 14 none]
+G c Z s b [get_timestamp language__tree__database 224 24 none]
+G c Z s b [get_buffer language__tree__database 229 24 none]
+G c Z s b [Oeq language__tree__database 240 24 none]
+G c Z s b [ref language__tree__database 248 14 none]
+G c Z s b [unref language__tree__database 252 14 none]
+G c Z s b [is_externally_referenced language__tree__database 255 13 none]
+G c Z s b [get_tree language__tree__database 260 13 none]
+G c Z s b [get_buffer language__tree__database 266 13 none]
+G c Z s b [get_file_path language__tree__database 274 13 none]
+G c Z s b [get_offset_of_line language__tree__database 277 13 none]
+G c Z s b [to_visible_column language__tree__database 284 13 none]
+G c Z s b [to_line_string_index language__tree__database 291 13 none]
+G c Z s b [to_string_index language__tree__database 298 13 none]
+G c Z s b [to_line_column language__tree__database 305 14 none]
+G c Z s b [get_tree_language language__tree__database 313 13 none]
+G c Z s b [update_contents language__tree__database 317 14 none]
+G c Z s b [is_null language__tree__database 325 13 none]
+G c Z s b [lock_updates language__tree__database 340 13 none]
+G c Z s b [unlock language__tree__database 349 14 none]
+G c Z s b [finalize language__tree__database 353 25 none]
+G c Z s b [free language__tree__database 366 14 none]
+G c Z s b [Olt language__tree__database 369 13 none]
+G c Z s b [Oeq language__tree__database 372 24 none]
+G c Z s b [to_entity_access language__tree__database 376 13 none]
+G c Z s b [to_construct_tree_iterator language__tree__database 383 13 none]
+G c Z s b [get_file language__tree__database 388 13 none]
+G c Z s b [get_construct language__tree__database 392 13 none]
+G c Z s b [to_string language__tree__database 397 13 none]
+G c Z s b [contains language__tree__database 400 13 none]
+G c Z s b [initialize language__tree__database 410 14 none]
+G c Z s b [set_provider language__tree__database 413 14 none]
+G c Z s b [set_symbols language__tree__database 420 14 none]
+G c Z s b [symbols language__tree__database 423 13 none]
+G c Z s b [free language__tree__database 430 14 none]
+G c Z s b [get_or_create language__tree__database 433 13 none]
+G c Z s b [get_file language__tree__database 444 13 none]
+G c Z s b [remove_file language__tree__database 449 14 none]
+G c Z s b [get_project language__tree__database 456 13 none]
+G c Z s b [set_project language__tree__database 460 14 none]
+G c Z s b [update_contents language__tree__database 464 14 none]
+G c Z s b [clear language__tree__database 471 14 none]
+G c Z s b [destroy language__tree__database 475 14 none]
+G c Z s b [start language__tree__database 483 13 none]
+G c Z s b [get_construct language__tree__database 490 13 none]
+G c Z s b [get_current_id language__tree__database 496 13 none]
+G c Z s b [get_file language__tree__database 501 13 none]
+G c Z s b [get language__tree__database 506 13 none]
+G c Z s b [next language__tree__database 509 14 none]
+G c Z s b [at_end language__tree__database 512 13 none]
+G c Z s b [is_valid language__tree__database 515 13 none]
+G c Z s b [free language__tree__database 519 14 none]
+G c Z s b [get_tree_annotation_key_registry language__tree__database 524 13 none]
+G c Z s b [get_construct_annotation_key_registry language__tree__database 529 13 none]
+G c Z s b [Olt language__tree__database 534 13 none]
+G c Z s s [equivalent_elements language__tree__database__file_set 53 13 537_4]
+G c Z s s [has_element language__tree__database__file_set 75 13 537_4]
+G c Z s s [Oeq language__tree__database__file_set 81 13 537_4]
+G c Z s s [equivalent_sets language__tree__database__file_set 90 13 537_4]
+G c Z s s [to_set language__tree__database__file_set 94 13 537_4]
+G c Z s s [length language__tree__database__file_set 97 13 537_4]
+G c Z s s [is_empty language__tree__database__file_set 100 13 537_4]
+G c Z s s [clear language__tree__database__file_set 103 14 537_4]
+G c Z s s [element language__tree__database__file_set 106 13 537_4]
+G c Z s s [replace_element language__tree__database__file_set 110 14 537_4]
+G c Z s s [query_element language__tree__database__file_set 126 14 537_4]
+G c Z s s [constant_reference language__tree__database__file_set 139 13 537_4]
+G c Z s s [assign language__tree__database__file_set 144 14 537_4]
+G c Z s s [copy language__tree__database__file_set 146 13 537_4]
+G c Z s s [move language__tree__database__file_set 148 14 537_4]
+G c Z s s [insert language__tree__database__file_set 155 14 537_4]
+G c Z s s [insert language__tree__database__file_set 169 14 537_4]
+G c Z s s [exclude language__tree__database__file_set 181 14 537_4]
+G c Z s s [delete language__tree__database__file_set 186 14 537_4]
+G c Z s s [delete language__tree__database__file_set 192 14 537_4]
+G c Z s s [delete_first language__tree__database__file_set 200 14 537_4]
+G c Z s s [delete_last language__tree__database__file_set 203 14 537_4]
+G c Z s s [union language__tree__database__file_set 206 14 537_4]
+G c Z s s [union language__tree__database__file_set 213 13 537_4]
+G c Z s s [intersection language__tree__database__file_set 220 14 537_4]
+G c Z s s [intersection language__tree__database__file_set 226 13 537_4]
+G c Z s s [difference language__tree__database__file_set 235 14 537_4]
+G c Z s s [difference language__tree__database__file_set 240 13 537_4]
+G c Z s s [symmetric_difference language__tree__database__file_set 246 14 537_4]
+G c Z s s [symmetric_difference language__tree__database__file_set 252 13 537_4]
+G c Z s s [overlap language__tree__database__file_set 259 13 537_4]
+G c Z s s [is_subset language__tree__database__file_set 263 13 537_4]
+G c Z s s [first language__tree__database__file_set 267 13 537_4]
+G c Z s s [first_element language__tree__database__file_set 271 13 537_4]
+G c Z s s [last language__tree__database__file_set 274 13 537_4]
+G c Z s s [last_element language__tree__database__file_set 278 13 537_4]
+G c Z s s [next language__tree__database__file_set 281 13 537_4]
+G c Z s s [next language__tree__database__file_set 287 14 537_4]
+G c Z s s [previous language__tree__database__file_set 290 13 537_4]
+G c Z s s [previous language__tree__database__file_set 296 14 537_4]
+G c Z s s [find language__tree__database__file_set 299 13 537_4]
+G c Z s s [floor language__tree__database__file_set 303 13 537_4]
+G c Z s s [ceiling language__tree__database__file_set 310 13 537_4]
+G c Z s s [contains language__tree__database__file_set 317 13 537_4]
+G c Z s s [Olt language__tree__database__file_set 320 13 537_4]
+G c Z s s [Ogt language__tree__database__file_set 323 13 537_4]
+G c Z s s [Olt language__tree__database__file_set 326 13 537_4]
+G c Z s s [Ogt language__tree__database__file_set 329 13 537_4]
+G c Z s s [Olt language__tree__database__file_set 332 13 537_4]
+G c Z s s [Ogt language__tree__database__file_set 335 13 537_4]
+G c Z s s [iterate language__tree__database__file_set 338 14 537_4]
+G c Z s s [reverse_iterate language__tree__database__file_set 344 14 537_4]
+G c Z s s [iterate language__tree__database__file_set 350 14 537_4]
+G c Z s s [reverse_iterate language__tree__database__file_set 357 14 537_4]
+G c Z s s [iterate language__tree__database__file_set 364 13 537_4]
+G c Z s s [iterate language__tree__database__file_set 368 13 537_4]
+G c Z s s [node_typeIP language__tree__database__file_set 463 9 537_4]
+G c Z s s [adjust language__tree__database__file_set__tree_types__implementation 90 28 52_7_471_4_537_4]
+G c Z s s [finalize language__tree__database__file_set__tree_types__implementation 93 28 52_7_471_4_537_4]
+G c Z s s [zero_counts language__tree__database__file_set__tree_types__implementation 96 17 52_7_471_4_537_4]
+G c Z s s [busy language__tree__database__file_set__tree_types__implementation 100 17 52_7_471_4_537_4]
+G c Z s s [unbusy language__tree__database__file_set__tree_types__implementation 104 17 52_7_471_4_537_4]
+G c Z s s [lock language__tree__database__file_set__tree_types__implementation 108 17 52_7_471_4_537_4]
+G c Z s s [unlock language__tree__database__file_set__tree_types__implementation 112 17 52_7_471_4_537_4]
+G c Z s s [tc_check language__tree__database__file_set__tree_types__implementation 116 17 52_7_471_4_537_4]
+G c Z s s [te_check language__tree__database__file_set__tree_types__implementation 120 17 52_7_471_4_537_4]
+G c Z s s [is_busy language__tree__database__file_set__tree_types__implementation 136 16 52_7_471_4_537_4]
+G c Z s s [is_locked language__tree__database__file_set__tree_types__implementation 140 16 52_7_471_4_537_4]
+G c Z s s [initialize language__tree__database__file_set__tree_types__implementation 161 28 52_7_471_4_537_4]
+G c Z s s [finalize language__tree__database__file_set__tree_types__implementation 162 28 52_7_471_4_537_4]
+G c Z s s [initialize language__tree__database__file_set__tree_types__implementation 167 28 52_7_471_4_537_4]
+G c Z s s [finalize language__tree__database__file_set__tree_types__implementation 168 28 52_7_471_4_537_4]
+G c Z s s [reference_control_typeDA language__tree__database__file_set__tree_types__implementation 84 12 52_7_471_4_537_4]
+G c Z s s [reference_control_typeDF language__tree__database__file_set__tree_types__implementation 84 12 52_7_471_4_537_4]
+G c Z s s [reference_control_typeIP language__tree__database__file_set__tree_types__implementation 84 12 52_7_471_4_537_4]
+G c Z s s [with_busyDF language__tree__database__file_set__tree_types__implementation 158 12 52_7_471_4_537_4]
+G c Z s s [with_busyIP language__tree__database__file_set__tree_types__implementation 158 12 52_7_471_4_537_4]
+G c Z s s [with_lockDF language__tree__database__file_set__tree_types__implementation 164 12 52_7_471_4_537_4]
+G c Z s s [with_lockIP language__tree__database__file_set__tree_types__implementation 164 12 52_7_471_4_537_4]
+G c Z s s [tree_typeDA language__tree__database__file_set__tree_types 44 12 471_4_537_4]
+G c Z s s [tree_typeDF language__tree__database__file_set__tree_types 44 12 471_4_537_4]
+G c Z s s [tree_typeIP language__tree__database__file_set__tree_types 44 12 471_4_537_4]
+G c Z s s [put_image language__tree__database__file_set 478 14 537_4]
+G c Z s s [adjust language__tree__database__file_set 481 25 537_4]
+G c Z s s [write language__tree__database__file_set 515 14 537_4]
+G c Z s s [read language__tree__database__file_set 521 14 537_4]
+G c Z s s [cursorIP language__tree__database__file_set 510 9 537_4]
+G c Z s s [write language__tree__database__file_set 529 14 537_4]
+G c Z s s [read language__tree__database__file_set 535 14 537_4]
+G c Z s s [read language__tree__database__file_set 541 14 537_4]
+G c Z s s [write language__tree__database__file_set 547 14 537_4]
+G c Z s s [setDA language__tree__database__file_set 474 9 537_4]
+G c Z s s [setDF language__tree__database__file_set 474 9 537_4]
+G c Z s s [setIP language__tree__database__file_set 474 9 537_4]
+G c Z s s [finalize language__tree__database__file_set 563 25 537_4]
+G c Z s s [first language__tree__database__file_set 565 24 537_4]
+G c Z s s [last language__tree__database__file_set 566 24 537_4]
+G c Z s s [next language__tree__database__file_set 568 24 537_4]
+G c Z s s [previous language__tree__database__file_set 572 24 537_4]
+G c Z s s [reference_control_typeIP language__tree__database__file_set 497 9 537_4]
+G c Z s s [constant_reference_typeIP language__tree__database__file_set 501 9 537_4]
+G c Z s s [iteratorDF language__tree__database__file_set 555 9 537_4]
+G c Z s s [iteratorIP language__tree__database__file_set 555 9 537_4]
+G c Z s s [color language__tree__database__file_set 59 13 537_4]
+G c Z s s [left language__tree__database__file_set 62 13 537_4]
+G c Z s s [parent language__tree__database__file_set 65 13 537_4]
+G c Z s s [right language__tree__database__file_set 68 13 537_4]
+G c Z s s [set_parent language__tree__database__file_set 71 14 537_4]
+G c Z s s [set_left language__tree__database__file_set 74 14 537_4]
+G c Z s s [set_right language__tree__database__file_set 77 14 537_4]
+G c Z s s [set_color language__tree__database__file_set 80 14 537_4]
+G c Z s s [copy_node language__tree__database__file_set 87 13 537_4]
+G c Z s s [free language__tree__database__file_set 90 14 537_4]
+G c Z s s [insert_sans_hint language__tree__database__file_set 92 14 537_4]
+G c Z s s [insert_with_hint language__tree__database__file_set 97 14 537_4]
+G c Z s s [is_equal_node_node language__tree__database__file_set 103 13 537_4]
+G c Z s s [is_greater_element_node language__tree__database__file_set 106 13 537_4]
+G c Z s s [is_less_element_node language__tree__database__file_set 111 13 537_4]
+G c Z s s [is_less_node_node language__tree__database__file_set 116 13 537_4]
+G c Z s s [replace_element language__tree__database__file_set 119 14 537_4]
+G c Z s s [min language__tree__database__file_set__tree_operations 51 13 128_4_537_4]
+G c Z s s [max language__tree__database__file_set__tree_operations 54 13 128_4_537_4]
+G c Z s s [vet language__tree__database__file_set__tree_operations 64 13 128_4_537_4]
+G c Z s s [next language__tree__database__file_set__tree_operations 69 13 128_4_537_4]
+G c Z s s [previous language__tree__database__file_set__tree_operations 72 13 128_4_537_4]
+G c Z s s [delete_node_sans_free language__tree__database__file_set__tree_operations 82 14 128_4_537_4]
+G c Z s s [rebalance_for_insert language__tree__database__file_set__tree_operations 158 14 128_4_537_4]
+G c Z s s [delete_fixup language__tree__database__file_set__tree_operations 49 14 128_4_537_4]
+G c Z s s [delete_swap language__tree__database__file_set__tree_operations 51 14 128_4_537_4]
+G c Z s s [left_rotate language__tree__database__file_set__tree_operations 53 14 128_4_537_4]
+G c Z s s [right_rotate language__tree__database__file_set__tree_operations 54 14 128_4_537_4]
+G c Z s s [delete_treeR language__tree__database__file_set__delete_treeGP5265 131 14 537_4]
+G c Z s s [delete_tree language__tree__database__file_set 131 14 537_4]
+G c Z s s [copy_treeR language__tree__database__file_set__copy_treeGP5346 134 13 537_4]
+G c Z s s [copy_tree language__tree__database__file_set 134 13 537_4]
+G c Z s s [is_equalR language__tree__database__file_set__is_equalGP5466 139 13 537_4]
+G c Z s s [is_equal language__tree__database__file_set 139 13 537_4]
+G c Z s s [find language__tree__database__file_set__element_keys 156 13 142_4_537_4]
+G c Z s s [ceiling language__tree__database__file_set__element_keys 161 13 142_4_537_4]
+G c Z s s [floor language__tree__database__file_set__element_keys 166 13 142_4_537_4]
+G c Z s s [upper_bound language__tree__database__file_set__element_keys 171 13 142_4_537_4]
+G c Z s s [union language__tree__database__file_set__set_ops 58 14 149_4_537_4]
+G c Z s s [union language__tree__database__file_set__set_ops 66 13 149_4_537_4]
+G c Z s s [intersection language__tree__database__file_set__set_ops 70 14 149_4_537_4]
+G c Z s s [intersection language__tree__database__file_set__set_ops 74 13 149_4_537_4]
+G c Z s s [difference language__tree__database__file_set__set_ops 78 14 149_4_537_4]
+G c Z s s [difference language__tree__database__file_set__set_ops 82 13 149_4_537_4]
+G c Z s s [symmetric_difference language__tree__database__file_set__set_ops 86 14 149_4_537_4]
+G c Z s s [symmetric_difference language__tree__database__file_set__set_ops 93 13 149_4_537_4]
+G c Z s s [is_subset language__tree__database__file_set__set_ops 98 13 149_4_537_4]
+G c Z s s [overlap language__tree__database__file_set__set_ops 102 13 149_4_537_4]
+G c Z s s [clear language__tree__database__file_set__set_ops 42 14 149_4_537_4]
+G c Z s s [copy language__tree__database__file_set__set_ops 44 13 149_4_537_4]
+G c Z s s [adjustR language__tree__database__file_set__adjustGP9105 271 14 537_4]
+G c Z s s [adjust language__tree__database__file_set 271 14 537_4]
+G c Z s s [clearR language__tree__database__file_set__clearGP9960 312 14 537_4]
+G c Z s s [clear language__tree__database__file_set 312 14 537_4]
+G c Z s s [moveR language__tree__database__file_set__moveGP41030 1432 14 537_4]
+G c Z s s [move language__tree__database__file_set 1432 14 537_4]
+G c Z s b [get_identifier language__tree__database 541 13 none]
+G c Z s b [analyze_file_differences language__tree__database 546 14 none]
+G c Z s b [Olt language__tree__database 562 13 none]
+G c Z s b [hash language__tree__database 565 13 none]
+G c Z s b [free language__tree__database 572 14 none]
+G c Z s b [to_entity_access language__tree__database 575 13 none]
+G c Z s b [to_entity_persistent_access language__tree__database 581 13 none]
+G c Z s b [to_unrefed_entity_persistent_access language__tree__database 586 13 none]
+G c Z s b [get_construct language__tree__database 594 13 none]
+G c Z s b [ref language__tree__database 599 14 none]
+G c Z s b [unref language__tree__database 603 14 none]
+G c Z s b [exists language__tree__database 610 13 none]
+G c Z s b [get_file language__tree__database 615 13 none]
+G c Z s s [file_updated language__tree__database 635 14 none]
+G c Z s s [before_clear_db language__tree__database 653 14 none]
+G c Z s b [add_database_listener language__tree__database 658 14 none]
+G c Z s b [remove_database_listener language__tree__database 663 14 none]
+G c Z s b [register_assistant language__tree__database 677 14 none]
+G c Z s b [get_assistant language__tree__database 686 13 none]
+G c Z s b [get_database language__tree__database 692 13 none]
+G c Z s s [free language__tree__database 696 14 none]
+G c Z s b [lock_all_updates language__tree__database 699 14 none]
+G c Z s b [unlock_all_updates language__tree__database 704 14 none]
+G c Z s s [entity_reference_detailsIP language__tree__database 116 9 none]
+G c Z s b [get_last_relevant_construct language__tree__database 715 13 none]
+G c Z s s [tree_languageDA language__tree__database 712 9 none]
+G c Z s s [tree_languageDF language__tree__database 712 9 none]
+G c Z s s [tree_languageIP language__tree__database 712 9 none]
+G c Z s s [unknown_tree_languageDA language__tree__database 748 9 none]
+G c Z s s [unknown_tree_languageDF language__tree__database 748 9 none]
+G c Z s s [unknown_tree_languageIP language__tree__database 748 9 none]
+G c Z s s [buffer_providerDA language__tree__database 753 9 none]
+G c Z s s [buffer_providerDF language__tree__database 753 9 none]
+G c Z s s [buffer_providerIP language__tree__database 753 9 none]
+G c Z s s [trie_additional_dataIP language__tree__database 757 9 none]
+G c Z s s [construct_node_wrapperIP language__tree__database__construct_db_trie 30 9 763_4]
+G c Z s s [clear language__tree__database__construct_db_trie__construct_trie_trees 52 14 38_4_763_4]
+G c Z s s [start language__tree__database__construct_db_trie__construct_trie_trees 55 13 38_4_763_4]
+G c Z s s [next language__tree__database__construct_db_trie__construct_trie_trees 62 14 38_4_763_4]
+G c Z s s [at_end language__tree__database__construct_db_trie__construct_trie_trees 65 13 38_4_763_4]
+G c Z s s [is_valid language__tree__database__construct_db_trie__construct_trie_trees 68 13 38_4_763_4]
+G c Z s s [get language__tree__database__construct_db_trie__construct_trie_trees 73 13 38_4_763_4]
+G c Z s s [get_index language__tree__database__construct_db_trie__construct_trie_trees 77 13 38_4_763_4]
+G c Z s s [free language__tree__database__construct_db_trie__construct_trie_trees 81 14 38_4_763_4]
+G c Z s s [insert language__tree__database__construct_db_trie__construct_trie_trees 85 14 38_4_763_4]
+G c Z s s [delete language__tree__database__construct_db_trie__construct_trie_trees 95 14 38_4_763_4]
+G c Z s s [replace language__tree__database__construct_db_trie__construct_trie_trees 99 14 38_4_763_4]
+G c Z s s [get_name_index language__tree__database__construct_db_trie__construct_trie_trees 105 13 38_4_763_4]
+G c Z s s [free language__tree__database__construct_db_trie__construct_trie_trees__data_vector 35 14 115_4_38_4_763_4]
+G c Z s s [insert language__tree__database__construct_db_trie__construct_trie_trees__data_vector 38 14 115_4_38_4_763_4]
+G c Z s s [insert language__tree__database__construct_db_trie__construct_trie_trees__data_vector 49 14 115_4_38_4_763_4]
+G c Z s s [first language__tree__database__construct_db_trie__construct_trie_trees__data_vector 56 13 115_4_38_4_763_4]
+G c Z s s [next language__tree__database__construct_db_trie__construct_trie_trees__data_vector 59 14 115_4_38_4_763_4]
+G c Z s s [at_end language__tree__database__construct_db_trie__construct_trie_trees__data_vector 62 13 115_4_38_4_763_4]
+G c Z s s [get language__tree__database__construct_db_trie__construct_trie_trees__data_vector 65 13 115_4_38_4_763_4]
+G c Z s s [get_vector language__tree__database__construct_db_trie__construct_trie_trees__data_vector 68 13 115_4_38_4_763_4]
+G c Z s s [set language__tree__database__construct_db_trie__construct_trie_trees__data_vector 70 14 115_4_38_4_763_4]
+G c Z s s [delete language__tree__database__construct_db_trie__construct_trie_trees__data_vector 73 14 115_4_38_4_763_4]
+G c Z s s [free language__tree__database__construct_db_trie__construct_trie_trees__data_vector 82 14 115_4_38_4_763_4]
+G c Z s s [is_valid language__tree__database__construct_db_trie__construct_trie_trees__data_vector 95 13 115_4_38_4_763_4]
+G c Z s s [iteratorIP language__tree__database__construct_db_trie__construct_trie_trees__data_vector 90 9 115_4_38_4_763_4]
+G c Z s s [lazy_vector_recordIP language__tree__database__construct_db_trie__construct_trie_trees__data_vector 85 9 115_4_38_4_763_4]
+G c Z s s [data_arrayIP language__tree__database__construct_db_trie__construct_trie_trees__data_vector 78 9 115_4_38_4_763_4]
+G c Z s s [data_listIP language__tree__database__construct_db_trie__construct_trie_trees 119 9 38_4_763_4]
+G c Z s s [get_name language__tree__database__construct_db_trie__construct_trie_trees 129 13 38_4_763_4]
+G c Z s s [free language__tree__database__construct_db_trie__construct_trie_trees 133 14 38_4_763_4]
+G c Z s s [clear language__tree__database__construct_db_trie__construct_trie_trees__vector_trie_trees 49 14 135_4_38_4_763_4]
+G c Z s s [insert language__tree__database__construct_db_trie__construct_trie_trees__vector_trie_trees 52 14 135_4_38_4_763_4]
+G c Z s s [remove language__tree__database__construct_db_trie__construct_trie_trees__vector_trie_trees 58 14 135_4_38_4_763_4]
+G c Z s s [get language__tree__database__construct_db_trie__construct_trie_trees__vector_trie_trees 61 13 135_4_38_4_763_4]
+G c Z s s [start language__tree__database__construct_db_trie__construct_trie_trees__vector_trie_trees 66 13 135_4_38_4_763_4]
+G c Z s s [at_end language__tree__database__construct_db_trie__construct_trie_trees__vector_trie_trees 72 13 135_4_38_4_763_4]
+G c Z s s [next language__tree__database__construct_db_trie__construct_trie_trees__vector_trie_trees 75 14 135_4_38_4_763_4]
+G c Z s s [get language__tree__database__construct_db_trie__construct_trie_trees__vector_trie_trees 78 13 135_4_38_4_763_4]
+G c Z s s [get_index language__tree__database__construct_db_trie__construct_trie_trees__vector_trie_trees 83 13 135_4_38_4_763_4]
+G c Z s s [is_valid language__tree__database__construct_db_trie__construct_trie_trees__vector_trie_trees 86 13 135_4_38_4_763_4]
+G c Z s s [free language__tree__database__construct_db_trie__construct_trie_trees__vector_trie_trees 90 14 135_4_38_4_763_4]
+G c Z s s [insert language__tree__database__construct_db_trie__construct_trie_trees__vector_trie_trees 110 14 135_4_38_4_763_4]
+G c Z s s [get language__tree__database__construct_db_trie__construct_trie_trees__vector_trie_trees 113 13 135_4_38_4_763_4]
+G c Z s s [remove language__tree__database__construct_db_trie__construct_trie_trees__vector_trie_trees 116 14 135_4_38_4_763_4]
+G c Z s s [trie_treeIP language__tree__database__construct_db_trie__construct_trie_trees__vector_trie_trees 173 9 135_4_38_4_763_4]
+G c Z s s [iteratorIP language__tree__database__construct_db_trie__construct_trie_trees__vector_trie_trees 195 9 135_4_38_4_763_4]
+G c Z s s [cell_pointerIP language__tree__database__construct_db_trie__construct_trie_trees__vector_trie_trees 223 9 135_4_38_4_763_4]
+G c Z s s [cell_childIP language__tree__database__construct_db_trie__construct_trie_trees__vector_trie_trees 142 9 135_4_38_4_763_4]
+G c Z s s [Tcell_child_arrayBIP language__tree__database__construct_db_trie__construct_trie_trees__vector_trie_trees 164 4 135_4_38_4_763_4]
+G c Z s s [Tdata_type_arrayBIP language__tree__database__construct_db_trie__construct_trie_trees__vector_trie_trees 191 4 135_4_38_4_763_4]
+G c Z s s [convert language__tree__database__construct_db_trie__construct_trie_trees__vector_trie_trees 31 13 135_4_38_4_763_4]
+G c Z s s [convert language__tree__database__construct_db_trie__construct_trie_trees__vector_trie_trees 33 13 135_4_38_4_763_4]
+G c Z s s [convert language__tree__database__construct_db_trie__construct_trie_trees__vector_trie_trees 35 13 135_4_38_4_763_4]
+G c Z s s [convert language__tree__database__construct_db_trie__construct_trie_trees__vector_trie_trees 37 13 135_4_38_4_763_4]
+G c Z s s [free language__tree__database__construct_db_trie__construct_trie_trees__vector_trie_trees 44 14 135_4_38_4_763_4]
+G c Z s s [get_index language__tree__database__construct_db_trie__construct_trie_trees__vector_trie_trees 47 13 135_4_38_4_763_4]
+G c Z s s [update_children_parent language__tree__database__construct_db_trie__construct_trie_trees__vector_trie_trees 52 14 135_4_38_4_763_4]
+G c Z s s [increment_clock language__tree__database__construct_db_trie__construct_trie_trees__vector_trie_trees 57 14 135_4_38_4_763_4]
+G c Z s s [adjust_if_need language__tree__database__construct_db_trie__construct_trie_trees__vector_trie_trees 61 14 135_4_38_4_763_4]
+G c Z s s [find_cell_child language__tree__database__construct_db_trie__construct_trie_trees__vector_trie_trees 106 14 135_4_38_4_763_4]
+G c Z s s [vector_trie_iteratorIP language__tree__database__construct_db_trie__construct_trie_trees 150 9 38_4_763_4]
+G c Z s s [vector_trie_indexIP language__tree__database__construct_db_trie__construct_trie_trees 161 9 38_4_763_4]
+G c Z s s [get_or_create_list language__tree__database__construct_db_trie__construct_trie_trees 24 13 38_4_763_4]
+G c Z s s [get_construct_it language__tree__database__construct_db_trie 67 13 763_4]
+G c Z s s [get_additional_data language__tree__database__construct_db_trie 72 13 763_4]
+G c Z s s [insert language__tree__database__construct_db_trie 77 14 763_4]
+G c Z s s [insert language__tree__database__construct_db_trie 88 14 763_4]
+G c Z s s [replace language__tree__database__construct_db_trie 99 14 763_4]
+G c Z s s [line_start_indexesIP language__tree__database 774 9 none]
+G c Z s s [free language__tree__database 777 14 none]
+G c Z s b [Oeq language__tree__database 813 13 none]
+G c Z s s [Oeq language__tree__database__file_map 113 13 816_4]
+G c Z s s [empty language__tree__database__file_map 129 13 816_4]
+G c Z s s [has_element language__tree__database__file_map 131 13 816_4]
+G c Z s s [Oeq language__tree__database__file_map 138 13 816_4]
+G c Z s s [capacity language__tree__database__file_map 154 13 816_4]
+G c Z s s [reserve_capacity language__tree__database__file_map 158 14 816_4]
+G c Z s s [length language__tree__database__file_map 168 13 816_4]
+G c Z s s [is_empty language__tree__database__file_map 171 13 816_4]
+G c Z s s [clear language__tree__database__file_map 174 14 816_4]
+G c Z s s [key language__tree__database__file_map 177 13 816_4]
+G c Z s s [element language__tree__database__file_map 182 13 816_4]
+G c Z s s [replace_element language__tree__database__file_map 188 14 816_4]
+G c Z s s [query_element language__tree__database__file_map 199 14 816_4]
+G c Z s s [update_element language__tree__database__file_map 212 14 816_4]
+G c Z s s [constant_reference language__tree__database__file_map 237 13 816_4]
+G c Z s s [reference language__tree__database__file_map 255 13 816_4]
+G c Z s s [constant_reference language__tree__database__file_map 272 13 816_4]
+G c Z s s [reference language__tree__database__file_map 278 13 816_4]
+G c Z s s [assign language__tree__database__file_map 284 14 816_4]
+G c Z s s [copy language__tree__database__file_map 289 13 816_4]
+G c Z s s [move language__tree__database__file_map 291 14 816_4]
+G c Z s s [insert language__tree__database__file_map 296 14 816_4]
+G c Z s s [insert language__tree__database__file_map 310 14 816_4]
+G c Z s s [insert language__tree__database__file_map 319 14 816_4]
+G c Z s s [include language__tree__database__file_map 327 14 816_4]
+G c Z s s [replace language__tree__database__file_map 337 14 816_4]
+G c Z s s [exclude language__tree__database__file_map 345 14 816_4]
+G c Z s s [delete language__tree__database__file_map 349 14 816_4]
+G c Z s s [delete language__tree__database__file_map 354 14 816_4]
+G c Z s s [first language__tree__database__file_map 362 13 816_4]
+G c Z s s [next language__tree__database__file_map 366 13 816_4]
+G c Z s s [next language__tree__database__file_map 371 14 816_4]
+G c Z s s [find language__tree__database__file_map 374 13 816_4]
+G c Z s s [contains language__tree__database__file_map 380 13 816_4]
+G c Z s s [element language__tree__database__file_map 383 13 816_4]
+G c Z s s [equivalent_keys language__tree__database__file_map 386 13 816_4]
+G c Z s s [equivalent_keys language__tree__database__file_map 390 13 816_4]
+G c Z s s [equivalent_keys language__tree__database__file_map 394 13 816_4]
+G c Z s s [iterate language__tree__database__file_map 398 14 816_4]
+G c Z s s [iterate language__tree__database__file_map 407 13 816_4]
+G c Z s s [node_typeDI language__tree__database__file_map 428 9 816_4]
+G c Z s s [node_typeDF language__tree__database__file_map 428 9 816_4]
+G c Z s s [node_typeIP language__tree__database__file_map 428 9 816_4]
+G c Z s s [adjust language__tree__database__file_map__ht_types__implementation 90 28 58_7_434_4_816_4]
+G c Z s s [finalize language__tree__database__file_map__ht_types__implementation 93 28 58_7_434_4_816_4]
+G c Z s s [zero_counts language__tree__database__file_map__ht_types__implementation 96 17 58_7_434_4_816_4]
+G c Z s s [busy language__tree__database__file_map__ht_types__implementation 100 17 58_7_434_4_816_4]
+G c Z s s [unbusy language__tree__database__file_map__ht_types__implementation 104 17 58_7_434_4_816_4]
+G c Z s s [lock language__tree__database__file_map__ht_types__implementation 108 17 58_7_434_4_816_4]
+G c Z s s [unlock language__tree__database__file_map__ht_types__implementation 112 17 58_7_434_4_816_4]
+G c Z s s [tc_check language__tree__database__file_map__ht_types__implementation 116 17 58_7_434_4_816_4]
+G c Z s s [te_check language__tree__database__file_map__ht_types__implementation 120 17 58_7_434_4_816_4]
+G c Z s s [is_busy language__tree__database__file_map__ht_types__implementation 136 16 58_7_434_4_816_4]
+G c Z s s [is_locked language__tree__database__file_map__ht_types__implementation 140 16 58_7_434_4_816_4]
+G c Z s s [initialize language__tree__database__file_map__ht_types__implementation 161 28 58_7_434_4_816_4]
+G c Z s s [finalize language__tree__database__file_map__ht_types__implementation 162 28 58_7_434_4_816_4]
+G c Z s s [initialize language__tree__database__file_map__ht_types__implementation 167 28 58_7_434_4_816_4]
+G c Z s s [finalize language__tree__database__file_map__ht_types__implementation 168 28 58_7_434_4_816_4]
+G c Z s s [reference_control_typeDA language__tree__database__file_map__ht_types__implementation 84 12 58_7_434_4_816_4]
+G c Z s s [reference_control_typeDF language__tree__database__file_map__ht_types__implementation 84 12 58_7_434_4_816_4]
+G c Z s s [reference_control_typeIP language__tree__database__file_map__ht_types__implementation 84 12 58_7_434_4_816_4]
+G c Z s s [with_busyDF language__tree__database__file_map__ht_types__implementation 158 12 58_7_434_4_816_4]
+G c Z s s [with_busyIP language__tree__database__file_map__ht_types__implementation 158 12 58_7_434_4_816_4]
+G c Z s s [with_lockDF language__tree__database__file_map__ht_types__implementation 164 12 58_7_434_4_816_4]
+G c Z s s [with_lockIP language__tree__database__file_map__ht_types__implementation 164 12 58_7_434_4_816_4]
+G c Z s s [buckets_typeIP language__tree__database__file_map__ht_types 46 12 434_4_816_4]
+G c Z s s [hash_table_typeDA language__tree__database__file_map__ht_types 52 12 434_4_816_4]
+G c Z s s [hash_table_typeDF language__tree__database__file_map__ht_types 52 12 434_4_816_4]
+G c Z s s [hash_table_typeIP language__tree__database__file_map__ht_types 52 12 434_4_816_4]
+G c Z s s [put_image language__tree__database__file_map 441 14 816_4]
+G c Z s s [adjust language__tree__database__file_map 444 25 816_4]
+G c Z s s [finalize language__tree__database__file_map 446 25 816_4]
+G c Z s s [write language__tree__database__file_map 452 14 816_4]
+G c Z s s [read language__tree__database__file_map 458 14 816_4]
+G c Z s s [read language__tree__database__file_map 487 14 816_4]
+G c Z s s [write language__tree__database__file_map 493 14 816_4]
+G c Z s s [write language__tree__database__file_map 512 14 816_4]
+G c Z s s [read language__tree__database__file_map 518 14 816_4]
+G c Z s s [write language__tree__database__file_map 534 14 816_4]
+G c Z s s [read language__tree__database__file_map 540 14 816_4]
+G c Z s s [pseudo_reference language__tree__database__file_map 550 13 816_4]
+G c Z s s [get_element_access language__tree__database__file_map 560 13 816_4]
+G c Z s s [mapDA language__tree__database__file_map 437 9 816_4]
+G c Z s s [mapDF language__tree__database__file_map 437 9 816_4]
+G c Z s s [mapIP language__tree__database__file_map 437 9 816_4]
+G c Z s s [cursorIP language__tree__database__file_map 467 9 816_4]
+G c Z s s [finalize language__tree__database__file_map 576 25 816_4]
+G c Z s s [first language__tree__database__file_map 578 24 816_4]
+G c Z s s [next language__tree__database__file_map 580 24 816_4]
+G c Z s s [constant_reference_typeDI language__tree__database__file_map 502 9 816_4]
+G c Z s s [constant_reference_typeDA language__tree__database__file_map 502 9 816_4]
+G c Z s s [constant_reference_typeDF language__tree__database__file_map 502 9 816_4]
+G c Z s s [constant_reference_typeIP language__tree__database__file_map 502 9 816_4]
+G c Z s s [reference_typeDI language__tree__database__file_map 524 9 816_4]
+G c Z s s [reference_typeDA language__tree__database__file_map 524 9 816_4]
+G c Z s s [reference_typeDF language__tree__database__file_map 524 9 816_4]
+G c Z s s [reference_typeIP language__tree__database__file_map 524 9 816_4]
+G c Z s s [iteratorDF language__tree__database__file_map 569 9 816_4]
+G c Z s s [iteratorIP language__tree__database__file_map 569 9 816_4]
+G c Z s s [copy_node language__tree__database__file_map 55 13 816_4]
+G c Z s s [equivalent_key_node language__tree__database__file_map 59 13 816_4]
+G c Z s s [free language__tree__database__file_map 64 14 816_4]
+G c Z s s [find_equal_key language__tree__database__file_map 66 13 816_4]
+G c Z s s [hash_node language__tree__database__file_map 70 13 816_4]
+G c Z s s [next language__tree__database__file_map 73 13 816_4]
+G c Z s s [read_node language__tree__database__file_map 76 13 816_4]
+G c Z s s [set_next language__tree__database__file_map 80 14 816_4]
+G c Z s s [vet language__tree__database__file_map 83 13 816_4]
+G c Z s s [write_node language__tree__database__file_map 85 14 816_4]
+G c Z s s [free_hash_table language__tree__database__file_map__ht_ops 57 14 94_4_816_4]
+G c Z s s [index language__tree__database__file_map__ht_ops 61 13 94_4_816_4]
+G c Z s s [index language__tree__database__file_map__ht_ops 67 13 94_4_816_4]
+G c Z s s [checked_index language__tree__database__file_map__ht_ops 74 13 94_4_816_4]
+G c Z s s [checked_index language__tree__database__file_map__ht_ops 81 13 94_4_816_4]
+G c Z s s [adjust language__tree__database__file_map__ht_ops 86 14 94_4_816_4]
+G c Z s s [finalize language__tree__database__file_map__ht_ops 92 14 94_4_816_4]
+G c Z s s [clear language__tree__database__file_map__ht_ops 108 14 94_4_816_4]
+G c Z s s [move language__tree__database__file_map__ht_ops 114 14 94_4_816_4]
+G c Z s s [capacity language__tree__database__file_map__ht_ops 120 13 94_4_816_4]
+G c Z s s [reserve_capacity language__tree__database__file_map__ht_ops 123 14 94_4_816_4]
+G c Z s s [delete_node_at_index language__tree__database__file_map__ht_ops 132 14 94_4_816_4]
+G c Z s s [delete_node_sans_free language__tree__database__file_map__ht_ops 141 14 94_4_816_4]
+G c Z s s [first language__tree__database__file_map__ht_ops 146 13 94_4_816_4]
+G c Z s s [first language__tree__database__file_map__ht_ops 148 13 94_4_816_4]
+G c Z s s [next language__tree__database__file_map__ht_ops 155 13 94_4_816_4]
+G c Z s s [next language__tree__database__file_map__ht_ops 158 13 94_4_816_4]
+G c Z s s [new_buckets language__tree__database__file_map__ht_ops 205 13 94_4_816_4]
+G c Z s s [free_buckets language__tree__database__file_map__ht_ops 209 14 94_4_816_4]
+G c Z s s [index language__tree__database__file_map__key_ops 56 13 102_4_816_4]
+G c Z s s [checked_index language__tree__database__file_map__key_ops 62 13 102_4_816_4]
+G c Z s s [checked_equivalent_keys language__tree__database__file_map__key_ops 69 13 102_4_816_4]
+G c Z s s [delete_key_sans_free language__tree__database__file_map__key_ops 76 14 102_4_816_4]
+G c Z s s [find language__tree__database__file_map__key_ops 84 13 102_4_816_4]
+G c Z s s [is_equalR language__tree__database__file_map__is_equalGP4517 110 13 816_4]
+G c Z s s [is_equal language__tree__database__file_map 110 13 816_4]
+G c Z s s [read_nodesR language__tree__database__file_map__read_nodesGP4586 112 14 816_4]
+G c Z s s [read_nodes language__tree__database__file_map 112 14 816_4]
+G c Z s s [write_nodesR language__tree__database__file_map__write_nodesGP4651 113 14 816_4]
+G c Z s s [write_nodes language__tree__database__file_map 113 14 816_4]
+G c Z s s [equivalent_keys language__tree__database__assistant_map 55 13 822_4]
+G c Z s s [empty language__tree__database__assistant_map 72 13 822_4]
+G c Z s s [has_element language__tree__database__assistant_map 76 13 822_4]
+G c Z s s [Oeq language__tree__database__assistant_map 81 13 822_4]
+G c Z s s [length language__tree__database__assistant_map 83 13 822_4]
+G c Z s s [is_empty language__tree__database__assistant_map 85 13 822_4]
+G c Z s s [clear language__tree__database__assistant_map 87 14 822_4]
+G c Z s s [key language__tree__database__assistant_map 89 13 822_4]
+G c Z s s [element language__tree__database__assistant_map 91 13 822_4]
+G c Z s s [replace_element language__tree__database__assistant_map 93 14 822_4]
+G c Z s s [query_element language__tree__database__assistant_map 98 14 822_4]
+G c Z s s [update_element language__tree__database__assistant_map 103 14 822_4]
+G c Z s s [constant_reference language__tree__database__assistant_map 118 13 822_4]
+G c Z s s [reference language__tree__database__assistant_map 123 13 822_4]
+G c Z s s [constant_reference language__tree__database__assistant_map 128 13 822_4]
+G c Z s s [reference language__tree__database__assistant_map 133 13 822_4]
+G c Z s s [assign language__tree__database__assistant_map 138 14 822_4]
+G c Z s s [copy language__tree__database__assistant_map 140 13 822_4]
+G c Z s s [move language__tree__database__assistant_map 142 14 822_4]
+G c Z s s [insert language__tree__database__assistant_map 144 14 822_4]
+G c Z s s [insert language__tree__database__assistant_map 151 14 822_4]
+G c Z s s [include language__tree__database__assistant_map 156 14 822_4]
+G c Z s s [replace language__tree__database__assistant_map 161 14 822_4]
+G c Z s s [exclude language__tree__database__assistant_map 166 14 822_4]
+G c Z s s [delete language__tree__database__assistant_map 168 14 822_4]
+G c Z s s [delete language__tree__database__assistant_map 170 14 822_4]
+G c Z s s [delete_first language__tree__database__assistant_map 172 14 822_4]
+G c Z s s [delete_last language__tree__database__assistant_map 174 14 822_4]
+G c Z s s [first language__tree__database__assistant_map 176 13 822_4]
+G c Z s s [first_element language__tree__database__assistant_map 178 13 822_4]
+G c Z s s [first_key language__tree__database__assistant_map 180 13 822_4]
+G c Z s s [last language__tree__database__assistant_map 182 13 822_4]
+G c Z s s [last_element language__tree__database__assistant_map 184 13 822_4]
+G c Z s s [last_key language__tree__database__assistant_map 186 13 822_4]
+G c Z s s [next language__tree__database__assistant_map 188 13 822_4]
+G c Z s s [next language__tree__database__assistant_map 190 14 822_4]
+G c Z s s [previous language__tree__database__assistant_map 192 13 822_4]
+G c Z s s [previous language__tree__database__assistant_map 194 14 822_4]
+G c Z s s [find language__tree__database__assistant_map 196 13 822_4]
+G c Z s s [element language__tree__database__assistant_map 198 13 822_4]
+G c Z s s [floor language__tree__database__assistant_map 200 13 822_4]
+G c Z s s [ceiling language__tree__database__assistant_map 202 13 822_4]
+G c Z s s [contains language__tree__database__assistant_map 204 13 822_4]
+G c Z s s [Olt language__tree__database__assistant_map 206 13 822_4]
+G c Z s s [Ogt language__tree__database__assistant_map 208 13 822_4]
+G c Z s s [Olt language__tree__database__assistant_map 210 13 822_4]
+G c Z s s [Ogt language__tree__database__assistant_map 212 13 822_4]
+G c Z s s [Olt language__tree__database__assistant_map 214 13 822_4]
+G c Z s s [Ogt language__tree__database__assistant_map 216 13 822_4]
+G c Z s s [iterate language__tree__database__assistant_map 218 14 822_4]
+G c Z s s [reverse_iterate language__tree__database__assistant_map 222 14 822_4]
+G c Z s s [iterate language__tree__database__assistant_map 230 13 822_4]
+G c Z s s [iterate language__tree__database__assistant_map 234 13 822_4]
+G c Z s s [node_typeIP language__tree__database__assistant_map 250 9 822_4]
+G c Z s s [adjust language__tree__database__assistant_map__tree_types__implementation 90 28 52_7_259_4_822_4]
+G c Z s s [finalize language__tree__database__assistant_map__tree_types__implementation 93 28 52_7_259_4_822_4]
+G c Z s s [zero_counts language__tree__database__assistant_map__tree_types__implementation 96 17 52_7_259_4_822_4]
+G c Z s s [busy language__tree__database__assistant_map__tree_types__implementation 100 17 52_7_259_4_822_4]
+G c Z s s [unbusy language__tree__database__assistant_map__tree_types__implementation 104 17 52_7_259_4_822_4]
+G c Z s s [lock language__tree__database__assistant_map__tree_types__implementation 108 17 52_7_259_4_822_4]
+G c Z s s [unlock language__tree__database__assistant_map__tree_types__implementation 112 17 52_7_259_4_822_4]
+G c Z s s [tc_check language__tree__database__assistant_map__tree_types__implementation 116 17 52_7_259_4_822_4]
+G c Z s s [te_check language__tree__database__assistant_map__tree_types__implementation 120 17 52_7_259_4_822_4]
+G c Z s s [is_busy language__tree__database__assistant_map__tree_types__implementation 136 16 52_7_259_4_822_4]
+G c Z s s [is_locked language__tree__database__assistant_map__tree_types__implementation 140 16 52_7_259_4_822_4]
+G c Z s s [initialize language__tree__database__assistant_map__tree_types__implementation 161 28 52_7_259_4_822_4]
+G c Z s s [finalize language__tree__database__assistant_map__tree_types__implementation 162 28 52_7_259_4_822_4]
+G c Z s s [initialize language__tree__database__assistant_map__tree_types__implementation 167 28 52_7_259_4_822_4]
+G c Z s s [finalize language__tree__database__assistant_map__tree_types__implementation 168 28 52_7_259_4_822_4]
+G c Z s s [reference_control_typeDA language__tree__database__assistant_map__tree_types__implementation 84 12 52_7_259_4_822_4]
+G c Z s s [reference_control_typeDF language__tree__database__assistant_map__tree_types__implementation 84 12 52_7_259_4_822_4]
+G c Z s s [reference_control_typeIP language__tree__database__assistant_map__tree_types__implementation 84 12 52_7_259_4_822_4]
+G c Z s s [with_busyDF language__tree__database__assistant_map__tree_types__implementation 158 12 52_7_259_4_822_4]
+G c Z s s [with_busyIP language__tree__database__assistant_map__tree_types__implementation 158 12 52_7_259_4_822_4]
+G c Z s s [with_lockDF language__tree__database__assistant_map__tree_types__implementation 164 12 52_7_259_4_822_4]
+G c Z s s [with_lockIP language__tree__database__assistant_map__tree_types__implementation 164 12 52_7_259_4_822_4]
+G c Z s s [tree_typeDA language__tree__database__assistant_map__tree_types 44 12 259_4_822_4]
+G c Z s s [tree_typeDF language__tree__database__assistant_map__tree_types 44 12 259_4_822_4]
+G c Z s s [tree_typeIP language__tree__database__assistant_map__tree_types 44 12 259_4_822_4]
+G c Z s s [put_image language__tree__database__assistant_map 267 14 822_4]
+G c Z s s [adjust language__tree__database__assistant_map 270 25 822_4]
+G c Z s s [write language__tree__database__assistant_map 279 14 822_4]
+G c Z s s [read language__tree__database__assistant_map 285 14 822_4]
+G c Z s s [write language__tree__database__assistant_map 299 14 822_4]
+G c Z s s [read language__tree__database__assistant_map 305 14 822_4]
+G c Z s s [read language__tree__database__assistant_map 324 14 822_4]
+G c Z s s [write language__tree__database__assistant_map 330 14 822_4]
+G c Z s s [read language__tree__database__assistant_map 346 14 822_4]
+G c Z s s [write language__tree__database__assistant_map 352 14 822_4]
+G c Z s s [pseudo_reference language__tree__database__assistant_map 363 13 822_4]
+G c Z s s [get_element_access language__tree__database__assistant_map 370 13 822_4]
+G c Z s s [mapDA language__tree__database__assistant_map 263 9 822_4]
+G c Z s s [mapDF language__tree__database__assistant_map 263 9 822_4]
+G c Z s s [mapIP language__tree__database__assistant_map 263 9 822_4]
+G c Z s s [cursorIP language__tree__database__assistant_map 294 9 822_4]
+G c Z s s [finalize language__tree__database__assistant_map 387 25 822_4]
+G c Z s s [first language__tree__database__assistant_map 389 24 822_4]
+G c Z s s [last language__tree__database__assistant_map 390 24 822_4]
+G c Z s s [next language__tree__database__assistant_map 392 24 822_4]
+G c Z s s [previous language__tree__database__assistant_map 396 24 822_4]
+G c Z s s [constant_reference_typeDI language__tree__database__assistant_map 314 9 822_4]
+G c Z s s [constant_reference_typeDA language__tree__database__assistant_map 314 9 822_4]
+G c Z s s [constant_reference_typeDF language__tree__database__assistant_map 314 9 822_4]
+G c Z s s [constant_reference_typeIP language__tree__database__assistant_map 314 9 822_4]
+G c Z s s [reference_typeDI language__tree__database__assistant_map 336 9 822_4]
+G c Z s s [reference_typeDA language__tree__database__assistant_map 336 9 822_4]
+G c Z s s [reference_typeDF language__tree__database__assistant_map 336 9 822_4]
+G c Z s s [reference_typeIP language__tree__database__assistant_map 336 9 822_4]
+G c Z s s [iteratorDF language__tree__database__assistant_map 379 9 822_4]
+G c Z s s [iteratorIP language__tree__database__assistant_map 379 9 822_4]
+G c Z s s [color language__tree__database__assistant_map 59 13 822_4]
+G c Z s s [left language__tree__database__assistant_map 62 13 822_4]
+G c Z s s [parent language__tree__database__assistant_map 65 13 822_4]
+G c Z s s [right language__tree__database__assistant_map 68 13 822_4]
+G c Z s s [set_parent language__tree__database__assistant_map 71 14 822_4]
+G c Z s s [set_left language__tree__database__assistant_map 74 14 822_4]
+G c Z s s [set_right language__tree__database__assistant_map 77 14 822_4]
+G c Z s s [set_color language__tree__database__assistant_map 80 14 822_4]
+G c Z s s [copy_node language__tree__database__assistant_map 87 13 822_4]
+G c Z s s [free language__tree__database__assistant_map 90 14 822_4]
+G c Z s s [is_equal_node_node language__tree__database__assistant_map 92 13 822_4]
+G c Z s s [is_greater_key_node language__tree__database__assistant_map 96 13 822_4]
+G c Z s s [is_less_key_node language__tree__database__assistant_map 101 13 822_4]
+G c Z s s [min language__tree__database__assistant_map__tree_operations 51 13 110_4_822_4]
+G c Z s s [max language__tree__database__assistant_map__tree_operations 54 13 110_4_822_4]
+G c Z s s [vet language__tree__database__assistant_map__tree_operations 64 13 110_4_822_4]
+G c Z s s [next language__tree__database__assistant_map__tree_operations 69 13 110_4_822_4]
+G c Z s s [previous language__tree__database__assistant_map__tree_operations 72 13 110_4_822_4]
+G c Z s s [delete_node_sans_free language__tree__database__assistant_map__tree_operations 82 14 110_4_822_4]
+G c Z s s [rebalance_for_insert language__tree__database__assistant_map__tree_operations 158 14 110_4_822_4]
+G c Z s s [delete_fixup language__tree__database__assistant_map__tree_operations 49 14 110_4_822_4]
+G c Z s s [delete_swap language__tree__database__assistant_map__tree_operations 51 14 110_4_822_4]
+G c Z s s [left_rotate language__tree__database__assistant_map__tree_operations 53 14 110_4_822_4]
+G c Z s s [right_rotate language__tree__database__assistant_map__tree_operations 54 14 110_4_822_4]
+G c Z s s [delete_treeR language__tree__database__assistant_map__delete_treeGP4690 113 14 822_4]
+G c Z s s [delete_tree language__tree__database__assistant_map 113 14 822_4]
+G c Z s s [copy_treeR language__tree__database__assistant_map__copy_treeGP4772 116 13 822_4]
+G c Z s s [copy_tree language__tree__database__assistant_map 116 13 822_4]
+G c Z s s [find language__tree__database__assistant_map__key_ops 156 13 121_4_822_4]
+G c Z s s [ceiling language__tree__database__assistant_map__key_ops 161 13 121_4_822_4]
+G c Z s s [floor language__tree__database__assistant_map__key_ops 166 13 121_4_822_4]
+G c Z s s [upper_bound language__tree__database__assistant_map__key_ops 171 13 121_4_822_4]
+G c Z s s [free_key language__tree__database__assistant_map 128 14 822_4]
+G c Z s s [free_element language__tree__database__assistant_map 131 14 822_4]
+G c Z s s [is_equalR language__tree__database__assistant_map__is_equalGP5329 134 13 822_4]
+G c Z s s [is_equal language__tree__database__assistant_map 134 13 822_4]
+G c Z s s [adjustR language__tree__database__assistant_map__adjustGP9600 276 14 822_4]
+G c Z s s [adjust language__tree__database__assistant_map 276 14 822_4]
+G c Z s s [clearR language__tree__database__assistant_map__clearGP10882 329 14 822_4]
+G c Z s s [clear language__tree__database__assistant_map 329 14 822_4]
+G c Z s s [moveR language__tree__database__assistant_map__moveGP32909 1133 14 822_4]
+G c Z s s [move language__tree__database__assistant_map 1133 14 822_4]
+G c Z s s [empty language__tree__database__database_listeners 70 13 825_4]
+G c Z s s [has_element language__tree__database__database_listeners 75 13 825_4]
+G c Z s s [Oeq language__tree__database__database_listeners 80 13 825_4]
+G c Z s s [length language__tree__database__database_listeners 82 13 825_4]
+G c Z s s [is_empty language__tree__database__database_listeners 84 13 825_4]
+G c Z s s [clear language__tree__database__database_listeners 86 14 825_4]
+G c Z s s [element language__tree__database__database_listeners 88 13 825_4]
+G c Z s s [replace_element language__tree__database__database_listeners 90 14 825_4]
+G c Z s s [query_element language__tree__database__database_listeners 95 14 825_4]
+G c Z s s [update_element language__tree__database__database_listeners 99 14 825_4]
+G c Z s s [constant_reference language__tree__database__database_listeners 114 13 825_4]
+G c Z s s [reference language__tree__database__database_listeners 119 13 825_4]
+G c Z s s [assign language__tree__database__database_listeners 124 14 825_4]
+G c Z s s [copy language__tree__database__database_listeners 126 13 825_4]
+G c Z s s [move language__tree__database__database_listeners 128 14 825_4]
+G c Z s s [insert language__tree__database__database_listeners 132 14 825_4]
+G c Z s s [insert language__tree__database__database_listeners 138 14 825_4]
+G c Z s s [insert language__tree__database__database_listeners 145 14 825_4]
+G c Z s s [prepend language__tree__database__database_listeners 151 14 825_4]
+G c Z s s [append language__tree__database__database_listeners 156 14 825_4]
+G c Z s s [append language__tree__database__database_listeners 161 14 825_4]
+G c Z s s [delete language__tree__database__database_listeners 165 14 825_4]
+G c Z s s [delete_first language__tree__database__database_listeners 170 14 825_4]
+G c Z s s [delete_last language__tree__database__database_listeners 174 14 825_4]
+G c Z s s [reverse_elements language__tree__database__database_listeners 178 14 825_4]
+G c Z s s [iterate language__tree__database__database_listeners 180 13 825_4]
+G c Z s s [iterate language__tree__database__database_listeners 183 13 825_4]
+G c Z s s [swap language__tree__database__database_listeners 186 14 825_4]
+G c Z s s [swap_links language__tree__database__database_listeners 190 14 825_4]
+G c Z s s [splice language__tree__database__database_listeners 194 14 825_4]
+G c Z s s [splice language__tree__database__database_listeners 199 14 825_4]
+G c Z s s [splice language__tree__database__database_listeners 205 14 825_4]
+G c Z s s [first language__tree__database__database_listeners 210 13 825_4]
+G c Z s s [first_element language__tree__database__database_listeners 212 13 825_4]
+G c Z s s [last language__tree__database__database_listeners 214 13 825_4]
+G c Z s s [last_element language__tree__database__database_listeners 216 13 825_4]
+G c Z s s [next language__tree__database__database_listeners 218 13 825_4]
+G c Z s s [next language__tree__database__database_listeners 220 14 825_4]
+G c Z s s [previous language__tree__database__database_listeners 222 13 825_4]
+G c Z s s [previous language__tree__database__database_listeners 224 14 825_4]
+G c Z s s [find language__tree__database__database_listeners 226 13 825_4]
+G c Z s s [reverse_find language__tree__database__database_listeners 231 13 825_4]
+G c Z s s [contains language__tree__database__database_listeners 236 13 825_4]
+G c Z s s [iterate language__tree__database__database_listeners 240 14 825_4]
+G c Z s s [reverse_iterate language__tree__database__database_listeners 244 14 825_4]
+G c Z s s [adjust language__tree__database__database_listeners__implementation 90 28 266_4_825_4]
+G c Z s s [finalize language__tree__database__database_listeners__implementation 93 28 266_4_825_4]
+G c Z s s [zero_counts language__tree__database__database_listeners__implementation 96 17 266_4_825_4]
+G c Z s s [busy language__tree__database__database_listeners__implementation 100 17 266_4_825_4]
+G c Z s s [unbusy language__tree__database__database_listeners__implementation 104 17 266_4_825_4]
+G c Z s s [lock language__tree__database__database_listeners__implementation 108 17 266_4_825_4]
+G c Z s s [unlock language__tree__database__database_listeners__implementation 112 17 266_4_825_4]
+G c Z s s [tc_check language__tree__database__database_listeners__implementation 116 17 266_4_825_4]
+G c Z s s [te_check language__tree__database__database_listeners__implementation 120 17 266_4_825_4]
+G c Z s s [is_busy language__tree__database__database_listeners__implementation 136 16 266_4_825_4]
+G c Z s s [is_locked language__tree__database__database_listeners__implementation 140 16 266_4_825_4]
+G c Z s s [initialize language__tree__database__database_listeners__implementation 161 28 266_4_825_4]
+G c Z s s [finalize language__tree__database__database_listeners__implementation 162 28 266_4_825_4]
+G c Z s s [initialize language__tree__database__database_listeners__implementation 167 28 266_4_825_4]
+G c Z s s [finalize language__tree__database__database_listeners__implementation 168 28 266_4_825_4]
+G c Z s s [reference_control_typeDA language__tree__database__database_listeners__implementation 84 12 266_4_825_4]
+G c Z s s [reference_control_typeDF language__tree__database__database_listeners__implementation 84 12 266_4_825_4]
+G c Z s s [reference_control_typeIP language__tree__database__database_listeners__implementation 84 12 266_4_825_4]
+G c Z s s [with_busyDF language__tree__database__database_listeners__implementation 158 12 266_4_825_4]
+G c Z s s [with_busyIP language__tree__database__database_listeners__implementation 158 12 266_4_825_4]
+G c Z s s [with_lockDF language__tree__database__database_listeners__implementation 164 12 266_4_825_4]
+G c Z s s [with_lockIP language__tree__database__database_listeners__implementation 164 12 266_4_825_4]
+G c Z s s [put_image language__tree__database__database_listeners 290 14 825_4]
+G c Z s s [adjust language__tree__database__database_listeners 293 25 825_4]
+G c Z s s [read language__tree__database__database_listeners 297 14 825_4]
+G c Z s s [write language__tree__database__database_listeners 303 14 825_4]
+G c Z s s [read language__tree__database__database_listeners 318 14 825_4]
+G c Z s s [write language__tree__database__database_listeners 324 14 825_4]
+G c Z s s [write language__tree__database__database_listeners 343 14 825_4]
+G c Z s s [read language__tree__database__database_listeners 349 14 825_4]
+G c Z s s [write language__tree__database__database_listeners 365 14 825_4]
+G c Z s s [read language__tree__database__database_listeners 371 14 825_4]
+G c Z s s [pseudo_reference language__tree__database__database_listeners 382 13 825_4]
+G c Z s s [get_element_access language__tree__database__database_listeners 392 13 825_4]
+G c Z s s [listDA language__tree__database__database_listeners 282 9 825_4]
+G c Z s s [listDF language__tree__database__database_listeners 282 9 825_4]
+G c Z s s [listIP language__tree__database__database_listeners 282 9 825_4]
+G c Z s s [cursorIP language__tree__database__database_listeners 312 9 825_4]
+G c Z s s [finalize language__tree__database__database_listeners 409 25 825_4]
+G c Z s s [first language__tree__database__database_listeners 411 24 825_4]
+G c Z s s [last language__tree__database__database_listeners 412 24 825_4]
+G c Z s s [next language__tree__database__database_listeners 414 24 825_4]
+G c Z s s [previous language__tree__database__database_listeners 418 24 825_4]
+G c Z s s [constant_reference_typeDI language__tree__database__database_listeners 333 9 825_4]
+G c Z s s [constant_reference_typeDA language__tree__database__database_listeners 333 9 825_4]
+G c Z s s [constant_reference_typeDF language__tree__database__database_listeners 333 9 825_4]
+G c Z s s [constant_reference_typeIP language__tree__database__database_listeners 333 9 825_4]
+G c Z s s [reference_typeDI language__tree__database__database_listeners 355 9 825_4]
+G c Z s s [reference_typeDA language__tree__database__database_listeners 355 9 825_4]
+G c Z s s [reference_typeDF language__tree__database__database_listeners 355 9 825_4]
+G c Z s s [reference_typeIP language__tree__database__database_listeners 355 9 825_4]
+G c Z s s [node_typeIP language__tree__database__database_listeners 272 9 825_4]
+G c Z s s [iteratorDF language__tree__database__database_listeners 401 9 825_4]
+G c Z s s [iteratorIP language__tree__database__database_listeners 401 9 825_4]
+G c Z s s [free language__tree__database__database_listeners 49 14 825_4]
+G c Z s s [insert_internal language__tree__database__database_listeners 51 14 825_4]
+G c Z s s [splice_internal language__tree__database__database_listeners 56 14 825_4]
+G c Z s s [splice_internal language__tree__database__database_listeners 61 14 825_4]
+G c Z s s [vet language__tree__database__database_listeners 67 13 825_4]
+G c Z s s [construct_db_iteratorIP language__tree__database 851 9 none]
+G c Z s s [database_listenerDA language__tree__database 623 9 none]
+G c Z s s [database_listenerDF language__tree__database 623 9 none]
+G c Z s s [database_listenerIP language__tree__database 623 9 none]
+G c Z s s [entity_accessIP language__tree__database 860 9 none]
+G c Z s b [free language__tree__database 886 14 none]
+G c Z s s [structured_fileDI language__tree__database 780 9 none]
+G c Z s s [structured_fileDA language__tree__database 780 9 none]
+G c Z s s [structured_fileDF language__tree__database 780 9 none]
+G c Z s s [structured_fileIP language__tree__database 780 9 none]
+G c Z s s [construct_databaseDA language__tree__database 832 9 none]
+G c Z s s [construct_databaseDF language__tree__database 832 9 none]
+G c Z s s [construct_databaseDI language__tree__database 832 9 none]
+G c Z s s [construct_databaseIP language__tree__database 832 9 none]
+G c Z s s [abstract_language_handler_recordDA language__tree__database 171 9 none]
+G c Z s s [abstract_language_handler_recordDF language__tree__database 171 9 none]
+G c Z s s [abstract_language_handler_recordIP language__tree__database 171 9 none]
+G c Z s s [file_buffer_providerDA language__tree__database 755 9 none]
+G c Z s s [file_buffer_providerDF language__tree__database 755 9 none]
+G c Z s s [file_buffer_providerIP language__tree__database 755 9 none]
+G c Z s s [update_lockDF language__tree__database 808 9 none]
+G c Z s s [update_lockIP language__tree__database 808 9 none]
+G c Z s s [entity_arrayIP language__tree__database 362 9 none]
+G c Z s s [entity_persistent_arrayIP language__tree__database 567 9 none]
+G c Z s s [database_assistantDA language__tree__database 858 9 none]
+G c Z s s [database_assistantDF language__tree__database 858 9 none]
+G c Z s s [database_assistantIP language__tree__database 858 9 none]
+G c Z s s [construct_db_data_arrayIP language__tree__database 769 9 none]
+G c Z s s [entity_persistent_infoIP language__tree__database 868 9 none]
+G c Z s s [entity_persistent_annotationDA language__tree__database 879 9 none]
+G c Z s s [entity_persistent_annotationDF language__tree__database 879 9 none]
+G c Z s s [entity_persistent_annotationIP language__tree__database 879 9 none]
+G c Z b b [internal_update_contents language__tree__database 33 14 none]
+G c Z b b [free language__tree__database 37 14 none]
+G c Z b b [unchecked_free language__tree__database 43 14 none]
+G c Z b b [free language__tree__database 46 14 none]
+G c Z b b [lock_if_needed language__tree__database 48 14 none]
+G c Z b b [empty language__tree__database__update_lock_lists 70 13 1943_4]
+G c Z b b [has_element language__tree__database__update_lock_lists 75 13 1943_4]
+G c Z b b [Oeq language__tree__database__update_lock_lists 80 13 1943_4]
+G c Z b b [length language__tree__database__update_lock_lists 82 13 1943_4]
+G c Z b b [is_empty language__tree__database__update_lock_lists 84 13 1943_4]
+G c Z b b [clear language__tree__database__update_lock_lists 86 14 1943_4]
+G c Z b b [element language__tree__database__update_lock_lists 88 13 1943_4]
+G c Z b b [replace_element language__tree__database__update_lock_lists 90 14 1943_4]
+G c Z b b [query_element language__tree__database__update_lock_lists 95 14 1943_4]
+G c Z b b [update_element language__tree__database__update_lock_lists 99 14 1943_4]
+G c Z b b [constant_reference language__tree__database__update_lock_lists 114 13 1943_4]
+G c Z b b [reference language__tree__database__update_lock_lists 119 13 1943_4]
+G c Z b b [assign language__tree__database__update_lock_lists 124 14 1943_4]
+G c Z b b [copy language__tree__database__update_lock_lists 126 13 1943_4]
+G c Z b b [move language__tree__database__update_lock_lists 128 14 1943_4]
+G c Z b b [insert language__tree__database__update_lock_lists 132 14 1943_4]
+G c Z b b [insert language__tree__database__update_lock_lists 138 14 1943_4]
+G c Z b b [insert language__tree__database__update_lock_lists 145 14 1943_4]
+G c Z b b [prepend language__tree__database__update_lock_lists 151 14 1943_4]
+G c Z b b [append language__tree__database__update_lock_lists 156 14 1943_4]
+G c Z b b [append language__tree__database__update_lock_lists 161 14 1943_4]
+G c Z b b [delete language__tree__database__update_lock_lists 165 14 1943_4]
+G c Z b b [delete_first language__tree__database__update_lock_lists 170 14 1943_4]
+G c Z b b [delete_last language__tree__database__update_lock_lists 174 14 1943_4]
+G c Z b b [reverse_elements language__tree__database__update_lock_lists 178 14 1943_4]
+G c Z b b [iterate language__tree__database__update_lock_lists 180 13 1943_4]
+G c Z b b [iterate language__tree__database__update_lock_lists 183 13 1943_4]
+G c Z b b [swap language__tree__database__update_lock_lists 186 14 1943_4]
+G c Z b b [swap_links language__tree__database__update_lock_lists 190 14 1943_4]
+G c Z b b [splice language__tree__database__update_lock_lists 194 14 1943_4]
+G c Z b b [splice language__tree__database__update_lock_lists 199 14 1943_4]
+G c Z b b [splice language__tree__database__update_lock_lists 205 14 1943_4]
+G c Z b b [first language__tree__database__update_lock_lists 210 13 1943_4]
+G c Z b b [first_element language__tree__database__update_lock_lists 212 13 1943_4]
+G c Z b b [last language__tree__database__update_lock_lists 214 13 1943_4]
+G c Z b b [last_element language__tree__database__update_lock_lists 216 13 1943_4]
+G c Z b b [next language__tree__database__update_lock_lists 218 13 1943_4]
+G c Z b b [next language__tree__database__update_lock_lists 220 14 1943_4]
+G c Z b b [previous language__tree__database__update_lock_lists 222 13 1943_4]
+G c Z b b [previous language__tree__database__update_lock_lists 224 14 1943_4]
+G c Z b b [find language__tree__database__update_lock_lists 226 13 1943_4]
+G c Z b b [reverse_find language__tree__database__update_lock_lists 231 13 1943_4]
+G c Z b b [contains language__tree__database__update_lock_lists 236 13 1943_4]
+G c Z b b [iterate language__tree__database__update_lock_lists 240 14 1943_4]
+G c Z b b [reverse_iterate language__tree__database__update_lock_lists 244 14 1943_4]
+G c Z b b [adjust language__tree__database__update_lock_lists__implementation 90 28 266_4_1943_4]
+G c Z b b [finalize language__tree__database__update_lock_lists__implementation 93 28 266_4_1943_4]
+G c Z b b [zero_counts language__tree__database__update_lock_lists__implementation 96 17 266_4_1943_4]
+G c Z b b [busy language__tree__database__update_lock_lists__implementation 100 17 266_4_1943_4]
+G c Z b b [unbusy language__tree__database__update_lock_lists__implementation 104 17 266_4_1943_4]
+G c Z b b [lock language__tree__database__update_lock_lists__implementation 108 17 266_4_1943_4]
+G c Z b b [unlock language__tree__database__update_lock_lists__implementation 112 17 266_4_1943_4]
+G c Z b b [tc_check language__tree__database__update_lock_lists__implementation 116 17 266_4_1943_4]
+G c Z b b [te_check language__tree__database__update_lock_lists__implementation 120 17 266_4_1943_4]
+G c Z b b [is_busy language__tree__database__update_lock_lists__implementation 136 16 266_4_1943_4]
+G c Z b b [is_locked language__tree__database__update_lock_lists__implementation 140 16 266_4_1943_4]
+G c Z b b [initialize language__tree__database__update_lock_lists__implementation 161 28 266_4_1943_4]
+G c Z b b [finalize language__tree__database__update_lock_lists__implementation 162 28 266_4_1943_4]
+G c Z b b [initialize language__tree__database__update_lock_lists__implementation 167 28 266_4_1943_4]
+G c Z b b [finalize language__tree__database__update_lock_lists__implementation 168 28 266_4_1943_4]
+G c Z b b [reference_control_typeDA language__tree__database__update_lock_lists__implementation 84 12 266_4_1943_4]
+G c Z b b [reference_control_typeDF language__tree__database__update_lock_lists__implementation 84 12 266_4_1943_4]
+G c Z b b [reference_control_typeIP language__tree__database__update_lock_lists__implementation 84 12 266_4_1943_4]
+G c Z b b [with_busyDF language__tree__database__update_lock_lists__implementation 158 12 266_4_1943_4]
+G c Z b b [with_busyIP language__tree__database__update_lock_lists__implementation 158 12 266_4_1943_4]
+G c Z b b [with_lockDF language__tree__database__update_lock_lists__implementation 164 12 266_4_1943_4]
+G c Z b b [with_lockIP language__tree__database__update_lock_lists__implementation 164 12 266_4_1943_4]
+G c Z b b [put_image language__tree__database__update_lock_lists 290 14 1943_4]
+G c Z b b [adjust language__tree__database__update_lock_lists 293 25 1943_4]
+G c Z b b [read language__tree__database__update_lock_lists 297 14 1943_4]
+G c Z b b [write language__tree__database__update_lock_lists 303 14 1943_4]
+G c Z b b [read language__tree__database__update_lock_lists 318 14 1943_4]
+G c Z b b [write language__tree__database__update_lock_lists 324 14 1943_4]
+G c Z b b [write language__tree__database__update_lock_lists 343 14 1943_4]
+G c Z b b [read language__tree__database__update_lock_lists 349 14 1943_4]
+G c Z b b [write language__tree__database__update_lock_lists 365 14 1943_4]
+G c Z b b [read language__tree__database__update_lock_lists 371 14 1943_4]
+G c Z b b [pseudo_reference language__tree__database__update_lock_lists 382 13 1943_4]
+G c Z b b [get_element_access language__tree__database__update_lock_lists 392 13 1943_4]
+G c Z b b [listDA language__tree__database__update_lock_lists 282 9 1943_4]
+G c Z b b [listDF language__tree__database__update_lock_lists 282 9 1943_4]
+G c Z b b [listIP language__tree__database__update_lock_lists 282 9 1943_4]
+G c Z b b [cursorIP language__tree__database__update_lock_lists 312 9 1943_4]
+G c Z b b [finalize language__tree__database__update_lock_lists 409 25 1943_4]
+G c Z b b [first language__tree__database__update_lock_lists 411 24 1943_4]
+G c Z b b [last language__tree__database__update_lock_lists 412 24 1943_4]
+G c Z b b [next language__tree__database__update_lock_lists 414 24 1943_4]
+G c Z b b [previous language__tree__database__update_lock_lists 418 24 1943_4]
+G c Z b b [constant_reference_typeDI language__tree__database__update_lock_lists 333 9 1943_4]
+G c Z b b [constant_reference_typeDA language__tree__database__update_lock_lists 333 9 1943_4]
+G c Z b b [constant_reference_typeDF language__tree__database__update_lock_lists 333 9 1943_4]
+G c Z b b [constant_reference_typeIP language__tree__database__update_lock_lists 333 9 1943_4]
+G c Z b b [reference_typeDI language__tree__database__update_lock_lists 355 9 1943_4]
+G c Z b b [reference_typeDA language__tree__database__update_lock_lists 355 9 1943_4]
+G c Z b b [reference_typeDF language__tree__database__update_lock_lists 355 9 1943_4]
+G c Z b b [reference_typeIP language__tree__database__update_lock_lists 355 9 1943_4]
+G c Z b b [node_typeIP language__tree__database__update_lock_lists 272 9 1943_4]
+G c Z b b [iteratorDF language__tree__database__update_lock_lists 401 9 1943_4]
+G c Z b b [iteratorIP language__tree__database__update_lock_lists 401 9 1943_4]
+G c Z b b [free language__tree__database__update_lock_lists 49 14 1943_4]
+G c Z b b [insert_internal language__tree__database__update_lock_lists 51 14 1943_4]
+G c Z b b [splice_internal language__tree__database__update_lock_lists 56 14 1943_4]
+G c Z b b [splice_internal language__tree__database__update_lock_lists 61 14 1943_4]
+G c Z b b [vet language__tree__database__update_lock_lists 67 13 1943_4]
+G c Z b b [automatic_update_lockDI language__tree__database 1937 9 none]
+G c Z b b [automatic_update_lockDF language__tree__database 1937 9 none]
+G c Z b b [automatic_update_lockIP language__tree__database 1937 9 none]
+G r c none [b language__tree__database 26 1 none] [create gnatcoll__traces 356 13 none]
+G r i none [s language__tree__database 38 1 none] [tries standard 39 9 none]
+G r s abstract_tree_language [s language__tree__database 38 1 none] [abstract_tree_languageIP language__tree 484 9 none]
+G r i none [s language__tree__database 38 1 none] [construct_tries standard 28 9 none]
+G r i none [s language__tree__database 38 1 none] [vector_tries standard 30 9 none]
+G r c none [s language__tree__database 38 1 none] [create gnatcoll__traces 356 13 none]
+G r i none [s language__tree__database 38 1 none] [lazy_vectors standard 23 9 none]
+G r c none [get_profile language__tree__database 69 14 none] [Oeq gnatcoll__vfs 334 24 none]
+G r c none [get_profile language__tree__database 69 14 none] [get_construct language__tree 111 13 none]
+G r c none [get_profile language__tree__database 69 14 none] [next language__tree 234 13 none]
+G r c none [get_profile language__tree__database 69 14 none] [is_parent_scope language__tree 106 13 none]
+G r c none [get_profile language__tree__database 69 14 none] [get gnatcoll__symbols 56 13 none]
+G r c none [get_profile language__tree__database 69 14 none] [get_referenced_entity language 802 14 none]
+G r s text_profile_formater [get_profile language__tree__database 81 13 none] [text_profile_formaterIP language__profile_formaters 81 9 none]
+G r l text_profile_formater [get_profile language__tree__database 81 13 none] [text_profile_formaterDI language__profile_formaters 81 9 none]
+G r k text_profile_formater [get_profile language__tree__database 81 13 none] [text_profile_formaterDF language__profile_formaters 81 9 none]
+G r c none [get_profile language__tree__database 81 13 none] [get_construct language__tree 111 13 none]
+G r c none [get_profile language__tree__database 81 13 none] [configure language__profile_formaters 74 14 none]
+G r c none [get_profile language__tree__database 81 13 none] [Oeq gnatcoll__vfs 334 24 none]
+G r c none [get_profile language__tree__database 81 13 none] [next language__tree 234 13 none]
+G r c none [get_profile language__tree__database 81 13 none] [is_parent_scope language__tree 106 13 none]
+G r c none [get_profile language__tree__database 81 13 none] [get gnatcoll__symbols 56 13 none]
+G r c none [get_profile language__tree__database 81 13 none] [get_referenced_entity language 802 14 none]
+G r c none [get_profile language__tree__database 81 13 none] [get_text language__profile_formaters 113 24 none]
+G r c none [get_profile language__tree__database 81 13 none] [find gnatcoll__symbols 49 13 none]
+G r c none [get_timestamp language__tree__database 224 24 none] [file_time_stamp gnatcoll__vfs 370 13 none]
+G r c none [get_buffer language__tree__database 229 24 none] [read_file gnatcoll__vfs 448 13 none]
+G r c none [get_buffer language__tree__database 229 24 none] [unknown_to_utf8 utf8_utils 43 14 none]
+G r c none [Oeq language__tree__database 240 24 none] [Oeq gnatcoll__vfs 334 24 none]
+G r c none [unref language__tree__database 252 14 none] [Oeq gnatcoll__vfs 334 24 none]
+G r c none [get_tree language__tree__database 260 13 none] [Oeq gnatcoll__vfs 334 24 none]
+G r c none [get_buffer language__tree__database 266 13 none] [Oeq gnatcoll__vfs 334 24 none]
+G r c none [get_file_path language__tree__database 274 13 none] [Oeq gnatcoll__vfs 334 24 none]
+G r d virtual_file [get_file_path language__tree__database 274 13 none] [adjust gnatcoll__vfs 631 25 none]
+G r c none [get_offset_of_line language__tree__database 277 13 none] [Oeq gnatcoll__vfs 334 24 none]
+G r c none [to_visible_column language__tree__database 284 13 none] [Oeq gnatcoll__vfs 334 24 none]
+G r c none [to_visible_column language__tree__database 284 13 none] [skip_to_index string_utils 70 14 none]
+G r c none [to_line_string_index language__tree__database 291 13 none] [Oeq gnatcoll__vfs 334 24 none]
+G r c none [to_line_string_index language__tree__database 291 13 none] [skip_to_column gnatcoll__utils 166 14 none]
+G r c none [to_string_index language__tree__database 298 13 none] [Oeq gnatcoll__vfs 334 24 none]
+G r c none [to_string_index language__tree__database 298 13 none] [skip_to_column gnatcoll__utils 166 14 none]
+G r c none [to_line_column language__tree__database 305 14 none] [Oeq gnatcoll__vfs 334 24 none]
+G r c none [to_line_column language__tree__database 305 14 none] [skip_to_index string_utils 70 14 none]
+G r s construct_list [update_contents language__tree__database 317 14 none] [construct_listIP language 626 9 none]
+G r c none [update_contents language__tree__database 317 14 none] [Oeq gnatcoll__vfs 334 24 none]
+G r c none [update_contents language__tree__database 317 14 none] [is_active gnatcoll__traces 624 13 none]
+G r c none [update_contents language__tree__database 317 14 none] [should_refresh_constructs_tree language 695 13 none]
+G r c none [update_contents language__tree__database 317 14 none] [parse_constructs language 687 14 none]
+G r c none [update_contents language__tree__database 317 14 none] [to_construct_tree language__tree 49 13 none]
+G r c none [update_contents language__tree__database 317 14 none] [analyze_referenced_identifiers language__tree 464 14 none]
+G r c none [update_contents language__tree__database 317 14 none] [analyze_constructs_identifiers language__tree 458 14 none]
+G r c none [update_contents language__tree__database 317 14 none] [first language__tree 92 13 none]
+G r c none [update_contents language__tree__database 317 14 none] [Oeq language__tree 76 24 none]
+G r c none [update_contents language__tree__database 317 14 none] [get_construct language__tree 111 13 none]
+G r c none [update_contents language__tree__database 317 14 none] [get gnatcoll__symbols 56 13 none]
+G r s construct_tree_iterator [update_contents language__tree__database 317 14 none] [construct_tree_iteratorIP language__tree 558 9 none]
+G r c none [update_contents language__tree__database 317 14 none] [find gnatcoll__symbols 49 13 none]
+G r c none [update_contents language__tree__database 317 14 none] [next language__tree 234 13 none]
+G r c none [update_contents language__tree__database 317 14 none] [free language 633 14 none]
+G r c none [update_contents language__tree__database 317 14 none] [free language__tree 42 14 none]
+G r c none [update_contents language__tree__database 317 14 none] [active gnatcoll__traces 628 13 none]
+G r c none [update_contents language__tree__database 317 14 none] [display_full_name gnatcoll__vfs 261 13 none]
+G r c none [update_contents language__tree__database 317 14 none] [trace gnatcoll__traces 526 14 none]
+G r c none [is_null language__tree__database 325 13 none] [Oeq gnatcoll__vfs 334 24 none]
+G r c none [lock_updates language__tree__database 340 13 none] [Oeq gnatcoll__vfs 334 24 none]
+G r c none [unlock language__tree__database 349 14 none] [Oeq gnatcoll__vfs 334 24 none]
+G r s construct_list [unlock language__tree__database 349 14 none] [construct_listIP language 626 9 none]
+G r c none [unlock language__tree__database 349 14 none] [is_active gnatcoll__traces 624 13 none]
+G r c none [unlock language__tree__database 349 14 none] [should_refresh_constructs_tree language 695 13 none]
+G r c none [unlock language__tree__database 349 14 none] [parse_constructs language 687 14 none]
+G r c none [unlock language__tree__database 349 14 none] [to_construct_tree language__tree 49 13 none]
+G r c none [unlock language__tree__database 349 14 none] [analyze_referenced_identifiers language__tree 464 14 none]
+G r c none [unlock language__tree__database 349 14 none] [analyze_constructs_identifiers language__tree 458 14 none]
+G r c none [unlock language__tree__database 349 14 none] [first language__tree 92 13 none]
+G r c none [unlock language__tree__database 349 14 none] [Oeq language__tree 76 24 none]
+G r c none [unlock language__tree__database 349 14 none] [get_construct language__tree 111 13 none]
+G r c none [unlock language__tree__database 349 14 none] [get gnatcoll__symbols 56 13 none]
+G r s construct_tree_iterator [unlock language__tree__database 349 14 none] [construct_tree_iteratorIP language__tree 558 9 none]
+G r c none [unlock language__tree__database 349 14 none] [find gnatcoll__symbols 49 13 none]
+G r c none [unlock language__tree__database 349 14 none] [next language__tree 234 13 none]
+G r c none [unlock language__tree__database 349 14 none] [free language 633 14 none]
+G r c none [unlock language__tree__database 349 14 none] [free language__tree 42 14 none]
+G r c none [unlock language__tree__database 349 14 none] [active gnatcoll__traces 628 13 none]
+G r c none [unlock language__tree__database 349 14 none] [display_full_name gnatcoll__vfs 261 13 none]
+G r c none [unlock language__tree__database 349 14 none] [trace gnatcoll__traces 526 14 none]
+G r c none [unlock language__tree__database 349 14 none] [trace gnatcoll__traces 501 14 none]
+G r c none [finalize language__tree__database 353 25 none] [Oeq gnatcoll__vfs 334 24 none]
+G r s construct_list [finalize language__tree__database 353 25 none] [construct_listIP language 626 9 none]
+G r c none [finalize language__tree__database 353 25 none] [is_active gnatcoll__traces 624 13 none]
+G r c none [finalize language__tree__database 353 25 none] [should_refresh_constructs_tree language 695 13 none]
+G r c none [finalize language__tree__database 353 25 none] [parse_constructs language 687 14 none]
+G r c none [finalize language__tree__database 353 25 none] [to_construct_tree language__tree 49 13 none]
+G r c none [finalize language__tree__database 353 25 none] [analyze_referenced_identifiers language__tree 464 14 none]
+G r c none [finalize language__tree__database 353 25 none] [analyze_constructs_identifiers language__tree 458 14 none]
+G r c none [finalize language__tree__database 353 25 none] [first language__tree 92 13 none]
+G r c none [finalize language__tree__database 353 25 none] [Oeq language__tree 76 24 none]
+G r c none [finalize language__tree__database 353 25 none] [get_construct language__tree 111 13 none]
+G r c none [finalize language__tree__database 353 25 none] [get gnatcoll__symbols 56 13 none]
+G r s construct_tree_iterator [finalize language__tree__database 353 25 none] [construct_tree_iteratorIP language__tree 558 9 none]
+G r c none [finalize language__tree__database 353 25 none] [find gnatcoll__symbols 49 13 none]
+G r c none [finalize language__tree__database 353 25 none] [next language__tree 234 13 none]
+G r c none [finalize language__tree__database 353 25 none] [free language 633 14 none]
+G r c none [finalize language__tree__database 353 25 none] [free language__tree 42 14 none]
+G r c none [finalize language__tree__database 353 25 none] [active gnatcoll__traces 628 13 none]
+G r c none [finalize language__tree__database 353 25 none] [display_full_name gnatcoll__vfs 261 13 none]
+G r c none [finalize language__tree__database 353 25 none] [trace gnatcoll__traces 526 14 none]
+G r c none [finalize language__tree__database 353 25 none] [trace gnatcoll__traces 501 14 none]
+G r c none [Olt language__tree__database 369 13 none] [Olt gnatcoll__vfs 337 13 none]
+G r c none [Olt language__tree__database 369 13 none] [Oeq language__tree 76 24 none]
+G r c none [Olt language__tree__database 369 13 none] [Olt language__tree 79 13 none]
+G r c none [Oeq language__tree__database 372 24 none] [Oeq gnatcoll__vfs 334 24 none]
+G r c none [Oeq language__tree__database 372 24 none] [Oeq language__tree 76 24 none]
+G r s construct_tree_iterator [to_entity_access language__tree__database 376 13 none] [construct_tree_iteratorIP language__tree 558 9 none]
+G r c none [to_entity_access language__tree__database 376 13 none] [Oeq language__tree 76 24 none]
+G r c none [get_construct language__tree__database 392 13 none] [get_construct language__tree 111 13 none]
+G r c none [to_string language__tree__database 397 13 none] [Oeq gnatcoll__vfs 334 24 none]
+G r c none [to_string language__tree__database 397 13 none] [Oeq language__tree 76 24 none]
+G r c none [to_string language__tree__database 397 13 none] [to_string language__tree 317 13 none]
+G r c none [to_string language__tree__database 397 13 none] [full_name gnatcoll__vfs 224 13 none]
+G r c none [contains language__tree__database 400 13 none] [Oeq gnatcoll__vfs 334 24 none]
+G r c none [contains language__tree__database 400 13 none] [encloses language__tree 272 13 none]
+G r c none [initialize language__tree__database 410 14 none] [create_annotation_key_registry language__tree__tree_annotations_pckg 78 13 38_4]
+G r c none [initialize language__tree__database 410 14 none] [create_annotation_key_registry language__tree__construct_annotations_pckg 78 13 40_4]
+G r c none [initialize language__tree__database 410 14 none] [get_annotation_key language__tree__construct_annotations_pckg 86 14 40_4]
+G r c none [free language__tree__database 430 14 none] [free_annotations language__tree 46 14 none]
+G r c none [free language__tree__database 430 14 none] [free language__tree 42 14 none]
+G r e project_type [free language__tree__database 430 14 none] [finalize gnatcoll__projects 2218 25 none]
+G r e virtual_file [free language__tree__database 430 14 none] [finalize gnatcoll__vfs 630 25 none]
+G r c none [free language__tree__database 430 14 none] [free language__tree__tree_annotations_pckg 81 14 38_4]
+G r c none [free language__tree__database 430 14 none] [free language__tree__construct_annotations_pckg 81 14 40_4]
+G r c none [get_or_create language__tree__database 433 13 none] [Oeq gnatcoll__vfs 334 24 none]
+G r c none [get_or_create language__tree__database 433 13 none] [is_regular_file gnatcoll__vfs 327 13 none]
+G r s virtual_file [get_or_create language__tree__database 433 13 none] [virtual_fileIP gnatcoll__vfs 625 9 none]
+G r d project_type [get_or_create language__tree__database 433 13 none] [adjust gnatcoll__projects 2217 25 none]
+G r e project_type [get_or_create language__tree__database 433 13 none] [finalize gnatcoll__projects 2218 25 none]
+G r e virtual_file [get_or_create language__tree__database 433 13 none] [finalize gnatcoll__vfs 630 25 none]
+G r s construct_list [get_or_create language__tree__database 433 13 none] [construct_listIP language 626 9 none]
+G r c none [get_or_create language__tree__database 433 13 none] [is_active gnatcoll__traces 624 13 none]
+G r c none [get_or_create language__tree__database 433 13 none] [should_refresh_constructs_tree language 695 13 none]
+G r c none [get_or_create language__tree__database 433 13 none] [parse_constructs language 687 14 none]
+G r c none [get_or_create language__tree__database 433 13 none] [to_construct_tree language__tree 49 13 none]
+G r c none [get_or_create language__tree__database 433 13 none] [analyze_referenced_identifiers language__tree 464 14 none]
+G r c none [get_or_create language__tree__database 433 13 none] [analyze_constructs_identifiers language__tree 458 14 none]
+G r c none [get_or_create language__tree__database 433 13 none] [first language__tree 92 13 none]
+G r c none [get_or_create language__tree__database 433 13 none] [Oeq language__tree 76 24 none]
+G r c none [get_or_create language__tree__database 433 13 none] [get_construct language__tree 111 13 none]
+G r c none [get_or_create language__tree__database 433 13 none] [get gnatcoll__symbols 56 13 none]
+G r s construct_tree_iterator [get_or_create language__tree__database 433 13 none] [construct_tree_iteratorIP language__tree 558 9 none]
+G r c none [get_or_create language__tree__database 433 13 none] [find gnatcoll__symbols 49 13 none]
+G r c none [get_or_create language__tree__database 433 13 none] [next language__tree 234 13 none]
+G r c none [get_or_create language__tree__database 433 13 none] [free language 633 14 none]
+G r c none [get_or_create language__tree__database 433 13 none] [free language__tree 42 14 none]
+G r c none [get_or_create language__tree__database 433 13 none] [active gnatcoll__traces 628 13 none]
+G r c none [get_or_create language__tree__database 433 13 none] [display_full_name gnatcoll__vfs 261 13 none]
+G r c none [get_or_create language__tree__database 433 13 none] [trace gnatcoll__traces 526 14 none]
+G r c none [remove_file language__tree__database 449 14 none] [Oeq gnatcoll__vfs 334 24 none]
+G r c none [remove_file language__tree__database 449 14 none] [free_annotations language__tree 46 14 none]
+G r c none [remove_file language__tree__database 449 14 none] [free language__tree 42 14 none]
+G r e project_type [remove_file language__tree__database 449 14 none] [finalize gnatcoll__projects 2218 25 none]
+G r e virtual_file [remove_file language__tree__database 449 14 none] [finalize gnatcoll__vfs 630 25 none]
+G r d project_type [get_project language__tree__database 456 13 none] [adjust gnatcoll__projects 2217 25 none]
+G r c none [update_contents language__tree__database 464 14 none] [Oeq gnatcoll__vfs 334 24 none]
+G r s construct_list [update_contents language__tree__database 464 14 none] [construct_listIP language 626 9 none]
+G r c none [update_contents language__tree__database 464 14 none] [is_active gnatcoll__traces 624 13 none]
+G r c none [update_contents language__tree__database 464 14 none] [should_refresh_constructs_tree language 695 13 none]
+G r c none [update_contents language__tree__database 464 14 none] [parse_constructs language 687 14 none]
+G r c none [update_contents language__tree__database 464 14 none] [to_construct_tree language__tree 49 13 none]
+G r c none [update_contents language__tree__database 464 14 none] [analyze_referenced_identifiers language__tree 464 14 none]
+G r c none [update_contents language__tree__database 464 14 none] [analyze_constructs_identifiers language__tree 458 14 none]
+G r c none [update_contents language__tree__database 464 14 none] [first language__tree 92 13 none]
+G r c none [update_contents language__tree__database 464 14 none] [Oeq language__tree 76 24 none]
+G r c none [update_contents language__tree__database 464 14 none] [get_construct language__tree 111 13 none]
+G r c none [update_contents language__tree__database 464 14 none] [get gnatcoll__symbols 56 13 none]
+G r s construct_tree_iterator [update_contents language__tree__database 464 14 none] [construct_tree_iteratorIP language__tree 558 9 none]
+G r c none [update_contents language__tree__database 464 14 none] [find gnatcoll__symbols 49 13 none]
+G r c none [update_contents language__tree__database 464 14 none] [next language__tree 234 13 none]
+G r c none [update_contents language__tree__database 464 14 none] [free language 633 14 none]
+G r c none [update_contents language__tree__database 464 14 none] [free language__tree 42 14 none]
+G r c none [update_contents language__tree__database 464 14 none] [active gnatcoll__traces 628 13 none]
+G r c none [update_contents language__tree__database 464 14 none] [display_full_name gnatcoll__vfs 261 13 none]
+G r c none [update_contents language__tree__database 464 14 none] [trace gnatcoll__traces 526 14 none]
+G r c none [clear language__tree__database 471 14 none] [free_annotations language__tree 46 14 none]
+G r c none [clear language__tree__database 471 14 none] [free language__tree 42 14 none]
+G r e project_type [clear language__tree__database 471 14 none] [finalize gnatcoll__projects 2218 25 none]
+G r e virtual_file [clear language__tree__database 471 14 none] [finalize gnatcoll__vfs 630 25 none]
+G r c none [destroy language__tree__database 475 14 none] [free_annotations language__tree 46 14 none]
+G r c none [destroy language__tree__database 475 14 none] [free language__tree 42 14 none]
+G r e project_type [destroy language__tree__database 475 14 none] [finalize gnatcoll__projects 2218 25 none]
+G r e virtual_file [destroy language__tree__database 475 14 none] [finalize gnatcoll__vfs 630 25 none]
+G r c none [destroy language__tree__database 475 14 none] [free language__tree__tree_annotations_pckg 81 14 38_4]
+G r c none [destroy language__tree__database 475 14 none] [free language__tree__construct_annotations_pckg 81 14 40_4]
+G r c none [start language__tree__database 483 13 none] [get gnatcoll__symbols 56 13 none]
+G r c none [next language__tree__database 509 14 none] [get gnatcoll__symbols 56 13 none]
+G r c none [Olt language__tree__database 534 13 none] [Olt gnatcoll__vfs 337 13 none]
+G r s file_array [analyze_file_differences language__tree__database 546 14 none] [file_arrayIP gnatcoll__vfs 387 9 none]
+G r j file_array [analyze_file_differences language__tree__database 546 14 none] [file_arrayDA gnatcoll__vfs 387 9 none]
+G r c none [Olt language__tree__database 562 13 none] [Oeq gnatcoll__vfs 334 24 none]
+G r c none [Olt language__tree__database 562 13 none] [Olt gnatcoll__vfs 337 13 none]
+G r c none [to_entity_access language__tree__database 575 13 none] [Oeq gnatcoll__vfs 334 24 none]
+G r s construct_tree_iterator [to_entity_access language__tree__database 575 13 none] [construct_tree_iteratorIP language__tree 558 9 none]
+G r c none [to_entity_access language__tree__database 575 13 none] [Oeq language__tree 76 24 none]
+G r s annotation [to_entity_persistent_access language__tree__database 581 13 none] [annotationIP language__tree__construct_annotations_pckg 43 9 40_4]
+G r c none [to_entity_persistent_access language__tree__database 581 13 none] [Oeq language__tree 76 24 none]
+G r c none [to_entity_persistent_access language__tree__database 581 13 none] [Oeq gnatcoll__vfs 334 24 none]
+G r c none [to_entity_persistent_access language__tree__database 581 13 none] [get_annotation_container language__tree 297 13 none]
+G r c none [to_entity_persistent_access language__tree__database 581 13 none] [is_set language__tree__construct_annotations_pckg 117 13 40_4]
+G r c none [to_entity_persistent_access language__tree__database 581 13 none] [get_annotation language__tree__construct_annotations_pckg 102 14 40_4]
+G r c none [to_entity_persistent_access language__tree__database 581 13 none] [set_annotation language__tree__construct_annotations_pckg 110 14 40_4]
+G r s annotation [to_unrefed_entity_persistent_access language__tree__database 586 13 none] [annotationIP language__tree__construct_annotations_pckg 43 9 40_4]
+G r c none [to_unrefed_entity_persistent_access language__tree__database 586 13 none] [Oeq language__tree 76 24 none]
+G r c none [to_unrefed_entity_persistent_access language__tree__database 586 13 none] [Oeq gnatcoll__vfs 334 24 none]
+G r c none [to_unrefed_entity_persistent_access language__tree__database 586 13 none] [get_annotation_container language__tree 297 13 none]
+G r c none [to_unrefed_entity_persistent_access language__tree__database 586 13 none] [is_set language__tree__construct_annotations_pckg 117 13 40_4]
+G r c none [to_unrefed_entity_persistent_access language__tree__database 586 13 none] [get_annotation language__tree__construct_annotations_pckg 102 14 40_4]
+G r c none [to_unrefed_entity_persistent_access language__tree__database 586 13 none] [set_annotation language__tree__construct_annotations_pckg 110 14 40_4]
+G r c none [get_construct language__tree__database 594 13 none] [Oeq gnatcoll__vfs 334 24 none]
+G r c none [unlock_all_updates language__tree__database 704 14 none] [Oeq gnatcoll__vfs 334 24 none]
+G r s construct_list [unlock_all_updates language__tree__database 704 14 none] [construct_listIP language 626 9 none]
+G r c none [unlock_all_updates language__tree__database 704 14 none] [is_active gnatcoll__traces 624 13 none]
+G r c none [unlock_all_updates language__tree__database 704 14 none] [should_refresh_constructs_tree language 695 13 none]
+G r c none [unlock_all_updates language__tree__database 704 14 none] [parse_constructs language 687 14 none]
+G r c none [unlock_all_updates language__tree__database 704 14 none] [to_construct_tree language__tree 49 13 none]
+G r c none [unlock_all_updates language__tree__database 704 14 none] [analyze_referenced_identifiers language__tree 464 14 none]
+G r c none [unlock_all_updates language__tree__database 704 14 none] [analyze_constructs_identifiers language__tree 458 14 none]
+G r c none [unlock_all_updates language__tree__database 704 14 none] [first language__tree 92 13 none]
+G r c none [unlock_all_updates language__tree__database 704 14 none] [Oeq language__tree 76 24 none]
+G r c none [unlock_all_updates language__tree__database 704 14 none] [get_construct language__tree 111 13 none]
+G r c none [unlock_all_updates language__tree__database 704 14 none] [get gnatcoll__symbols 56 13 none]
+G r s construct_tree_iterator [unlock_all_updates language__tree__database 704 14 none] [construct_tree_iteratorIP language__tree 558 9 none]
+G r c none [unlock_all_updates language__tree__database 704 14 none] [find gnatcoll__symbols 49 13 none]
+G r c none [unlock_all_updates language__tree__database 704 14 none] [next language__tree 234 13 none]
+G r c none [unlock_all_updates language__tree__database 704 14 none] [free language 633 14 none]
+G r c none [unlock_all_updates language__tree__database 704 14 none] [free language__tree 42 14 none]
+G r c none [unlock_all_updates language__tree__database 704 14 none] [active gnatcoll__traces 628 13 none]
+G r c none [unlock_all_updates language__tree__database 704 14 none] [display_full_name gnatcoll__vfs 261 13 none]
+G r c none [unlock_all_updates language__tree__database 704 14 none] [trace gnatcoll__traces 526 14 none]
+G r c none [unlock_all_updates language__tree__database 704 14 none] [trace gnatcoll__traces 501 14 none]
+G r s construct_tree_iterator [get_last_relevant_construct language__tree__database 715 13 none] [construct_tree_iteratorIP language__tree 558 9 none]
+G r c none [get_last_relevant_construct language__tree__database 715 13 none] [Oeq language__tree 76 24 none]
+G r c none [get_last_relevant_construct language__tree__database 715 13 none] [get_construct language__tree 111 13 none]
+G r c none [get_last_relevant_construct language__tree__database 715 13 none] [get_parent_scope language__tree 99 13 none]
+G r c none [get_last_relevant_construct language__tree__database 715 13 none] [is_parent_scope language__tree 106 13 none]
+G r c none [get_last_relevant_construct language__tree__database 715 13 none] [prev language__tree 245 13 none]
+G r s abstract_tree_language [tree_languageIP language__tree__database 712 9 none] [abstract_tree_languageIP language__tree 484 9 none]
+G r s abstract_tree_language [unknown_tree_languageIP language__tree__database 748 9 none] [abstract_tree_languageIP language__tree 484 9 none]
+G r s construct_tree_iterator [construct_node_wrapperIP language__tree__database__construct_db_trie 30 9 763_4] [construct_tree_iteratorIP language__tree 558 9 none]
+G r c none [start language__tree__database__construct_db_trie__construct_trie_trees 55 13 38_4_763_4] [get gnatcoll__symbols 56 13 none]
+G r c none [next language__tree__database__construct_db_trie__construct_trie_trees 62 14 38_4_763_4] [get gnatcoll__symbols 56 13 none]
+G r c none [insert language__tree__database__construct_db_trie__construct_trie_trees 85 14 38_4_763_4] [get gnatcoll__symbols 56 13 none]
+G r c none [insert language__tree__database__construct_db_trie__construct_trie_trees 85 14 38_4_763_4] [find gnatcoll__symbols 49 13 none]
+G r s construct_tree_iterator [insert language__tree__database__construct_db_trie__construct_trie_trees 85 14 38_4_763_4] [construct_tree_iteratorIP language__tree 558 9 none]
+G r c none [get_name_index language__tree__database__construct_db_trie__construct_trie_trees 105 13 38_4_763_4] [get gnatcoll__symbols 56 13 none]
+G r c none [get_name_index language__tree__database__construct_db_trie__construct_trie_trees 105 13 38_4_763_4] [find gnatcoll__symbols 49 13 none]
+G r s construct_tree_iterator [insert language__tree__database__construct_db_trie__construct_trie_trees__data_vector 38 14 115_4_38_4_763_4] [construct_tree_iteratorIP language__tree 558 9 none]
+G r s construct_tree_iterator [insert language__tree__database__construct_db_trie__construct_trie_trees__data_vector 49 14 115_4_38_4_763_4] [construct_tree_iteratorIP language__tree 558 9 none]
+G r s construct_tree_iterator [data_arrayIP language__tree__database__construct_db_trie__construct_trie_trees__data_vector 78 9 115_4_38_4_763_4] [construct_tree_iteratorIP language__tree 558 9 none]
+G r c none [get_name language__tree__database__construct_db_trie__construct_trie_trees 129 13 38_4_763_4] [get gnatcoll__symbols 56 13 none]
+G r c none [insert language__tree__database__construct_db_trie__construct_trie_trees__vector_trie_trees 52 14 135_4_38_4_763_4] [get gnatcoll__symbols 56 13 none]
+G r c none [remove language__tree__database__construct_db_trie__construct_trie_trees__vector_trie_trees 58 14 135_4_38_4_763_4] [get gnatcoll__symbols 56 13 none]
+G r c none [remove language__tree__database__construct_db_trie__construct_trie_trees__vector_trie_trees 58 14 135_4_38_4_763_4] [trace gnatcoll__traces 526 14 none]
+G r c none [get language__tree__database__construct_db_trie__construct_trie_trees__vector_trie_trees 61 13 135_4_38_4_763_4] [get gnatcoll__symbols 56 13 none]
+G r c none [start language__tree__database__construct_db_trie__construct_trie_trees__vector_trie_trees 66 13 135_4_38_4_763_4] [get gnatcoll__symbols 56 13 none]
+G r c none [next language__tree__database__construct_db_trie__construct_trie_trees__vector_trie_trees 75 14 135_4_38_4_763_4] [get gnatcoll__symbols 56 13 none]
+G r c none [remove language__tree__database__construct_db_trie__construct_trie_trees__vector_trie_trees 116 14 135_4_38_4_763_4] [trace gnatcoll__traces 526 14 none]
+G r c none [get_index language__tree__database__construct_db_trie__construct_trie_trees__vector_trie_trees 47 13 135_4_38_4_763_4] [get gnatcoll__symbols 56 13 none]
+G r c none [adjust_if_need language__tree__database__construct_db_trie__construct_trie_trees__vector_trie_trees 61 14 135_4_38_4_763_4] [get gnatcoll__symbols 56 13 none]
+G r c none [find_cell_child language__tree__database__construct_db_trie__construct_trie_trees__vector_trie_trees 106 14 135_4_38_4_763_4] [get gnatcoll__symbols 56 13 none]
+G r c none [get_or_create_list language__tree__database__construct_db_trie__construct_trie_trees 24 13 38_4_763_4] [get gnatcoll__symbols 56 13 none]
+G r c none [get_or_create_list language__tree__database__construct_db_trie__construct_trie_trees 24 13 38_4_763_4] [find gnatcoll__symbols 49 13 none]
+G r c none [insert language__tree__database__construct_db_trie 77 14 763_4] [get_construct language__tree 111 13 none]
+G r c none [insert language__tree__database__construct_db_trie 77 14 763_4] [get gnatcoll__symbols 56 13 none]
+G r s construct_tree_iterator [insert language__tree__database__construct_db_trie 77 14 763_4] [construct_tree_iteratorIP language__tree 558 9 none]
+G r c none [insert language__tree__database__construct_db_trie 77 14 763_4] [find gnatcoll__symbols 49 13 none]
+G r s construct_tree_iterator [insert language__tree__database__construct_db_trie 88 14 763_4] [construct_tree_iteratorIP language__tree 558 9 none]
+G r c none [insert language__tree__database__construct_db_trie 88 14 763_4] [get gnatcoll__symbols 56 13 none]
+G r c none [insert language__tree__database__construct_db_trie 88 14 763_4] [find gnatcoll__symbols 49 13 none]
+G r s construct_tree_iterator [replace language__tree__database__construct_db_trie 99 14 763_4] [construct_tree_iteratorIP language__tree 558 9 none]
+G r c none [Oeq language__tree__database 813 13 none] [Oeq gnatcoll__vfs 334 24 none]
+G r s construct_tree_iterator [entity_accessIP language__tree__database 860 9 none] [construct_tree_iteratorIP language__tree 558 9 none]
+G r d virtual_file [structured_fileDA language__tree__database 780 9 none] [adjust gnatcoll__vfs 631 25 none]
+G r d project_type [structured_fileDA language__tree__database 780 9 none] [adjust gnatcoll__projects 2217 25 none]
+G r e project_type [structured_fileDF language__tree__database 780 9 none] [finalize gnatcoll__projects 2218 25 none]
+G r e virtual_file [structured_fileDF language__tree__database 780 9 none] [finalize gnatcoll__vfs 630 25 none]
+G r s virtual_file [structured_fileIP language__tree__database 780 9 none] [virtual_fileIP gnatcoll__vfs 625 9 none]
+G r d project_type [structured_fileIP language__tree__database 780 9 none] [adjust gnatcoll__projects 2217 25 none]
+G r e project_type [structured_fileIP language__tree__database 780 9 none] [finalize gnatcoll__projects 2218 25 none]
+G r e virtual_file [structured_fileIP language__tree__database 780 9 none] [finalize gnatcoll__vfs 630 25 none]
+G r d virtual_file [construct_databaseDA language__tree__database 832 9 none] [adjust gnatcoll__vfs 631 25 none]
+G r d project_type [construct_databaseDA language__tree__database 832 9 none] [adjust gnatcoll__projects 2217 25 none]
+G r e project_type [construct_databaseDF language__tree__database 832 9 none] [finalize gnatcoll__projects 2218 25 none]
+G r e virtual_file [construct_databaseDF language__tree__database 832 9 none] [finalize gnatcoll__vfs 630 25 none]
+G r s virtual_file [construct_databaseIP language__tree__database 832 9 none] [virtual_fileIP gnatcoll__vfs 625 9 none]
+G r d project_type [construct_databaseIP language__tree__database 832 9 none] [adjust gnatcoll__projects 2217 25 none]
+G r e project_type [construct_databaseIP language__tree__database 832 9 none] [finalize gnatcoll__projects 2218 25 none]
+G r e virtual_file [construct_databaseIP language__tree__database 832 9 none] [finalize gnatcoll__vfs 630 25 none]
+G r c none [update_lockDF language__tree__database 808 9 none] [Oeq gnatcoll__vfs 334 24 none]
+G r s construct_list [update_lockDF language__tree__database 808 9 none] [construct_listIP language 626 9 none]
+G r c none [update_lockDF language__tree__database 808 9 none] [is_active gnatcoll__traces 624 13 none]
+G r c none [update_lockDF language__tree__database 808 9 none] [should_refresh_constructs_tree language 695 13 none]
+G r c none [update_lockDF language__tree__database 808 9 none] [parse_constructs language 687 14 none]
+G r c none [update_lockDF language__tree__database 808 9 none] [to_construct_tree language__tree 49 13 none]
+G r c none [update_lockDF language__tree__database 808 9 none] [analyze_referenced_identifiers language__tree 464 14 none]
+G r c none [update_lockDF language__tree__database 808 9 none] [analyze_constructs_identifiers language__tree 458 14 none]
+G r c none [update_lockDF language__tree__database 808 9 none] [first language__tree 92 13 none]
+G r c none [update_lockDF language__tree__database 808 9 none] [Oeq language__tree 76 24 none]
+G r c none [update_lockDF language__tree__database 808 9 none] [get_construct language__tree 111 13 none]
+G r c none [update_lockDF language__tree__database 808 9 none] [get gnatcoll__symbols 56 13 none]
+G r s construct_tree_iterator [update_lockDF language__tree__database 808 9 none] [construct_tree_iteratorIP language__tree 558 9 none]
+G r c none [update_lockDF language__tree__database 808 9 none] [find gnatcoll__symbols 49 13 none]
+G r c none [update_lockDF language__tree__database 808 9 none] [next language__tree 234 13 none]
+G r c none [update_lockDF language__tree__database 808 9 none] [free language 633 14 none]
+G r c none [update_lockDF language__tree__database 808 9 none] [free language__tree 42 14 none]
+G r c none [update_lockDF language__tree__database 808 9 none] [active gnatcoll__traces 628 13 none]
+G r c none [update_lockDF language__tree__database 808 9 none] [display_full_name gnatcoll__vfs 261 13 none]
+G r c none [update_lockDF language__tree__database 808 9 none] [trace gnatcoll__traces 526 14 none]
+G r c none [update_lockDF language__tree__database 808 9 none] [trace gnatcoll__traces 501 14 none]
+G r s construct_tree_iterator [entity_arrayIP language__tree__database 362 9 none] [construct_tree_iteratorIP language__tree 558 9 none]
+G r s general_annotation_record [entity_persistent_annotationIP language__tree__database 879 9 none] [general_annotation_recordIP language__tree__construct_annotations_pckg 31 9 40_4]
+G r s construct_list [internal_update_contents language__tree__database 33 14 none] [construct_listIP language 626 9 none]
+G r c none [internal_update_contents language__tree__database 33 14 none] [Oeq gnatcoll__vfs 334 24 none]
+G r c none [internal_update_contents language__tree__database 33 14 none] [is_active gnatcoll__traces 624 13 none]
+G r c none [internal_update_contents language__tree__database 33 14 none] [should_refresh_constructs_tree language 695 13 none]
+G r c none [internal_update_contents language__tree__database 33 14 none] [parse_constructs language 687 14 none]
+G r c none [internal_update_contents language__tree__database 33 14 none] [to_construct_tree language__tree 49 13 none]
+G r c none [internal_update_contents language__tree__database 33 14 none] [analyze_referenced_identifiers language__tree 464 14 none]
+G r c none [internal_update_contents language__tree__database 33 14 none] [analyze_constructs_identifiers language__tree 458 14 none]
+G r c none [internal_update_contents language__tree__database 33 14 none] [first language__tree 92 13 none]
+G r c none [internal_update_contents language__tree__database 33 14 none] [Oeq language__tree 76 24 none]
+G r c none [internal_update_contents language__tree__database 33 14 none] [get_construct language__tree 111 13 none]
+G r c none [internal_update_contents language__tree__database 33 14 none] [get gnatcoll__symbols 56 13 none]
+G r s construct_tree_iterator [internal_update_contents language__tree__database 33 14 none] [construct_tree_iteratorIP language__tree 558 9 none]
+G r c none [internal_update_contents language__tree__database 33 14 none] [find gnatcoll__symbols 49 13 none]
+G r c none [internal_update_contents language__tree__database 33 14 none] [next language__tree 234 13 none]
+G r c none [internal_update_contents language__tree__database 33 14 none] [free language 633 14 none]
+G r c none [internal_update_contents language__tree__database 33 14 none] [free language__tree 42 14 none]
+G r c none [internal_update_contents language__tree__database 33 14 none] [active gnatcoll__traces 628 13 none]
+G r c none [internal_update_contents language__tree__database 33 14 none] [display_full_name gnatcoll__vfs 261 13 none]
+G r c none [internal_update_contents language__tree__database 33 14 none] [trace gnatcoll__traces 526 14 none]
+G r c none [free language__tree__database 46 14 none] [free_annotations language__tree 46 14 none]
+G r c none [free language__tree__database 46 14 none] [free language__tree 42 14 none]
+G r e project_type [free language__tree__database 46 14 none] [finalize gnatcoll__projects 2218 25 none]
+G r e virtual_file [free language__tree__database 46 14 none] [finalize gnatcoll__vfs 630 25 none]
+G r c none [lock_if_needed language__tree__database 48 14 none] [Oeq gnatcoll__vfs 334 24 none]
+G r c none [automatic_update_lockDF language__tree__database 1937 9 none] [Oeq gnatcoll__vfs 334 24 none]
+G r s construct_list [automatic_update_lockDF language__tree__database 1937 9 none] [construct_listIP language 626 9 none]
+G r c none [automatic_update_lockDF language__tree__database 1937 9 none] [is_active gnatcoll__traces 624 13 none]
+G r c none [automatic_update_lockDF language__tree__database 1937 9 none] [should_refresh_constructs_tree language 695 13 none]
+G r c none [automatic_update_lockDF language__tree__database 1937 9 none] [parse_constructs language 687 14 none]
+G r c none [automatic_update_lockDF language__tree__database 1937 9 none] [to_construct_tree language__tree 49 13 none]
+G r c none [automatic_update_lockDF language__tree__database 1937 9 none] [analyze_referenced_identifiers language__tree 464 14 none]
+G r c none [automatic_update_lockDF language__tree__database 1937 9 none] [analyze_constructs_identifiers language__tree 458 14 none]
+G r c none [automatic_update_lockDF language__tree__database 1937 9 none] [first language__tree 92 13 none]
+G r c none [automatic_update_lockDF language__tree__database 1937 9 none] [Oeq language__tree 76 24 none]
+G r c none [automatic_update_lockDF language__tree__database 1937 9 none] [get_construct language__tree 111 13 none]
+G r c none [automatic_update_lockDF language__tree__database 1937 9 none] [get gnatcoll__symbols 56 13 none]
+G r s construct_tree_iterator [automatic_update_lockDF language__tree__database 1937 9 none] [construct_tree_iteratorIP language__tree 558 9 none]
+G r c none [automatic_update_lockDF language__tree__database 1937 9 none] [find gnatcoll__symbols 49 13 none]
+G r c none [automatic_update_lockDF language__tree__database 1937 9 none] [next language__tree 234 13 none]
+G r c none [automatic_update_lockDF language__tree__database 1937 9 none] [free language 633 14 none]
+G r c none [automatic_update_lockDF language__tree__database 1937 9 none] [free language__tree 42 14 none]
+G r c none [automatic_update_lockDF language__tree__database 1937 9 none] [active gnatcoll__traces 628 13 none]
+G r c none [automatic_update_lockDF language__tree__database 1937 9 none] [display_full_name gnatcoll__vfs 261 13 none]
+G r c none [automatic_update_lockDF language__tree__database 1937 9 none] [trace gnatcoll__traces 526 14 none]
+G r c none [automatic_update_lockDF language__tree__database 1937 9 none] [trace gnatcoll__traces 501 14 none]
+G r c none [automatic_update_lockIP language__tree__database 1937 9 none] [Oeq gnatcoll__vfs 334 24 none]
+G r s construct_list [automatic_update_lockIP language__tree__database 1937 9 none] [construct_listIP language 626 9 none]
+G r c none [automatic_update_lockIP language__tree__database 1937 9 none] [is_active gnatcoll__traces 624 13 none]
+G r c none [automatic_update_lockIP language__tree__database 1937 9 none] [should_refresh_constructs_tree language 695 13 none]
+G r c none [automatic_update_lockIP language__tree__database 1937 9 none] [parse_constructs language 687 14 none]
+G r c none [automatic_update_lockIP language__tree__database 1937 9 none] [to_construct_tree language__tree 49 13 none]
+G r c none [automatic_update_lockIP language__tree__database 1937 9 none] [analyze_referenced_identifiers language__tree 464 14 none]
+G r c none [automatic_update_lockIP language__tree__database 1937 9 none] [analyze_constructs_identifiers language__tree 458 14 none]
+G r c none [automatic_update_lockIP language__tree__database 1937 9 none] [first language__tree 92 13 none]
+G r c none [automatic_update_lockIP language__tree__database 1937 9 none] [Oeq language__tree 76 24 none]
+G r c none [automatic_update_lockIP language__tree__database 1937 9 none] [get_construct language__tree 111 13 none]
+G r c none [automatic_update_lockIP language__tree__database 1937 9 none] [get gnatcoll__symbols 56 13 none]
+G r s construct_tree_iterator [automatic_update_lockIP language__tree__database 1937 9 none] [construct_tree_iteratorIP language__tree 558 9 none]
+G r c none [automatic_update_lockIP language__tree__database 1937 9 none] [find gnatcoll__symbols 49 13 none]
+G r c none [automatic_update_lockIP language__tree__database 1937 9 none] [next language__tree 234 13 none]
+G r c none [automatic_update_lockIP language__tree__database 1937 9 none] [free language 633 14 none]
+G r c none [automatic_update_lockIP language__tree__database 1937 9 none] [free language__tree 42 14 none]
+G r c none [automatic_update_lockIP language__tree__database 1937 9 none] [active gnatcoll__traces 628 13 none]
+G r c none [automatic_update_lockIP language__tree__database 1937 9 none] [display_full_name gnatcoll__vfs 261 13 none]
+G r c none [automatic_update_lockIP language__tree__database 1937 9 none] [trace gnatcoll__traces 526 14 none]
+G r c none [automatic_update_lockIP language__tree__database 1937 9 none] [trace gnatcoll__traces 501 14 none]
+X 1 ada.ads
+18K9*Ada 22e8 123|21r6 21r28 22r6 23r6 24r6 25r6 26r6 36r6 36r26 537r28 777r26
+. 816r28 822r33 825r38 124|18r6 18r33 24r6 24r29 43r45 411r42 453r42 1026r42
+. 1245r18 1247r48 1491r48 1576r42 1698r38 1807r42 1944r11 1973r54
+X 2 a-calend.ads
+36K13*Calendar 440e17 124|18w10 18r37
+42I9*Time<226I9> 124|364r15
+48I12*Year_Number{integer} 124|365r15
+49I12*Month_Number{integer} 124|366r15
+50I12*Day_Number{integer} 124|367r15
+54O12*Day_Duration{duration} 124|368r15
+72U14*Split 124|371s7
+226I9 Time_Rep<long_long_integer>
+X 6 a-chahan.ads
+209V13*To_Lower{character} 98|283i21
+224V13*To_Upper{character} 98|285i21
+X 8 a-contai.ads
+16K13*Containers 28e19 123|22r10 23r10 24r10 25r10 36w10 36r30 537r32 816r32
+. 822r37 825r42 124|1944r15
+19M9*Hash_Type 123|565r50 124|1565r50 1568r14
+22I9*Count_Type<integer>
+X 9 a-cdlili.ads
+47k24*Doubly_Linked_Lists 422e39 123|25w21 825r53 124|1944r26
+54R9*List<43|43R9> 123|837r47[825] 124|1946r41[1943]
+65R9*Cursor 124|924r38[123|825] 1181r38[123|825] 1218r35[123|825] 1751r31[123|825]
+. 1967r35[1943]
+73r4*No_Element{65R9[123|825]} 124|928r45[123|825] 1185r45[123|825] 1222r42[123|825]
+. 1753r38[123|825]
+75V13*Has_Element{boolean} 124|1969s37[1943]
+84V13*Is_Empty{boolean} 124|1965s31[1943]
+86U14*Clear 124|1981s30[1943]
+88V13*Element{123|626P9} 124|930s19[123|825] 1187s19[123|825] 1223s30[123|825]
+. 1754s13[123|825] 1972s40[1943]
+161U14*Append 124|1740s20[123|825] 1775s7[123|825] 1994s27[1943]
+165U14*Delete 124|1755s26[123|825]
+210V13*First{65R9[123|825]} 124|926s20[123|825] 1183s20[123|825] 1220s17[123|825]
+. 1751s41[123|825] 1967s62[1943]
+218V13*Next{65R9[123|825]} 124|931s23[123|825] 1188s23[123|825] 1224s20[123|825]
+. 1760s16[123|825]
+220U14*Next 124|1979s34[1943]
+269R9 Node_Type
+270P9 Node_Access(269R9[123|825])
+X 10 a-cdlili.adb
+699V22 Next{9|270P9} 39|61i24
+700U23 Set_Next 39|62i25[124|1943]
+702U23 Set_Prev 39|63i25[123|825]
+704V23 "<"{boolean} 39|64i25[124|1943]
+706U23 Update_Container 39|66i25[123|825]
+X 16 a-cohama.ads
+65V18 Hash{8|19M9} 123|819r7
+74V18 Equivalent_Keys{boolean} 123|818r7
+92k24*Hashed_Maps 584e31 123|22w21 816r43
+99R9*Map<43|43R9> 123|833r37[816] 124|1841r31[123|816]
+110R9*Cursor 124|1119r29[123|816]
+131V13*Has_Element{boolean} 124|1121s10[123|816]
+168V13*Length{8|22I9} 124|1837s61[123|816]
+174U14*Clear 124|1233s19[123|816]
+182V13*Element{123|53P9} 124|1122s17[123|816]
+319U14*Insert 124|1104s19[123|816] 1851s26[123|816]
+349U14*Delete 124|1153s22[123|816]
+374V13*Find{110R9[123|816]} 124|1119s51[123|816]
+380V13*Contains{boolean} 124|1846s30[123|816] 1856s30[123|816] 1865s29[123|816]
+X 19 a-conhel.ads
+84R12 Reference_Control_Type<43|43R9>
+X 23 a-ciorma.ads
+48k24*Indefinite_Ordered_Maps 400e43 123|24w21 822r48
+57R9*Map<43|43R9> 123|836r42[822]
+67R9*Cursor 124|1241r37[123|822]
+75r4*No_Element{67R9[123|822]} 124|1254r44[123|822]
+91V13*Element{123|675P9} 124|1255s23[123|822]
+151U14*Insert 124|1774s7[123|822]
+176V13*First{67R9[123|822]} 124|1252s24[123|822]
+188V13*Next{67R9[123|822]} 124|1259s27[123|822]
+198V13*Element{123|675P9} 124|1787s14[123|822]
+244R9 Node_Type
+245P9 Node_Access(244R9)
+X 24 a-ciorma.adb
+59V13 Color{32|37E9} 35|45i19
+62V13 Left{23|245P9} 35|41i19
+65V13 Parent{23|245P9} 35|39i19
+68V13 Right{23|245P9} 35|43i19
+71U14 Set_Parent 35|40i19[123|822]
+74U14 Set_Left 35|42i19[123|822]
+77U14 Set_Right 35|44i19[123|822]
+80U14 Set_Color 35|46i19[123|822]
+X 25 a-ciorse.ads
+57R9*Set<43|43R9>
+X 28 a-coormu.ads
+46k24*Ordered_Multisets 576e37 123|23w21 537r43
+460R9 Node_Type
+461P9 Node_Access(460R9[123|537])
+X 29 a-coormu.adb
+59V13 Color{32|37E9} 35|45i19
+62V13 Left{28|461P9} 35|41i19
+65V13 Parent{28|461P9} 35|39i19
+68V13 Right{28|461P9[123|537]} 35|43i19[123|537]
+71U14 Set_Parent 35|40i19[123|537]
+74U14 Set_Left 35|42i19[123|537]
+77U14 Set_Right 35|44i19
+80U14 Set_Color 35|46i19[123|537]
+X 43 a-finali.ads
+40K13*Finalization 68e21 123|21w10 21r32
+50H9*Limited_Controlled<143|40R9> 66e55 123|329r36 808r36 124|961r10
+53U14*Initialize<143|48p14>
+X 47 a-string.ads
+16K13*Strings 35e16 124|24r10 24r33
+X 49 a-strfix.ads
+49K21*Fixed 1390e22 124|24w18 24r41
+1342V14*"*"{string} 124|163s56
+X 59 a-tags.ads
+653V13 CW_Membership{boolean} 124|806s22 1622s14 1654s15 1667s14
+X 62 a-uncdea.ads
+23u15*Unchecked_Deallocation 123|26w10 777r30 124|43r49 411r46 453r46 1026r46
+. 1245r22 1247r52 1491r52 1576r46 1698r42 1807r46 1973r58
+X 63 annotations.ads
+28E9*Annotation_Kind
+29n44*Other_Kind{28E9[122|40]} 124|796r55[122|40] 1597r43[122|40] 1641r43[122|40]
+31R9*General_Annotation_Record 123|880r33[122|40]
+41P9*General_Annotation(31R9[122|40])
+43R9*Annotation 124|796r43[122|40] 1597r31[122|40] 1641r31[122|40]
+55p13*Other_Val{41P9[122|40]} 124|807r47[122|40] 1611m32[122|40] 1623r32[122|40]
+. 1655r38[122|40] 1657m32[122|40] 1668r32[122|40]
+66I9*Annotation_Key<integer> 123|842r58[122|40]
+72P9*Annotation_Key_Registry 123|526r43[122|38] 531r48[122|40] 839r9[122|38]
+. 841r9[122|40] 124|1384r43[122|38] 1395r48[122|40]
+78V13*Create_Annotation_Key_Registry{72P9[122|38]} 124|1042s49[122|38] 1044s36[122|40]
+81U14*Free 124|1262s29[122|38] 1263s34[122|40]
+86U14*Get_Annotation_Key 124|1045s34[122|40]
+91R9*Annotation_Container 124|794r49[122|40] 1595r28[122|40] 1639r28[122|40]
+97r4*Null_Annotation_Container{91R9[122|38]} 124|906r37[122|38]
+99U14*Free 124|750s43[122|40]
+102U14*Get_Annotation 124|801s22[122|40] 1608s10[122|40] 1652s10[122|40]
+110U14*Set_Annotation 124|1618s10[122|40] 1663s10[122|40]
+117V13*Is_Set{boolean} 124|798s22[122|40] 1607s10[122|40] 1651s10[122|40]
+X 64 basic_types.ads
+110I12*Visible_Column_Type{106|169I9} 123|287r47 294r16 301r16 309r34 124|568r47
+. 570r21 589r16 608r16 622r34
+119I9*String_Index_Type<integer> 123|110r18 117r21 118r21 127r28 138r17 162r17
+. 278r61 287r21 294r44 301r44 307r30 774r59 124|322r18 517r14 539r42 555r17
+. 568r21 571r15 589r44 597r14 608r44 620r30 626r20 629r23 1905r17
+X 66 construct_tries.ads
+28k9*Construct_Tries 106e20 123|30w6 763r37
+38K12*Construct_Trie_Trees[189|30] 123|767r26[763]
+41R12*Construct_Trie{189|32R9[38[123|763]]} 123|835r54[763]
+52R12*Construct_Trie_Iterator{189|41R9[38[123|763]]} 123|852r30[763]
+57r4*Null_Construct_Trie_Iterator=58:27{189|41R9[38[123|763]]} 123|856r31[763]
+60R12*Construct_Trie_Index{189|46R9[38[123|763]]} 123|770r46[763]
+64r4*Null_Construct_Trie_Index=65:27{189|46R9[38[123|763]]} 124|780r36[123|763]
+. 864r33[123|763]
+67V13*Get_Construct_It{122|28R9} 124|1309s14[123|763] 1339s18[123|763]
+72V13*Get_Additional_Data{123|757R9} 124|1328s14[123|763] 1338s18[123|763]
+77U14*Insert 124|726s28[123|763]
+78p7 Trie(41R12[123|763]) 124|727r13[123|763]
+79p7 Symbols(99|36R9) 124|728r13[123|763]
+80r7 Construct_It{122|28R9} 124|729r13[123|763]
+81r7 Data{123|757R9} 124|730r13[123|763]
+82p7 Lang(122|484R9) 124|731r13[123|763]
+83r7 Index{60R12[123|763]} 124|732r13[123|763]
+99U14*Replace 124|782s19[123|763]
+X 68 gnat.ads
+40K9*GNAT 63e9 123|28r6 28r24 213r14 231r52 267r45 793r22 124|124r25 381r52
+. 383r17 384r17 485r45 519r25 688r20
+X 81 g-string.ads
+38K14*Strings=38:37 123|28w11 28r29 213r19 231r57 267r50 793r27 124|124r30
+. 381r57 383r22 384r22 485r50 519r30 688r25
+X 83 gnatcoll.ads
+24K9*GNATCOLL 27e13 123|31r6 32r6 32r29 33r6 33r29 96r56 179r27 187r27 206r18
+. 212r18 226r18 231r18 422r17 425r14 819r26 846r23 124|19r6 19r33 361r18
+. 381r18 1918r17 1929r14
+X 90 gnatcoll-projects.ads
+98K18*Projects 2445e22 123|33w15 33r38
+148R9*Project_Type<43|43R9> 2215e14 123|436r19 457r45 461r48 805r23 124|1070r17
+. 1163r45 1174r48
+150r4*No_Project{148R9} 123|436r35 805r39 124|1070r33
+468V25*"="{boolean} 41|65i19
+X 91 gnatcoll-refcount.ads
+123R12*Ref<43|43R9>
+351R12*Ref<43|43R9>
+X 94 gnatcoll-sql_impl.ads
+457H12 Base_Field<333R9>
+607R12*Field<333R9>
+X 99 gnatcoll-symbols.ads
+34K18*Symbols 108e21 123|31w15 96r65 422r26 425r23 846r32 124|1918r26 1929r23
+37P9*Symbol_Table_Access(36R9) 123|422r34 425r31 846r40 124|234r18 1918r34
+. 1929r31
+42P9*Symbol<103|46P9> 123|96r73 124|104r56
+43p4*No_Symbol{42P9} 124|241r48 715r30
+44p4*Empty_String{42P9} 124|253r48
+49V13*Find{42P9} 124|251R52
+56V13*Get{103|46P9} 124|142s31 161s24 260s14
+X 102 gnatcoll-traces.ads
+344P9*Trace_Handle(343R9) 124|28r18 30r33
+355n56*Off{355E9} 124|31r64
+356V13*Create{345P12} 124|28s34 30s49
+501U14*Trace 124|983s19
+526U14*Trace 124|938s13
+624V13*Is_Active{boolean} 124|843s17
+628V13*Active{boolean} 124|937s13
+X 103 gnatcoll-utils.ads
+36K18*Utils 330e19 124|19w15 19r42
+46P9*Cst_String_Access(string)
+166U14*Skip_To_Column 124|593s7
+167a7 Str{string} 124|593r23
+168i7 Columns{integer} 124|594r23
+169i7 Index{integer} 124|595r23
+X 104 gnatcoll-vfs.ads
+62K18*VFS 673e17 123|32w15 32r38 179r36 187r36 206r27 212r27 226r27 231r27
+. 819r35 124|361r27 381r27
+68A9*Filesystem_String<string>(character)<integer>
+83P9*Cst_Filesystem_String_Access(68A9)
+97R9*Virtual_File<43|43R9> 627e14 123|179r40 187r40 206r31 212r31 226r31
+. 231r31 274r66 435r19 446r14 451r19 466r15 781r19 817r7 124|361r31 381r31
+. 502r45 1069r17 1117r14 1134r19 1200r14
+98r4*No_File{97R9} 124|505r17 678r46 1893r53 1894r64
+224V13*Full_Name{83P9} 124|1463s45
+241V13*Full_Name_Hash{8|19M9} 123|819r39
+261V13*Display_Full_Name{string} 124|939s32
+327V13*Is_Regular_File{boolean} 124|1081s19
+334V25*"="{boolean} 18|50i19 123|818r27 124|678s44 1009s24 1893s51 1894s62
+337V14*"<"{boolean} 124|1018s24
+370V13*File_Time_Stamp{2|42I9} 124|370s21
+387A9*File_Array(97R9)<integer> 123|548r36 124|1834r36 1837r23 1838r21 1873r28
+. 1875r26
+388P9*File_Array_Access(387A9) 123|549r40 124|1835r40
+448V13*Read_File{171|43P9} 124|390s14
+X 106 gnatcoll-xref.ads
+169I9*Visible_Column<integer>
+189V14*"<"{boolean} 30|45i19
+190V14*"="{boolean} 30|46i19
+X 120 language.ads
+30K9*Language 978e13 123|34r6 34r38 35r6 35r34 38r9 889r5 124|26r14 1999r5
+36P9*Language_Access(35R9) 123|66r43 156r51 180r52 782r19 124|128r28 307r51
+. 1072r19
+282R9*Source_Location 294e14 124|130r30 202r34
+292i7*Index{natural} 124|66r52 73r47 170r49 170r67 197r46 197r64 215r48 215r65
+442n7*Cat_Parameter{411E9} 124|140r55 150r55 716r41
+444n7*Cat_Field{411E9} 124|717r41
+452n7*Cat_With{411E9} 124|718r41
+453n7*Cat_Use{411E9} 124|719r41
+496E12*Subprogram_Category{490E12} 124|134r43
+509E12*Data_Category{411E9} 124|200r46
+548A9*Construct_Attribute_Map(boolean)<540I9>
+562R9*Simple_Construct_Information 611e14 123|96r19 393r45 595r49 124|104r19
+. 709r38 1448r45 1676r49
+563e7*Category{411E9} 124|134r31 140r44 150r44 200r34 716r30 717r30 718r30
+. 719r30
+569b7*Is_Declaration{boolean} 124|760r50 761r42
+575e7*Visibility{534E9} 124|762r50 763r42
+578p7*Name{99|42P9} 124|108r24 142r61 161r54 715r23
+587p7*Profile{99|42P9} 124|241r38 251m37 253m37 260r40
+596r7*Sloc_Start{282R9} 124|66r41
+606r7*Sloc_End{282R9} 124|73r38
+609a7*Attributes{548A9} 124|758r43 759r42
+626R9*Construct_List 629e14 124|689r28
+633U14*Free 124|915s10
+687U14*Parse_Constructs 124|851R10
+695V13*Should_Refresh_Constructs_Tree{boolean} 124|842R27
+802U14*Get_Referenced_Entity 124|151R19 186R10 204R13
+939p7*Symbols{99|37P9} 124|249r64
+X 121 language-profile_formaters.ads
+22K18*Profile_Formaters 116e31 123|34w15 34r47
+24H9*Profile_Formater 24e56 123|72r27 124|118r27
+27x14*Add_Parameter 124|166R34 173R34
+29a7 Name{string} 124|167r28 174r28
+30a7 Mode{string} 124|168r28 175r28
+31a7 Of_Type{string} 124|169r28 176r28
+32a7 Default{string} 124|171r28 177r28
+45x14*Add_Result 124|195R22
+47a7 Mode{string} 124|196r16
+48a7 Of_Type{string} 124|197r16
+51x14*Add_Variable 124|213R25
+53a7 Mode{string} 124|214r19
+54a7 Of_Type{string} 124|215r19
+71R9*Text_Profile_Formater<24R9> 85e14 124|231r26
+74U14*Configure 124|243s19
+76b7 Show_Param_Names{boolean} 124|244r13
+113V24 Get_Text{string}<67p13> 124|251s67 257s26
+X 122 language-tree.ads
+21K18*Tree 120|30k9 122|600e18 123|38r18 889r14 124|26r23 1999r14
+28R9*Construct_Tree_Iterator 561e14 123|378r20 384r38 491r42 718r14 862r14
+. 124|58r14 60r33 62r33 126r25 136r24 232r25 698r51 701r29 707r51 740r29
+. 873r21 1306r42 1407r20 1428r38 1593r30 1637r30
+34P9*Construct_Tree 123|103r28 261r45 638r18 716r16 790r22 124|57r14 122r25
+. 282r28 469r61 693r26 696r18 1477r29
+36p4*Null_Construct_Tree{34P9} 124|474r17 1187r40
+38K12*Tree_Annotations_Pckg[63|26] 123|526r21 838r36 124|906r15 1042r27 1262r7
+. 1384r21
+40K12*Construct_Annotations_Pckg[63|26] 123|531r21 840r36 842r31 880r6 124|750r16
+. 792r23 1044r9 1045r7 1263r7 1395r21 1589r11 1633r11
+42U14*Free 124|457s7 935s10
+46U14*Free_Annotations 124|456s7
+49V13*To_Construct_Tree{34P9} 124|852s22
+74r4*Null_Construct_Tree_Iterator{28R9} 123|866r13 124|61r9 70r25 290r13
+. 296r13 875r28 1411r22 1599r15 1643r15
+76V25*"="{boolean} 124|70s22 875s25 1411s20 1506s26 1518s22 1599s13 1643s13
+79V14*"<"{boolean} 124|1505s22
+92V13*First{28R9} 124|873s48
+99V13*Get_Parent_Scope{28R9} 124|83s19
+106V13*Is_Parent_Scope{boolean} 124|82s23 139s19 149s19
+111V13*Get_Construct(120|562R9) 124|73s19 134s10 140s19 142s36 150s19 154s22
+. 161s29 189s13 200s13 207s16 241s17 251s16 253s16 260s19 710s24 758s19 759s18
+. 760s26 761s18 762s26 763s18 1450s14
+232n30*Jump_Over{232E9} 124|88r38 144r50 182r50
+232n41*Jump_Into{232E9} 124|136r69 147r43 878r45
+234V13*Next{28R9} 124|136s51 144s28 147s25 182s28 878s25
+245V13*Prev{28R9} 124|88s22
+272V13*Encloses{boolean} 124|1479s20
+297V13*Get_Annotation_Container(63|91R9[40]) 124|751s19 795s21 1604s22 1648s22
+317V13*To_String{string} 124|1462s17
+405P9*Normalized_Symbol<99|42P9> 123|542r38 124|1822r38
+458U14*Analyze_Constructs_Identifiers 124|856s10
+464U14*Analyze_Referenced_Identifiers 124|854s10
+484H9*Abstract_Tree_Language 484e62 123|59r39 713r8
+497E9*Diff_Kind 497e49 124|701r61 740r61
+497n23*Removed{497E9} 124|291r13 743r18
+497n32*Added{497E9} 124|298r13 753r18
+497n39*Preserved{497E9} 124|757r18
+499P9*Diff_Callback 123|104r28 124|283r28
+532r7*Construct{120|562R9} 124|66r31 1679r43
+536r7*Annotations{63|91R9[40]} 124|773m50 774r53
+538p7*Id{405P9} 124|1825r29
+542A9 Node_Array(531R9)<integer>
+545a7*Contents{542A9} 124|65r34 66r18 67m46 287r25 289m23 294r25 297m23 773m25
+. 774r28 858r27 1414r54 1533m37 1679r9
+547r7*Annotations{63|91R9[38]} 124|882m22 882r47 905m23
+559p7*Node(531R9) 124|1825r24
+560i7*Index{natural} 124|732r50 748r46 768r42 769r45 773r43 774r46 779r45
+. 784r48 808r32 1414r35 1568r35 1615r62 1661r62
+X 123 language-tree-database.ads
+38K23*Database 122|21k18 123|710E4 889l19 889e27 124|26b28 1999l19 1999t27
+40R9*Entity_Access 71r20 83r26 91r16 91r38 110r44 143r16 143r38 149r16 149r38
+. 360r42 362r53 369r32 372r43 378r52 384r16 388r32 393r16 397r33 401r15 401r39
+. 506r53 542r16 565r28 576r49 582r16 587r16 860c9 863e14 865r42 124|117r20
+. 227r26 269r16 269r38 322r44 335r16 335r38 348r16 348r38 1335r53 1407r52
+. 1409r16 1428r16 1438r32 1448r16 1457r33 1472r15 1472r39 1501r32 1514r43
+. 1526r49 1565r28 1587r16 1631r16 1822r16
+46R9*Construct_Database 408r49 420p14 421r24 423p13 424r24 464p14 465r22
+. 471p14 471r33 475p14 475r35 483p13 484r19 655r25 797r29 832c9 849e14 124|39r21
+. 1027r10 1199r21 1215r33 1240r35 1274r22 1291r19 1917r24 1928r24
+50R9*Structured_File 53r46 780c9 806e14 813r32 844r38 124|454r10 1007r43
+. 1097r23 1886r34
+53P9*Structured_File_Access(50R9) 108r18 137r17 161r17 241r21 248r26 252r28
+. 256r14 261r14 267r14 274r35 278r14 285r21 292r16 299r16 306r30 314r14 318r15
+. 325r29 341r14 377r20 388r54 436r54 446r35 457r14 461r14 502r42 534r32 538r7
+. 616r49 637r18 693r14 758r15 809r24 817r21 861r14 870r16 124|34r14 46r34
+. 48r37 320r18 421r26 430r28 442r14 452r34 454r27 469r30 485r14 502r14 516r14
+. 566r21 587r16 606r16 619r30 656r14 666r17 676r29 686r14 949r14 1016r32
+. 1070r52 1074r19 1117r35 1136r16 1163r14 1174r14 1203r20 1326r42 1406r20
+. 1438r54 1726r49 1795r14 1884r21 1904r17 1991r37
+59H9*Tree_Language<122|484R9> 63r44 65p13 66r21 69p14 70r27 81p13 82r33 89p13
+. 90r23 94P24 95r26 101P25 102r35 106p13 107r25 135p13 136r24 141p13 142r23
+. 147p13 148r23 153r38 712c9 713e47 748r38 124|103r26 116r27 129r23 226r33
+. 249r20 268r23 281r35 319r25 334r23 347r23 888r19
+63P9*Tree_Language_Access(59R9) 165r33 189r14 314r45 750r33 783r19 124|245r10
+. 656r45 1073r19
+65y13*Get_Language{120|36P9} 66^7 124|129R9 249R51
+66p7 Tree(59R9)
+69U14*Get_Profile 70^7 71>7 72^7 73>7 124|115b14 219l8 219t19 245R38
+70p7 Lang(59R9) 124|116b7 129r44
+71r7 Entity{40R9} 124|117b7 123r29 125r31 127r37
+72p7 Formater(121|24R9) 124|118b7 166r25 173r25 195r13 213r16
+73b7 With_Aspects{boolean} 124|119b7 121r28 246r38
+81V13*Get_Profile{string} 82^7 83>7 84>7 85>7 124|225b13 261l8 261t19
+82p7 Lang(59R9) 124|226b7 245r32 249r41
+83r7 Entity{40R9} 124|227b7 233r37 246r13
+84b7 With_Aspects{boolean} 124|228b7 246r54
+85b7 Show_Param_Names{boolean} 124|229b7 240r14 244r33 248r13
+89V13*Get_Declaration{40R9} 90^7 91>7 124|267b13 274l8 274t23
+90p7 Lang(59R9) 124|268b7 271r28
+91r7 Entity{40R9} 124|269b7 273r14
+94V24*Get_Name_Index{99|42P9}<122|489p13> 95^7 96>7 124|102b24 109l8 109t22
+95p7 Lang(59R9) 124|103b7 106r28
+96r7 Construct{120|562R9} 124|104b7 108r14
+101U25*Diff<122|502p14> 102^7 103>7 103>17 104>7 124|280b25 300l8 300t12
+. 887s16 898R16
+102p7 Lang(59R9) 124|281b7 285r28
+103p7 Old_Tree{122|34P9} 124|282b7 287r16 289r14
+103p17 New_Tree{122|34P9} 124|282b17 294r16 297r14
+104p7 Callback{122|499P9} 124|283b7 288r10 295r10
+106V13*Find_Declaration{40R9} 107^7 108>7 109>7 110>7 124|318b13 327l8 327t24
+107p7 Lang(59R9) 124|319b7 324r28
+108p7 File{53P9} 124|320b7 324r34
+109i7 Line{integer} 124|321b7 324r40
+110i7 Column{64|119I9} 124|322b7 324r46
+116R9*Entity_Reference_Details 130e14 133r33 138r43 162r43 710r33 124|1905r43
+117i7*Index_Start{64|119I9}
+118i7*Index_End{64|119I9}
+121b7*Is_Named_Parameter{boolean}
+127i7*Parenthesis_Loc{64|119I9}
+133r4*Invalid_Reference{116R9} 710c4 124|1909r14
+135y13*Find_Reference_Details{116R9} 136^7 137>7 138>7
+136p7 Lang(59R9)
+137p7 File{53P9}
+138i7 Index{64|119I9}
+141V13*Find_First_Part{40R9} 142^7 143>7 124|333b13 340l8 340t23
+142p7 Lang(59R9) 124|334b7 337r28
+143r7 Entity{40R9} 124|335b7 339r14
+147V13*Find_Next_Part{40R9} 148^7 149>7 124|346b13 353l8 353t22
+148p7 Lang(59R9) 124|347b7 350r28
+149r7 Entity{40R9} 124|348b7 352r14
+153R9*Unknown_Tree_Language<59R9> 69p14 81p13 89p13 94P24 101P25 106p13 141p13
+. 147p13 155P24 156r21 159P24 160r24 748c9 748e68 751r10 124|307r21 1903r24
+155V24*Get_Language{120|36P9}<65p13> 156^7 124|306b24 312l8 312t20
+156p7 Tree(153R9) 124|307b7 309r28
+159V24*Find_Reference_Details{116R9}<135p13> 160^7 161>7 162>7 124|1902b24
+. 1910l8 1910t30
+160p7 Lang(153R9) 124|1903b7 1907r28
+161p7 File{53P9} 124|1904b7 1907r34
+162i7 Index{64|119I9} 124|1905b7 1907r40
+165p4*Unknown_Tree_Lang{63P9} 750c4
+171H9*Abstract_Language_Handler_Record 171e72 173r20 177p13 178r34 185p13
+. 186r34
+172P9*Abstract_Language_Handler(171R9) 412r20 848r23 124|1039r20
+177y13*Get_Language_From_File{120|36P9} 178^7 179>7 180>7 124|1085R29
+178p7 Handler(171R9)
+179r7 Source_Filename{104|97R9}
+180b7 From_Project_Only{boolean}
+185y13*Get_Tree_Language_From_File{63P9} 186^7 187>7 188>7 124|1095R34
+186p7 Handler(171R9)
+187r7 Source_Filename{104|97R9}
+188b7 From_Project_Only{boolean}
+196H9*Buffer_Provider 202r46 204p13 205r25 210p13 211r25 222r37 753c9 753e55
+. 755r37 124|412r10 1248r10
+202P9*Buffer_Provider_Access(196R9) 219r34 415r20 834r28 124|410r34 412r33
+. 1057r20 1248r33
+204y13*Get_Timestamp{integer} 205^7 206>7 124|837R37
+205p7 Provider(196R9)
+206r7 File{104|97R9}
+210y13*Get_Buffer{171|43P9} 211^7 212>7 124|491R31 850R20
+211p7 Provider(196R9)
+212r7 File{104|97R9}
+219U14*Free 219=20 124|410b14 415l8 415t12
+219p20 This{202P9} 124|410b20 414m17
+222R9*File_Buffer_Provider<196R9> 224P24 225r25 229P24 230r25 755c9 755e69
+. 124|360r25 380r25
+224V24*Get_Timestamp{integer}<204p13> 225^7 226>7 124|359b24 373l8 373t21
+225p7 Provider(222R9) 124|360b7 363r28
+226r7 File{104|97R9} 124|361b7 370r16
+229V24*Get_Buffer{171|43P9}<210p13> 230^7 231>7 124|379b24 404l8 404t18
+230p7 Provider(222R9) 124|380b7 386r28
+231r7 File{104|97R9} 124|381b7 390r25
+240V25*"="{boolean} 16|84i19 28|44i19 123|241>7 241>13 124|432s15 471s15
+. 504s15 678s19 954s15 972s27 1077s19 1138s17 1206s12 1475s21 1518s52 1549s27
+. 1883b25 1896l9 1896t11
+241p7 Left{53P9} 124|1884b7 1893r20 1893r41 1895r26
+241p13 Right{53P9} 124|1884b13 1894r29 1894r51 1895r43
+248U14*Ref 248>19 124|421b14 424l8 424t11
+248p19 File{53P9} 124|421b19 423r7 423r19
+252U14*Unref 252>21 124|430b14 435l8 435t13
+252p21 File{53P9} 124|430b21 432r10 433r10 433r22
+255V13*Is_Externally_Referenced{boolean} 256>7 124|441b13 446l8 446t32 1139s13
+256p7 File{53P9} 124|442b7 445r14
+260V13*Get_Tree{122|34P9} 261>7 124|123s9 469b13 476l8 476t16 1148s38 1477s47
+. 1533s14 1605s10 1649s10 1678s14
+261p7 File{53P9} 124|469b23 471r10 472r17
+266V13*Get_Buffer{171|43P9} 267>7 124|125s9 484b13 495l8 495t18 519s55 574s27
+. 593s34
+267p7 File{53P9} 124|485b7 488r19 490r13 491r10 491r43 491r61 494r14
+274V13*Get_File_Path{104|97R9} 274>28 124|501b13 509l8 509t21
+274p28 File{53P9} 124|502b7 504r10 507r17
+277V13*Get_Offset_Of_Line{64|119I9} 278>7 278>38 124|515b13 559l8 559t26
+. 571s36 591s43 598s27 610s14 626s41 646s9
+278p7 File{53P9} 124|516b7 519r67 521r10 544r13 550r17 557r17
+278i38 Line{integer} 124|516b38 550r10 557r35
+284V13*To_Visible_Column{64|110I12} 285>7 286>7 287>7 124|565b13 580l8 580t25
+. 648s17
+285p7 File{53P9} 124|566b7 571r56 574r39
+286i7 Line{integer} 124|567b7 571r62
+287i7 Line_Offset{64|119I9} 124|568b7 576r27
+291V13*To_Line_String_Index{64|119I9} 292>7 293>7 294>7 124|586b13 599l8
+. 599t28 611s11
+292p7 File{53P9} 124|587b7 591r63 593r46 598r47
+293i7 Line{integer} 124|588b7 591r69 598r53
+294i7 Column{64|110I12} 124|589b7 594r43
+298V13*To_String_Index{64|119I9} 299>7 300>7 301>7 124|605b13 612l8 612t23
+299p7 File{53P9} 124|606b7 610r34 611r33
+300i7 Line{integer} 124|607b7 610r40 611r39
+301i7 Column{64|110I12} 124|608b7 611r45
+305U14*To_Line_Column 306>7 307>7 308<7 309<7 124|618b14 649l8 649t22
+306p7 File{53P9} 124|619b7 626r61 633r16 634r13 642r18 646r29 648r36
+307i7 Absolute_Byte_Offset{64|119I9} 124|620b7 634r36 645r24
+308i7 Line{integer} 124|621b7 631m7 635m13 641r10 642m10 646r35 648r42
+309i7 Column{64|110I12} 124|622b7 648m7
+313V13*Get_Tree_Language{63P9} 314>7 124|655b13 659l8 659t25
+314p7 File{53P9} 124|656b7 658r14
+317U14*Update_Contents 318>7 319>7 124|665b14 670l8 670t23 979s16 1207s10
+318p7 File{53P9} 124|666b7 669r33
+319b7 Purge{boolean} 124|667b7 669r48
+325V13*Is_Null{boolean} 325>22 124|488s10 676b13 679l8 679t15 818s10
+325p22 File{53P9} 124|676b22 678r14 678r34
+329R9*Update_Lock<43|50R9> 43|53P14 123|340p13 342r14 349p14 349r36 353P25
+. 353r49 808c9 811e14 124|950r54 970r36 998r49 1938r14 143|46p14
+338E9*Lock_Kind_Type 338e58 341r45 800r23 810r24 124|950r14 952r24
+338n28*Defer_Updates{338E9} 341r63 800r41 124|829r30 950r32
+338n43*Ignore_Updates{338E9}
+340V13*Lock_Updates{329R9} 341>7 341>38 124|948b13 964l8 964t20 1995s22
+341p7 File{53P9} 124|949b7 954r10 955r10 955r29 956r28 957r10 962r25
+341e38 Kind{338E9} 124|950b7 952r42 957r28
+349U14*Unlock 349=22 124|970b14 992l8 992t14 1000s7 1976s19
+349r22 This{329R9} 124|970b22 972r10 973m10 973r10 973r41 975r13 976r21 979r33
+. 985m13 985r13 989m10 989r10 989r40 990m10
+353U25*Finalize<43|54p14> 353=35 124|998b25 1001l8 1001t16
+353r35 This{329R9} 124|998b35 1000m15
+360r4*Null_Entity_Access{40R9} 865c4 124|326r14 1412r17 1459r19 1529r17
+362A9*Entity_Array(40R9)<integer> 364r43 124|1492r10
+364P9*Entity_Array_Access(362A9) 366r34 124|1490r34 1492r24
+366U14*Free 366=20 124|1490b14 1495l8 1495t12
+366p20 This{364P9} 124|1490b20 1494m23
+369V14*"<"{boolean} 369>18 369>24 124|1501b14 1508l9 1508t11
+369r18 Left{40R9} 124|1501b18 1505r14 1506r18 1507r20
+369r24 Right{40R9} 124|1501b24 1505r24 1506r28 1507r32
+372V25*"="{boolean} 372>29 372>35 124|1459s17 1514b25 1519l9 1519t11
+372r29 Left{40R9} 124|1514b29 1518r14 1518r42
+372r35 Right{40R9} 124|1514b35 1518r24 1518r54
+376V13*To_Entity_Access{40R9} 377>7 378>7 379r19 124|1405b13 1421l8 1421t24
+. 1531s17
+377p7 File{53P9} 124|1406b7 1414r44 1416r25
+378r7 Construct{122|28R9} 124|1407b7 1411r10 1414r25 1417r23
+383V13*To_Construct_Tree_Iterator{122|28R9} 384>7 385r19 124|127s9 233s9
+. 1427b13 1432l8 1432t34 1594s9 1615s26 1638s9 1661s26
+384r7 Entity{40R9} 124|1428b7 1431r14
+388V13*Get_File{53P9} 388>23 389r19 124|123s19 125s21 1438b13 1441l8 1441t16
+. 1603s27 1605s20 1614s26 1647s27 1649s20 1660s26
+388r23 Entity{40R9} 124|1438b23 1440r14
+392V13*Get_Construct(120|562R9) 393>7 124|1447b13 1451l8 1451t21
+393r7 Entity{40R9} 124|1448b7 1450r29
+397V13*To_String{string} 397>24 124|1457b13 1465l8 1465t17
+397r24 Entity{40R9} 124|1457b24 1459r10 1463r13 1463r56
+400V13*Contains{boolean} 401>7 401>30 124|1471b13 1484l8 1484t16
+401r7 Scope{40R9} 124|1472b7 1475r10 1477r57 1479r36
+401r30 Entity{40R9} 124|1472b30 1475r23 1479r46
+408P9*Construct_Database_Access(46R9) 411r20 414r20 430r34 434r19 445r14
+. 450r19 525r12 530r12 547r36 659r18 664r18 678r19 687r12 693r45 124|1025r34
+. 1027r30 1038r20 1056r20 1068r17 1116r14 1133r19 1204r20 1383r12 1394r12
+. 1591r12 1635r12 1736r18 1748r18 1769r19 1783r12 1795r45 1797r14 1833r36
+410U14*Initialize 411>7 412>7 124|1037b14 1049l8 1049t18
+411p7 Db{408P9} 124|1038b7 1042r7 1043r7 1046r10 1046r33 1047r7 1047r37 1048r7
+412p7 Lg_Handler{172P9} 124|1039b7 1048r24
+413U14*Set_Provider 414>7 415>7 124|1055b14 1061l8 1061t20
+414p7 Db{408P9} 124|1056b7 1060r7
+415p7 Provider{202P9} 124|1057b7 1060r22
+420U14*Set_Symbols 421^7 422>7 124|1916b14 1921l8 1921t19
+421p7 Self(46R9) 124|1917b7 1920r7
+422p7 Symbols{99|37P9} 124|1918b7 1920r23
+423V13*Symbols{99|37P9} 424^7 124|1927b13 1932l8 1932t15
+424p7 Self(46R9) 124|1928b7 1931r14
+430U14*Free 430=20 124|1025b14 1031l8 1031t12
+430p20 This{408P9} 124|1025b20 1029r16 1030m17
+433V13*Get_Or_Create{53P9} 434>7 435>7 436>7 124|1067b13 1109l8 1109t21
+434p7 Db{408P9} 124|1068b7 1076r29 1082r17 1085r15 1092r17 1095r20 1101r22
+. 1104r7
+435r7 File{104|97R9} 124|1069b7 1076r33 1081r14 1085r53 1095r63 1098r24 1104r27
+436r7 Project{90|148R9} 124|1070b7 1102r27
+444V13*Get_File{53P9} 445>7 446>7 124|1076s19 1115b13 1126l8 1126t16 1136s42
+. 1204s10
+445p7 Db{408P9} 124|1116b7 1119r39
+446r7 File{104|97R9} 124|1117b7 1119r57
+449U14*Remove_File 450>7 451>7 124|1132b14 1156l8 1156t19
+450p7 Db{408P9} 124|1133b7 1136r52 1147r19 1153r10
+451r7 File{104|97R9} 124|1134b7 1136r56 1153r30
+456V13*Get_Project{90|148R9} 457>7 124|1162b13 1167l8 1167t19
+457p7 File{53P9} 124|1163b7 1166r14
+460U14*Set_Project 461>7 461>38 124|1173b14 1192l8 1192t19
+461p7 File{53P9} 124|1174b7 1177r21 1178r10 1183r27 1187r34
+461r38 Project{90|148R9} 124|1174b38 1177r10 1178r26
+464U14*Update_Contents 465^7 466>7 467>7 124|1198b14 1209l8 1209t23
+465p7 Db(46R9) 124|1199b7 1204r47
+466r7 File{104|97R9} 124|1200b7 1204r52
+467b7 Purge{boolean} 124|1201b7 1207r30
+471U14*Clear 471^21 124|1215b14 1234l8 1234t13 1250s7
+471p21 Db(46R9) 124|1215b21 1220r24 1223r45 1228r22 1232r14 1233r7
+475U14*Destroy 475^23 124|1029s7 1240b14 1266l8 1266t15
+475p23 Db(46R9) 124|1240b23 1250r14 1252r31 1262r35 1263r40 1265r23
+479R9*Construct_Db_Iterator 485r14 491r12 496r34 502r12 506r23 509r32 512r26
+. 515r28 519r32 522r42 851c9 853e14 855r42 124|1292r14 1294r12 1306r12 1316r34
+. 1326r12 1335r23 1346r32 1355r26 1364r28 1373r32
+483V13*Start{479R9} 484^7 484>39 484>56 124|1290b13 1299l8 1299t13
+484p7 Db(46R9) 124|1291b7 1296r23
+484a39 Prefix{string} 124|1291b39 1296r46
+484b56 Is_Partial{boolean} 124|1291b56 1296r54
+490V13*Get_Construct{122|28R9} 491>7 124|1305b13 1310l8 1310t21
+491r7 It{479R9} 124|1306b7 1309r32
+496V13*Get_Current_Id{string} 496>29 124|1316b13 1319l8 1319t22
+496r29 It{479R9} 124|1316b29 1318r25
+501V13*Get_File{53P9} 502>7 124|1325b13 1329l8 1329t16
+502r7 It{479R9} 124|1326b7 1328r35
+506V13*Get{40R9} 506>18 124|1335b13 1340l8 1340t11
+506r18 It{479R9} 124|1335b18 1338r39 1339r36
+509U14*Next 509=20 124|1346b14 1349l8 1349t12
+509r20 It{479R9} 124|1346b20 1348m13 1348r13
+512V13*At_End{boolean} 512>21 124|1355b13 1358l8 1358t14
+512r21 It{479R9} 124|1355b21 1357r22
+515V13*Is_Valid{boolean} 515>23 124|1364b13 1367l8 1367t16
+515r23 It{479R9} 124|1364b23 1366r24
+519U14*Free 519=20 124|1373b14 1376l8 1376t12
+519r20 It{479R9} 124|1373b20 1375m13 1375r13
+522r4*Null_Construct_Db_Iterator{479R9} 855c4
+524V13*Get_Tree_Annotation_Key_Registry(63|72P9[122|38]) 525>7 124|1382b13
+. 1387l8 1387t40
+525p7 Db{408P9} 124|1383b7 1386r14
+529V13*Get_Construct_Annotation_Key_Registry(63|72P9[122|40]) 530>7 124|1393b13
+. 1399l8 1399t45
+530p7 Db{408P9} 124|1394b7 1398r14
+534V14*"<"{boolean} 28|43i19 123|534>18 534>24 124|1016b14 1019l9 1019t11
+. 1507s30 1556s34
+534p18 Left{53P9} 124|1016b18 1018r14
+534p24 Right{53P9} 124|1016b24 1018r26
+537K12*File_Set[28|46]
+541V13*Get_Identifier{122|405P9} 542>7 124|1821b13 1826l8 1826t22
+542r7 Entity{40R9} 124|1822b7 1825r14
+546U14*Analyze_File_Differences 547>7 548>7 549<7 549<22 124|1832b14 1877l8
+. 1877t32
+547p7 Db{408P9} 124|1833b7 1837r49 1855r24 1865r17
+548a7 New_Set{104|387A9} 124|1834b7 1838r38 1845r16 1846r40 1851r34 1864r16
+. 1865r39 1866r42
+549p7 Removed_Files{104|388P9} 124|1835b7 1873m7
+549p22 Added_Files{104|388P9} 124|1835b22 1875m7
+558P9*Entity_Persistent_Access 562r32 568r7 576r16 582r38 587r38 595r16 599r35
+. 603r37 608r45 610r30 616r16 875c9 877r45 882r14 124|1526r16 1542r32 1587r38
+. 1631r38 1676r16 1686r35 1697r37 1699r34 1716r30 1726r16 1808r34
+562V14*"<"{boolean} 562>18 562>24 124|1542b14 1559l9 1559t11
+562p18 Left{558P9} 124|1542b18 1544r10 1549r13 1550r16 1551r23 1553r23 1556r20
+562p24 Right{558P9} 124|1542b24 1546r13 1549r29 1550r33 1551r42 1553r40 1556r36
+565V13*Hash{8|19M9} 565>19 124|1565b13 1569l8 1569t12
+565r19 Entity{40R9} 124|1565b19 1568r25
+567A9*Entity_Persistent_Array(558P9)<integer> 570r54 124|1577r10
+570P9*Entity_Persistent_Array_Access(567A9) 572r34 124|1575r34 1577r35
+572U14*Free 572=20 124|1575b14 1580l8 1580t12
+572p20 This{570P9} 124|1575b20 1579m17
+575V13*To_Entity_Access{40R9} 576>7 124|1525b13 1536l8 1536t24
+576p7 Entity{558P9} 124|1526b7 1528r22 1532r13 1533r24 1533r47 1534r14
+581V13*To_Entity_Persistent_Access{558P9} 582>7 124|1630b13 1669l8 1669t35
+582r7 Entity{40R9} 124|1631b7 1638r37 1647r37 1649r30 1660r36 1661r54
+586V13*To_Unrefed_Entity_Persistent_Access{558P9} 587>7 124|1586b13 1624l8
+. 1624t43
+587r7 Entity{40R9} 124|1587b7 1594r37 1603r37 1605r30 1614r36 1615r54
+594V13*Get_Construct{120|562R9} 595>7 124|1675b13 1680l8 1680t21
+595p7 Entity{558P9} 124|1676b7 1678r24 1679r28
+599U14*Ref 599=19 124|1654s10 1686b14 1691l8 1691t11
+599p19 Entity{558P9} 124|1686b19 1688r10 1689r10 1689r25
+603U14*Unref 603=21 124|1697b14 1710l8 1710t13
+603p21 Entity{558P9} 124|1697b21 1701r10 1702r10 1702r25 1704r13 1704r42
+. 1705m19 1708m10
+608p4*Null_Entity_Persistent_Access{558P9} 877c4 124|1600r17 1644r17 1688r20
+. 1701r20 1708r20
+610V13*Exists{boolean} 610>21 124|1528s14 1716b13 1719l8 1719t14
+610p21 Entity{558P9} 124|1716b21 1718r14 1718r38
+615V13*Get_File{53P9} 616>7 124|1725b13 1729l8 1729t16
+616p7 Entity{558P9} 124|1726b7 1728r14
+623H9*Database_Listener 623e57 626r48 635p14 636r25 653p14 654r25 673r44
+. 858r44
+626P9*Database_Listener_Access(623R9) 660r18 665r18 826r7 124|1737r18 1749r18
+. 1775r29
+628E9*Update_Kind 633e15 639r18 124|691r29
+629n7*Minor_Change{628E9} 124|896r39
+630n7*Structural_Change{628E9} 124|744r39 754r39 765r42
+631n7*Full_Change{628E9} 124|870r36 885r39
+632n7*Project_Change{628E9} 124|1187r61
+633n7*Removed{628E9} 124|1148r57
+635U14*File_Updated 636^7 637>7 638>7 639>7 124|929R16 1148R13 1186R16
+636p7 Listener(623R9)
+637p7 File{53P9}
+638p7 Old_Tree{122|34P9}
+639e7 Kind{628E9}
+653U14*Before_Clear_Db 654^7 655^7 124|1223R13
+654p7 Listener(623R9)
+655p7 Db(46R9)
+658U14*Add_Database_Listener 659>7 660>7 124|1735b14 1741l8 1741t29
+659p7 Db{408P9} 124|1736b7 1740r7
+660p7 Listener{626P9} 124|1737b7 1740r28
+663U14*Remove_Database_Listener 664>7 665>7 124|1747b14 1762l8 1762t32
+664p7 Db{408P9} 124|1748b7 1751r48 1755r13
+665p7 Listener{626P9} 124|1749b7 1754r28
+673H9*Database_Assistant<623R9> 635p14 653p14 675r49 696p14 696r39 858c9
+. 858e78 124|1246r12
+675P9*Database_Assistant_Access(673R9) 680r19 688r14 823r15 124|1242r23 1246r38
+. 1771r19 1784r14
+677U14*Register_Assistant 678>7 679>7 680>7 124|1768b14 1776l8 1776t26
+678p7 Db{408P9} 124|1769b7 1774r15 1775r15
+679a7 Name{string} 124|1770b7 1774r30
+680p7 Assistant{675P9} 124|1771b7 1774r36 1775r55
+686V13*Get_Assistant{675P9} 687>7 687>39 689r19 124|1782b13 1788l8 1788t21
+687p7 Db{408P9} 124|1783b7 1787r23
+687a39 Name{string} 124|1783b39 1787r38
+692V13*Get_Database{408P9} 693>7 124|1603s13 1647s13 1794b13 1798l8 1798t20
+693p7 File{53P9} 124|1795b7 1797r41
+696U14*Free 696=20 124|1257R10
+696r20 Assistant{673R9}
+699U14*Lock_All_Updates 124|1953b14 1956l8 1956t24
+704U14*Unlock_All_Updates 124|1962b14 1985l8 1985t26
+715V13 Get_Last_Relevant_Construct{122|28R9} 716>7 717>7 124|56b13 96l8 96t35
+716p7 Tree{122|34P9} 124|57b7 65r29 66r13 67r41 83r37 88r28
+717i7 Offset{natural} 124|57b30 66r61 73r56
+757R9 Trie_Additional_Data 759e14 761r41 764r7 124|708r22
+758p7*File{53P9} 761m66 124|724m15 786m23 1328r42 1338r46
+761r4 Null_Trie_Additional_Data{757R9} 764r29
+763K12 Construct_Db_Trie[66|28] 766r8 767r8 770r28 835r36 852r12 856r13 124|726r10
+. 780r18 864r15
+769A9 Construct_Db_Data_Array(66|60R12[763])<integer> 772r48 124|44r7 857r34
+772P9 Construct_Db_Data_Access(769A9) 791r22 124|38r21 44r32 694r26 1273r21
+774A9 Line_Start_Indexes(64|119I9)<integer> 775r49 778r7 124|524r19 534r35
+. 544r37
+775P9 Line_Start_Indexes_Access(774A9) 778r27 795r22 124|523r27 526r27
+777U14 Free[62|23] 124|459s7 536s22 546s13 910s13
+781r7*File{104|97R9} 124|491r66 507r22 678r39 837r57 842r64 850r55 851r44
+. 939r27 1009r19 1009r32 1018r19 1018r32 1098m16 1463r68 1856r50 1857r56
+. 1893r46 1894r57
+782p7*Lang{120|36P9} 124|842r22 851r33 855r30 856r47 1099m16
+783p7*Tree_Lang{63P9} 124|658r19 731r34 888r39 899r24 1100m16
+785i7*Timestamp{integer} 124|839r15 841r22 845m15
+790p7*Tree{122|34P9} 124|456m30 457m18 472r22 751r50 774r23 869r18 882r42
+. 889r24 900r24 905r18 912r30 918m15 1414r49
+791p7*Db_Data_Tree{772P9} 124|458m18 748r24 769r23 909m34 919m15
+793p7*Cache_Buffer{171|43P9} 124|460m18 490r18 491m15 494r19 908m24
+795p7*Line_Starts{775P9} 124|459m18 521r15 544m18 550r22 557r22 633r21 634r18
+. 642r23 910m24
+797p7*Db(46R9) 124|458r37 491r48 727r34 728r34 747r24 783r27 799r44 803r30
+. 837r25 850r37 926r32 1047m31 1101m16 1183r32 1797r46
+799i7*Lock_Depth{natural} 124|828r15 955m15 955r34 973m27 973r58 975r30 1993r43
+800e7*Lock_Kind{338E9} 124|829r18 956r33 957m15 989m27
+801b7*Update_Locked{boolean} 124|830m18 976r38 985m30
+803i7*Ref{natural} 124|423m12 423r24 433m15 433r27 445r19
+805r7*Project{90|148R9} 124|1102m16 1166r19 1177r26 1178m15
+809p7 File_Locked{53P9} 124|962m10 972r15 973r15 973r46 975r18 976r26 979r38
+. 985r18 989r15 990m15
+810e7 Last_Lock_Kind{338E9} 124|963m10 989r45
+813V14*"="{boolean} 813>18 813>24 124|1007b25 1010l9 1010t11
+813r18 Left{50R9} 124|1007b29 1009r14
+813r24 Right{50R9} 124|1007b35 1009r26
+816K12 File_Map[16|92] 820r8 833r28 124|1119r20 1841r22
+822K12 Assistant_Map[23|48] 828r8 836r28 124|1241r23 1254r30
+825K12 Database_Listeners[9|47] 830r8 837r28 124|924r19 928r26 1181r19 1185r26
+. 1218r16 1222r23 1751r12 1753r19
+833r7*Files_Db{16|99R9[816]} 124|1104m10 1119r42 1153m13 1228r25 1233m10
+. 1837r52 1855r27 1865r20
+834p7*Provider{202P9} 124|491r51 837r28 850r40 1060m10 1265m26
+835r7*Entities_Db{66|41R12[763]} 124|727m37 747m27 783m30 1232m17 1279m24
+. 1296m26
+836r7*Assistants{23|57R9[822]} 124|1252r34 1774m18 1787r26
+837r7*Listeners{9|54R9[825]} 124|926r35 1147r22 1183r35 1220r27 1740m10 1751r51
+. 1755m16 1775m18
+838p7*Tree_Registry{63|72P9[122|38]} 124|1042m10 1262m38 1386m17
+840p7*Construct_Registry{63|72P9[122|40]} 124|1043m10 1046m13 1263m43 1398m17
+842i7*Persistent_Entity_Key{63|66I9[122|40]} 124|799r47 803r33 1046m36 1607r38
+. 1609r33 1619r33 1651r38 1653r33 1664r33
+844r7*Null_Structured_File{50R9} 124|1047m10 1082m20 1092m20
+846p7*Symbols{99|37P9} 124|728r37 1920m12 1931r19
+848p7*Lg_Handler{172P9} 124|1048m10 1085r18 1095r23
+852r7*It{66|52R12[763]} 856m7 124|1296m10 1309r35 1318r28 1328r38 1338r42
+. 1339r39 1348m16 1357r25 1366r27 1375m16
+861p7*File{53P9} 124|1338m10 1416m17 1440r21 1463r63 1475r16 1475r30 1477r63
+. 1507r25 1507r38 1518r47 1518r60
+862r7*It{122|28R9} 124|1339m10 1417m17 1431r21 1450r36 1463r20 1479r42 1479r53
+. 1505r19 1505r30 1506r23 1506r34 1518r19 1518r30 1568r32 1825r21
+868R9 Entity_Persistent_Info 873e14 875r48 124|1612r25 1658r25 1699r10 1808r10
+869b7*Exists{boolean} 124|1613m16 1659m16 1704r49 1718r45 1810m16
+870p7*File{53P9} 124|1532r20 1533r31 1549r22 1549r39 1556r29 1556r46 1614m16
+. 1660m16 1678r31 1728r21
+871i7*Index{integer} 124|807m67 1533r54 1534r21 1550r25 1550r43 1553r32 1553r50
+. 1615m16 1661m16 1679r35
+872i7*Refs{integer} 124|1616m16 1662m16 1689m17 1689r32 1702m17 1702r32 1704r20
+. 1812r19
+879R9 Entity_Persistent_Annotation<63|31R9[122|40]> 883e14 886P14 887r20
+. 124|806m22 1611r49 1622r14 1654r15 1657r49 1667r14 1805r20
+882p7*Info{558P9} 124|807r62 1612m13 1623r47 1655m53 1658m13 1668r47 1810r11
+. 1812r14 1813m24
+886U14 Free<63|35p14> 887=7 124|1804b25 1815l8 1815t12
+887r7 Obj{879R9} 124|1805b7 1810m7 1810r7 1812r10 1813m20 1813r20
+X 124 language-tree-database.adb
+28p4 Me{102|344P9} 937r21 938r20 983r26
+30p4 Test_Update_Cache{102|344P9} 843r28
+33U14 Internal_Update_Contents 34>7 34>38 669s7 685b14 942l8 942t32 1106s7
+34p7 File{123|53P9} 686b7 724r23 727r29 728r29 731r29 747r19 748r19 751r45
+. 769r18 774r18 783r22 786r31 799r39 803r25 818r19 824r23 828r10 829r13 830r13
+. 837r20 837r52 839r10 841r17 842r17 842r59 845r10 850r32 850r50 851r28 851r39
+. 855r25 856r42 869r13 882r37 888r34 889r19 899r19 900r19 905r13 908r19 909r29
+. 910r19 912r25 918r10 919r10 926r27 930r34 939r22
+34b38 Purge{boolean} 669r39 686b38 884r16
+37U14 Free 38=7 39^7 458s7 1272b14 1284l8 1284t12
+38p7 This{123|772P9} 1273b7 1277r10 1278r19 1279r37 1282m26
+39p7 Db(123|46R9) 1274b7 1279r21
+43U14 Unchecked_Free[62|23] 909s13 1282s10
+46U14 Free 46=20 452b14 463l8 463t12 1154s10 1229s10
+46p20 File{123|53P9} 452b20 456r25 457r13 458r13 458r32 459r13 460r13 462m17
+48U14 Lock_If_Needed 48>30 824s7 1991b14 1997l8 1997t22
+48p30 File{123|53P9} 1991b30 1993r38 1995r36
+60r7 Last_Relevant_Construct{122|28R9} 67m13 68r19 83r43 85m19 95r14
+62r7 It{122|28R9} 68m13 70r19 73r34 83r69 85r46 88m16 88r34
+65i11 J{integer} 66r28 67r56 67r67
+122p7 Tree{122|34P9} 136r57 144r34 147r31 182r34
+124p7 Buffer{171|43P9} 153r22 170r30 188r13 197r27 206r16 215r30
+126r7 Node{122|28R9} 134r25 136r63 139r36 147r37 149r36 189r28 200r28 207r31
+128p7 Language{120|36P9} 152r22 187r13 205r16
+130r7 Type_Start{120|282R9} 155m22 170r38 190m13 197r35
+130r19 Type_End{120|282R9} 156m22 170r58 191m13 197r55
+131b7 Success{boolean} 157m22 165r25 192m13 194r13 210m16 212r16
+136r13 Sub_Iter{122|28R9} 139r42 140r34 142r51 144m16 144r40 147m13 149r42
+. 150r34 154r37 161r44 182m16 182r40
+137i13 Longest{natural} 141m19 142r22 163r33
+160a22 Name{string} 163r24 163r43
+162a22 Padded_Name=163:29{string} 167r39 174r39
+202r13 Var_Start{120|282R9} 208m16 215r38
+202r24 Var_End{120|282R9} 209m16 215r57
+231r7 Formater{121|71R9} 243m10 243r10 246m21 246r21 251r58 257r17
+232r7 Node{122|28R9} 241r32 251r31 253r31 260r34
+234p7 Sym{99|37P9} 249m13 250r16 251r48
+287i11 J{integer} 289r33 289r44
+294i11 J{integer} 297r33 297r44
+364i7 Stamp{2|42I9} 370m7 371r14
+365i7 Y{2|48I12} 371m21
+366i7 M{2|49I12} 371m24
+367i7 D{2|50I12} 371m27 372r14
+368o7 S{2|54O12} 371m30 372r35
+383p7 Tmp{171|43P9} 390m7 391r24 394m16 394r16 395m10 399m16 399r16 400m10
+. 403r14
+384p7 Tmp2{171|43P9} 391m33 391r33 393r10 395r17
+385b7 Success{boolean} 391m39 397r17
+411U17 Internal[62|23] 414s7
+453U17 Internal[62|23] 462s7
+482a4 Empty_String{string} 489m17 489r17
+519p7 Buffer{171|43P9} 530r22 531r19 555r36
+523p13 Lines{123|775P9} 528r13 532r36 533r35 534m22 534r60 535r22 539r19
+. 545r16 546m19 546r19
+525i13 Lines_Index{integer} 532r22 539r26 540m19 540r34 545r28
+526p13 Tmp_Lines{123|775P9} 533m22 535r34 535r53 536m28 536r28
+530i17 J{integer} 531r27 539r61
+570i7 Current_Col{64|110I12} 575m27 579r14
+571i7 Index{64|119I9} 577m27 577r27
+591i7 Current_Index{integer} 595m34 595r34 598r10
+626i7 First_Line{64|119I9} 627r28
+629i7 Index_In_Line{64|119I9} 645m7 648r48
+633i11 J{integer} 634r31 635r21
+688p7 Buffer{171|43P9} 850m10 851r50 855r13 916m16 916r16
+689r7 Constructs{120|626R9} 851m62 852m41 852r41 915m16 915r16
+691e7 Current_Update_Kind{123|628E9} 744m16 754m16 765m19 870m13 885m16 896m16
+. 930r50
+693p7 New_Tree{122|34P9} 773r16 795r47 852m10 855r36 856r53 858r18 873r55
+. 878r31 882r13 890r19 901r19 918r23
+694p7 New_Db_Data_Tree{123|772P9} 732r29 768r16 779r19 784r22 857m10 862r19
+. 863r13 919r31
+696p7 Old_Tree{122|34P9} 912m13 930r40 935m16 935r16
+698U17 Add_New_Construct_If_Needed 698>46 707b17 733l11 733t38 755s16 876s19
+698r46 It{122|28R9} 707b46 710r39 729r29 732r47
+700U17 Diff_Callback 701>10 701>19 701>54 739b17 812l11 812t24 891r19 902r19
+701r10 Old_Obj{122|28R9} 740b10 748r38 751r56 758r34 760r41 762r41 769r37
+. 774r38
+701r19 New_Obj{122|28R9} 740b19 755r45 759r33 761r33 763r33 768r34 773r35
+. 779r37 784r40 785r22 795r57 808r24
+701e54 Kind{122|497E9} 740b54 742r15
+708r10 Data{123|757R9} 724m10 730r29
+709p10 Construct(120|562R9) 715r13 716r20 717r20 718r20 719r20
+794p19 Annotations(63|91R9[122|40]) 799r22 802r25
+796r19 Persistent_Annotation{63|43R9[122|40]} 804m25 807r25
+814i7 Timestamp{integer} 837m7 840r17 841r35 845r28
+862i14 J{integer} 863r31
+873r16 It{122|28R9} 875r22 876r48 878m19 878r41
+924r13 Cur{9|65R9[123|825]} 926m13 928r19 930r28 931m16 931r29
+952e7 Last_Lock_Kind{123|338E9} 956m10 963r28
+981r21 E{42|53R9} 983r30
+1026U17 Internal[62|23] 1030s7
+1072p7 Lang{120|36P9} 1085m7 1087r10 1087r30 1099r24
+1073p7 Tree_Lang{123|63P9} 1095m7 1100r29
+1074p7 New_File{123|53P9} 1076m7 1077r10 1078r17 1097m7 1098r7 1099r7 1100r7
+. 1101r7 1102r7 1104r33 1106r33 1108r14
+1119r7 C{16|110R9[123|816]} 1121r23 1122r26
+1136p7 S_File{123|53P9} 1138r10 1139r39 1148r30 1148r48 1154m16 1154r16
+1147p14 L{123|626P9} 1148r27
+1181r13 Cur{9|65R9[123|825]} 1183m13 1185r19 1187r28 1188m16 1188r29
+1203p7 S{123|53P9} 1206r10 1207r27
+1218r10 Cur{9|65R9[123|825]} 1220m10 1222r16 1223r39 1224m13 1224r26
+1228p11 Garbage{123|53P9} 1229r16
+1241r7 Assistant_Cur{23|67R9[123|822]} 1252m7 1254r13 1255r32 1259m10 1259r33
+1242p7 Assistant{123|675P9} 1255m10 1257r16 1258m36 1258r36
+1244U17 Unchecked_Free_Assistant[62|23] 1258s10
+1247U17 Unchecked_Free[62|23] 1265s7
+1278i14 J{integer} 1279r43
+1294r7 It{123|479R9} 1296m7 1298r14
+1409r7 Result{123|40R9} 1416m10 1417m10 1419r17
+1477p13 Tree{122|34P9} 1479r30
+1491U17 Unchecked_Free[62|23] 1494s7
+1576U17 Internal[62|23] 1579s7
+1591p7 Db{123|408P9} 1603m7 1607r35 1609r30 1619r30
+1593r7 It{122|28R9} 1599r10 1605r40
+1595p7 Annotations(63|91R9[122|40]) 1604m7 1607r18 1609r13 1619r13
+1597r7 Persistent_Annotation{63|43R9[122|40]} 1609m56 1611m10 1619r56 1623r10
+1635p7 Db{123|408P9} 1647m7 1651r35 1653r30 1664r30
+1637r7 It{122|28R9} 1643r10 1649r40
+1639p7 Annotations(63|91R9[122|40]) 1648m7 1651r18 1653r13 1664r13
+1641r7 Persistent_Annotation{63|43R9[122|40]} 1653m56 1655r16 1657m10 1664r56
+. 1668r10
+1698U17 Free[62|23] 1705s13
+1751r7 It{9|65R9[123|825]} 1753r13 1754r22 1755m34 1755r34 1760m10 1760r22
+1807U17 Internal[62|23] 1813s10
+1837a7 Local_Removed{104|387A9} 1857m13 1874r10
+1838a7 Local_Added{104|387A9} 1866m13 1876r10
+1839i7 Removed_Index{integer} 1857r28 1858m13 1858r30 1874r30
+1840i7 Added_Index{integer} 1866r26 1867m13 1867r28 1876r28
+1841r7 New_File_Map{16|99R9[123|816]} 1846r17 1851m13 1851r13 1856r17
+1845i11 J{integer} 1846r49 1851r43
+1855p11 Contained{123|53P9} 1856r40 1857r46
+1864i11 J{integer} 1865r48 1866r51
+1886P12 Tmp_Acc(123|50R9) 1893r11 1894r20 1895r17 1895r34
+1934b4 Global_Update_Lock{boolean} 1955m7 1964m7 1993r10
+1937R9 Automatic_Update_Lock 1939e14 1941r52 1974r23 1994r39
+1938r7*Lock{123|329R9} 1976m42 1995m14
+1941P9 Automatic_Update_Lock_Access(1937R9) 1944r47 1971r36 1974r46
+1943K12 Update_Lock_Lists[9|47] 1946r23 1967r17 1969r19 1972r22 1979r16
+1946r4 Update_Lock_List{9|54R9[1943]} 1965r14 1967r45 1981m13 1981r13 1994m10
+. 1994r10
+1967r13 C{9|65R9[1943]} 1969r50 1972r49 1979m40 1979r40
+1971p19 Automatic_Lock{1941P9} 1976r27 1977m29 1977r29
+1973U29 Internal[62|23] 1977s19
+X 125 language-unknown.ads
+20K18*Unknown 123|35w15 35r43 125|80e21
+24p4*Unknown_Lang{120|36P9} 123|782r38 124|311r14 1087r37
+X 128 string_utils.ads
+25K9*String_Utils 124|22w6 22r29 128|360e17
+70U14*Skip_To_Index 124|573s7
+71a7 Buffer{string} 124|574r10
+72i7 Columns{64|110I12} 124|575r10
+73i7 Index_In_Line{64|119I9} 124|576r10
+74i7 Index{64|119I9} 124|577r10
+X 129 system.ads
+37K9*System 124|21w6 21r29 129|173e11
+67M9*Address
+77V14*"<"{boolean} 124|1551r40
+X 143 s-finroo.ads
+46U14*Adjust
+X 149 s-memory.ads
+51V13*Alloc{129|67M9} 101i<c,__gnat_malloc>22
+66U14*Free 102i<c,__gnat_free>22
+74V13*Realloc{129|67M9} 103i<c,__gnat_realloc>22
+X 164 s-stausa.ads
+207U14*Initialize 208i<c,__gnat_stack_usage_initialize>22
+272U14*Output_Results 276i<c,__gnat_stack_usage_output_results>22
+X 166 s-stalib.adb
+87U14 Break_Start 88i<c,__gnat_break_start>22
+X 171 s-string.ads
+43P9*String_Access(string) 123|213r27 231r65 267r58 793r35 124|124r38 381r65
+. 383r30 384r30 485r58 519r38 688r33
+47U14*Free[62|23] 124|394s10 399s10 460s7 908s13 916s10
+X 186 tries.ads
+41R9*Trie_Tree
+X 188 utf8_utils.ads
+25K9*UTF8_Utils 124|23w6 23r29 188|96e15
+43U14*Unknown_To_UTF8 124|391s7
+X 189 vector_tries.ads
+32R9*Vector_Trie<186|41R9[135[66|38[123|763]]]>
+41R9*Vector_Trie_Iterator
+46R9*Vector_Trie_Index
+52U14*Clear<186|49p14> 124|1232s7[66|38[123|763]]
+55V13*Start{41R9[66|38[123|763]]} 124|1296s16[66|38[123|763]]
+62U14*Next 124|1348s7[66|38[123|763]]
+65V13*At_End{boolean} 124|1357s14[66|38[123|763]]
+68V13*Is_Valid{boolean} 124|1366s14[66|38[123|763]]
+77V13*Get_Index{string} 124|1318s14[66|38[123|763]]
+81U14*Free 124|1375s7[66|38[123|763]]
+95U14*Delete 124|746s16[66|38[123|763]] 1279s13[66|38[123|763]]
+

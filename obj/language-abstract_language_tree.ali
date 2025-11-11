@@ -1,0 +1,568 @@
+V "GNAT Lib v15"
+A -O0
+A -Wtrampolines
+A -gnatA
+A -g
+A -gnatX
+A -gnata
+A -gnatVa
+A -gnatQ
+A -gnatyg
+A -gnatyO
+A -gnatwa
+A -gnatwC
+A -gnatwJ
+A -gnatwe
+A -gnateE
+A -mmacosx-version-min=26.0
+A -mcpu=apple-m1
+A -mlittle-endian
+A -mabi=lp64
+A -fPIC
+P SS ZX
+
+RN
+RV NO_ACCESS_SUBPROGRAMS
+RV NO_ALLOCATORS
+RV NO_DISPATCH
+RV NO_DISPATCHING_CALLS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_ALLOCATORS
+RV NO_NESTED_FINALIZATION
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+
+U language.abstract_language_tree%b  language-abstract_language_tree.adb  fadf8b54 NE OO PK
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W language%s		language.adb		language.ali
+Z system.assertions%s	s-assert.adb		s-assert.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.storage_pools%s  s-stopoo.adb		s-stopoo.ali
+
+U language.abstract_language_tree%s  language-abstract_language_tree.ads  d772af32 EE OO PF PK
+W ada%s			ada.ads			ada.ali
+W ada.containers%s	a-contai.ads		a-contai.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.streams%s		a-stream.adb		a-stream.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W language%s		language.adb		language.ali
+W language.tree%s	language-tree.adb	language-tree.ali
+Z system%s		system.ads		system.ali
+Z system.assertions%s	s-assert.adb		s-assert.ali
+Z system.finalization_primitives%s  s-finpri.adb  s-finpri.ali
+Z system.pool_global%s	s-pooglo.adb		s-pooglo.ali
+Z system.return_stack%s	s-retsta.ads		s-retsta.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.storage_elements%s  s-stoele.ads	s-stoele.ali
+Z system.storage_pools%s  s-stopoo.adb		s-stopoo.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+
+D ada.ads		20250419085653 76789da1 ada%s
+D a-assert.ads		20250419085653 ba465f5c ada.assertions%s
+D a-calend.ads		20250419085653 bf7f3cc9 ada.calendar%s
+D a-calfor.ads		20250419085653 0f4707d1 ada.calendar.formatting%s
+D a-catizo.ads		20250419085653 eaa56756 ada.calendar.time_zones%s
+D a-charac.ads		20250419085653 2d3ec45b ada.characters%s
+D a-chahan.ads		20250419085653 bf752ff6 ada.characters.handling%s
+D a-chlat1.ads		20250419085653 e0d72e76 ada.characters.latin_1%s
+D a-contai.ads		20250419085653 61e5e089 ada.containers%s
+D a-cdlili.ads		20250419085653 2434d8f6 ada.containers.doubly_linked_lists%s
+D a-cohata.ads		20250419085653 bea783e3 ada.containers.hash_tables%s
+D a-cohama.ads		20250419085653 de9aa0f2 ada.containers.hashed_maps%s
+D a-cohase.ads		20250419085653 4c12bfe7 ada.containers.hashed_sets%s
+D a-conhel.ads		20250419085653 46fe1ce3 ada.containers.helpers%s
+D a-cihama.ads		20250419085653 42861819 ada.containers.indefinite_hashed_maps%s
+D a-cihase.ads		20250419085653 b5cdb105 ada.containers.indefinite_hashed_sets%s
+D a-ciorse.ads		20250419085653 d80fbfe7 ada.containers.indefinite_ordered_sets%s
+D a-coinve.ads		20250419085653 b20d0098 ada.containers.indefinite_vectors%s
+D a-coorma.ads		20250419085653 3edf5cc0 ada.containers.ordered_maps%s
+D a-coorse.ads		20250419085653 d90cfee3 ada.containers.ordered_sets%s
+D a-crbltr.ads		20250419085653 d3d16ba4 ada.containers.red_black_trees%s
+D a-convec.ads		20250419085653 91fb49f3 ada.containers.vectors%s
+D a-except.ads		20250419085653 e7970cd9 ada.exceptions%s
+D a-finali.ads		20250419085653 bf4f806b ada.finalization%s
+D a-ioexce.ads		20250419085653 40018c65 ada.io_exceptions%s
+D a-iteint.ads		20250419085653 49a8bee2 ada.iterator_interfaces%s
+D a-stream.ads		20250419085653 17477cbd ada.streams%s
+D a-string.ads		20250419085653 90ac6797 ada.strings%s
+D a-secain.ads		20250419085653 37402117 ada.strings.equal_case_insensitive%s
+D a-strhas.ads		20250419085653 e06866e7 ada.strings.hash%s
+D a-shcain.ads		20250419085653 08af52df ada.strings.hash_case_insensitive%s
+D a-strmap.ads		20250419085653 1f91ebb6 ada.strings.maps%s
+D a-strsea.ads		20250419085653 18c3c634 ada.strings.search%s
+D a-sttebu.ads		20250419085653 f1ad67a2 ada.strings.text_buffers%s
+D a-strunb.ads		20250419085653 b10770ab ada.strings.unbounded%s
+D a-stuten.ads		20250419085653 c6ced0ae ada.strings.utf_encoding%s
+D a-stzhas.ads		20250419085653 471757ed ada.strings.wide_wide_hash%s
+D a-stzmap.ads		20250419085653 f60a1f4d ada.strings.wide_wide_maps%s
+D a-tags.ads		20250419085653 fbca0ad5 ada.tags%s
+D a-textio.ads		20250419085653 34ef47de ada.text_io%s
+D a-unccon.ads		20250419085653 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20250419085653 c3a8ac65 ada.unchecked_deallocation%s
+D annotations.ads	20251111131459 55ef9546 annotations%s
+D basic_types.ads	20251111131459 05e1b880 basic_types%s
+D case_handling.ads	20251111131459 d0aa370a case_handling%s
+D gnat.ads		20250419085653 b5988c27 gnat%s
+D g-bytswa.ads		20250419085653 a4d21639 gnat.byte_swapping%s
+D g-calend.ads		20250419085653 cad86fa7 gnat.calendar%s
+D g-dynhta.ads		20250419085653 968f1a08 gnat.dynamic_htables%s
+D g-dyntab.ads		20250419085653 f1e98b14 gnat.dynamic_tables%s
+D g-expect.ads		20250419085653 e4246c0f gnat.expect%s
+D g-io.ads		20250419085653 9f0d3ab2 gnat.io%s
+D g-md5.ads		20250419085653 bb55398e gnat.md5%s
+D g-os_lib.ads		20250419085653 0db74523 gnat.os_lib%s
+D g-regpat.ads		20250419085653 b85d88ef gnat.regpat%s
+D g-sechas.ads		20250419085653 302163b5 gnat.secure_hashes%s
+D g-sehamd.ads		20250419085653 d714f185 gnat.secure_hashes.md5%s
+D g-souinf.ads		20250419085653 470146ee gnat.source_info%s
+D g-string.ads		20250419085653 c6abc540 gnat.strings%s
+D g-table.ads		20250419085653 b4b07c4d gnat.table%s
+D gnatcoll.ads		20251104164843 6a5da479 gnatcoll%s
+D gnatcoll-atomic.ads	20251104164843 a760a918 gnatcoll.atomic%s
+D gnatcoll-iconv.ads	20251104164843 1d85b850 gnatcoll.iconv%s
+D gnatcoll-io.ads	20251104164842 40b00e79 gnatcoll.io%s
+D gnatcoll-io-native.ads  20251104164842 60c7703b gnatcoll.io.native%s
+D gnatcoll-path.ads	20251104164842 44783065 gnatcoll.path%s
+D gnatcoll-plugins.ads	20251104164842 d4c6371e gnatcoll.plugins%s
+D gnatcoll-projects.ads	20251104164843 8fb54a86 gnatcoll.projects%s
+D gnatcoll-refcount.ads	20251104164843 b4dda25c gnatcoll.refcount%s
+D gnatcoll-sql.ads	20251104164843 151b58bf gnatcoll.sql%s
+D gnatcoll-sql-exec.ads	20251104164843 75bf9dca gnatcoll.sql.exec%s
+D gnatcoll-sql_impl.ads	20251104164843 e4a6d3b2 gnatcoll.sql_impl%s
+D gnatcoll-storage_pools.ads  20251104164843 f82e283b gnatcoll.storage_pools%s
+D gnatcoll-storage_pools-headers.ads  20251104164843 968b2c2e gnatcoll.storage_pools.headers%s
+D gnatcoll-strings.ads	20251104164842 014a3fb6 gnatcoll.strings%s
+D gnatcoll-strings_impl.ads  20251104164842 3722c4b1 gnatcoll.strings_impl%s
+D gnatcoll-symbols.ads	20251104164842 c9c62a05 gnatcoll.symbols%s
+D gnatcoll-symbols.adb	20251104164842 2934c17d gnatcoll.symbols%b
+D gnatcoll-terminal.ads	20251104164842 b19fb5ba gnatcoll.terminal%s
+D gnatcoll-traces.ads	20251104164842 4e81b8c9 gnatcoll.traces%s
+D gnatcoll-utils.ads	20251104164842 8cd28764 gnatcoll.utils%s
+D gnatcoll-vfs.ads	20251104164842 1efc72f6 gnatcoll.vfs%s
+D gnatcoll-vfs_types.ads  20251104164842 14be4a8d gnatcoll.vfs_types%s
+D gnatcoll-xref.ads	20251104164843 ddd64576 gnatcoll.xref%s
+D gpr.ads		20251104164842 8e79990e gpr%s
+D gpr-ali.ads		20251104164842 96520699 gpr.ali%s
+D gpr-env.ads		20251104164842 8725813f gpr.env%s
+D gpr-ext.ads		20251104164842 b6f5e132 gpr.ext%s
+D gpr-names.ads		20251104164842 f36cddd2 gpr.names%s
+D gpr-osint.ads		20251104164842 ab7f8710 gpr.osint%s
+D gpr-scans.ads		20251104164842 a9e8e657 gpr.scans%s
+D gpr-tree.ads		20251104164842 dd4e11ae gpr.tree%s
+D gpr-util.ads		20251104164842 1b46d32f gpr.util%s
+D interfac.ads		20250419085653 9111f9c1 interfaces%s
+D i-c.ads		20250419085653 e94c966a interfaces.c%s
+D i-cstrin.ads		20250419085653 5409c1a4 interfaces.c.strings%s
+D i-cstrea.ads		20250419085653 ffd01b9d interfaces.c_streams%s
+D language.ads		20251111131459 8a951656 language%s
+D language-abstract_language_tree.ads  20251111131459 89c8f91a language.abstract_language_tree%s
+D language-abstract_language_tree.adb  20251111131459 7317724e language.abstract_language_tree%b
+D language-tree.ads	20251111131459 b5caa0f7 language.tree%s
+D system.ads		20250419085653 70765b54 system%s
+D s-addima.ads		20250419085653 a1ec9d3a system.address_image%s
+D s-atacco.ads		20250419085653 5868e3ba system.address_to_access_conversions%s
+D s-assert.ads		20250419085653 9c4520c7 system.assertions%s
+D s-atocou.ads		20250419085653 dc18efc3 system.atomic_counters%s
+D s-conca2.ads		20250419085653 b5fb73f7 system.concat_2%s
+D s-conca3.ads		20250419085653 8a7a19a2 system.concat_3%s
+D s-conca5.ads		20250419085653 4099d1db system.concat_5%s
+D s-conca6.ads		20250419085653 8252f108 system.concat_6%s
+D s-crtl.ads		20250419085653 beb39b9e system.crtl%s
+D s-exctab.ads		20250419085653 91bef6ef system.exception_table%s
+D s-fatflt.ads		20250419085653 11beb392 system.fat_flt%s
+D s-fatgen.ads		20250419085653 d28c6cfe system.fat_gen%s
+D s-fatlfl.ads		20250419085653 378cba9f system.fat_lflt%s
+D s-ficobl.ads		20250419085653 dc5161d4 system.file_control_block%s
+D s-finpri.ads		20250419085653 5970d55a system.finalization_primitives%s
+D s-finroo.ads		20250419085653 0a7c3ed4 system.finalization_root%s
+D s-imaged.ads		20250419085653 f3032752 system.image_d%s
+D s-imagei.ads		20250419085653 5e131ce0 system.image_i%s
+D s-imager.ads		20250419085653 45c7157d system.image_r%s
+D s-imageu.ads		20250419085653 b0b50650 system.image_u%s
+D s-imde64.ads		20250419085653 71905f86 system.img_decimal_64%s
+D s-imgflt.ads		20250419085653 d12816b5 system.img_flt%s
+D s-imgint.ads		20250419085653 67e4edfb system.img_int%s
+D s-imglfl.ads		20250419085653 941be202 system.img_lflt%s
+D s-imglli.ads		20250419085653 d88f4f3b system.img_lli%s
+D s-imgllu.ads		20250419085653 55ba53d8 system.img_llu%s
+D s-imguns.ads		20250419085653 c4e23690 system.img_uns%s
+D s-multip.ads		20250419085653 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20250522142959 16132a6a system.os_constants%s
+D s-osinte.ads		20250419085653 76797b0c system.os_interface%s
+D s-os_lib.ads		20250419085653 dd4133ed system.os_lib%s
+D s-oslock.ads		20250419085653 13fa6b78 system.os_locks%s
+D s-parame.ads		20250419085653 3597fc11 system.parameters%s
+D s-pooglo.ads		20250419085653 91708d21 system.pool_global%s
+D s-powflt.ads		20250419085653 a51ab9b8 system.powten_flt%s
+D s-powlfl.ads		20250419085653 ac0852c8 system.powten_lflt%s
+D s-putima.ads		20250419085653 17291fe4 system.put_images%s
+D s-regpat.ads		20250419085653 3f91c1d3 system.regpat%s
+D s-retsta.ads		20250419085653 0f6b06cb system.return_stack%s
+D s-rident.ads		20250419085653 5eec7ad4 system.rident%s
+D s-secsta.ads		20250419085653 578279f5 system.secondary_stack%s
+D s-soflin.ads		20250419085653 5d88fdea system.soft_links%s
+D s-stache.ads		20250419085653 0b81c1fe system.stack_checking%s
+D s-stausa.ads		20250419085653 5be75682 system.stack_usage%s
+D s-stalib.ads		20250419085653 1c9580f6 system.standard_library%s
+D s-stoele.ads		20250419085653 ccded4e8 system.storage_elements%s
+D s-stopoo.ads		20250419085653 e9fa2dd8 system.storage_pools%s
+D s-stposu.ads		20250419085653 e0b9fefd system.storage_pools.subpools%s
+D s-stratt.ads		20250419085653 516607ae system.stream_attributes%s
+D s-string.ads		20250419085653 582aac7d system.strings%s
+D s-ststop.ads		20250419085653 c569db7c system.strings.stream_ops%s
+D s-tasinf.ads		20250419085653 801abd01 system.task_info%s
+D s-taspri.ads		20250419085653 1e109e82 system.task_primitives%s
+D s-taskin.ads		20250419085653 38289021 system.tasking%s
+D s-traent.ads		20250419085653 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20250419085653 fa2a7f59 system.unsigned_types%s
+D s-valspe.ads		20250419085653 f810d31c system.val_spec%s
+D s-vaispe.ads		20250419085653 8280550e system.value_i_spec%s
+D s-vauspe.ads		20250419085653 89269ba5 system.value_u_spec%s
+D s-vs_int.ads		20250419085653 06b6b724 system.vs_int%s
+D s-vs_lli.ads		20250419085653 b945cf7d system.vs_lli%s
+D s-vs_llu.ads		20250419085653 8f3536c5 system.vs_llu%s
+D s-vs_uns.ads		20250419085653 e7f47a27 system.vs_uns%s
+D s-wchcon.ads		20250419085653 d9032363 system.wch_con%s
+D s-wchstw.ads		20250419085653 2d112c01 system.wch_stw%s
+G a e
+G c Z s s [Olt language__abstract_language_tree 119 13 none]
+G c Z s s [name language__abstract_language_tree 273 13 none]
+G c Z s b [info language__abstract_language_tree 327 13 none]
+G c Z s s [hash language__abstract_language_tree 333 13 none]
+G c Z s b [no_semantic_tree_iterator language__abstract_language_tree 357 13 none]
+G c Z s s [get language__abstract_language_tree 367 24 none]
+G c Z s s [length language__abstract_language_tree 372 24 none]
+G c Z s s [sort language__abstract_language_tree 376 25 none]
+G c Z s s [first_child language__abstract_language_tree 387 24 none]
+G c Z s s [sloc_def language__abstract_language_tree 391 24 none]
+G c Z s s [documentation_header language__abstract_language_tree 394 24 none]
+G c Z s s [visibility language__abstract_language_tree 397 24 none]
+G c Z s s [is_valid language__abstract_language_tree 401 24 none]
+G c Z s s [category language__abstract_language_tree 404 24 none]
+G c Z s s [is_declaration language__abstract_language_tree 407 24 none]
+G c Z s s [children language__abstract_language_tree 410 24 none]
+G c Z s s [parent language__abstract_language_tree 414 24 none]
+G c Z s s [name language__abstract_language_tree 418 24 none]
+G c Z s s [sloc_start language__abstract_language_tree 422 24 none]
+G c Z s s [sloc_end language__abstract_language_tree 426 24 none]
+G c Z s s [profile language__abstract_language_tree 430 24 none]
+G c Z s s [definition language__abstract_language_tree 435 24 none]
+G c Z s s [get_hash language__abstract_language_tree 439 24 none]
+G c Z s s [file language__abstract_language_tree 442 24 none]
+G c Z s s [unique_id language__abstract_language_tree 446 24 none]
+G c Z s s [next language__abstract_language_tree 457 25 none]
+G c Z s s [element language__abstract_language_tree 460 24 none]
+G c Z s s [has_element language__abstract_language_tree 464 24 none]
+G c Z s s [root_iterator language__abstract_language_tree 473 24 none]
+G c Z s s [root_nodes language__abstract_language_tree 477 24 none]
+G c Z s s [node_at language__abstract_language_tree 481 24 none]
+G c Z s s [file language__abstract_language_tree 487 24 none]
+G c Z s s [update language__abstract_language_tree 491 25 none]
+G c Z s s [update_async language__abstract_language_tree 493 25 none]
+G c Z s s [is_ready language__abstract_language_tree 496 24 none]
+G c Z s s [dummy_semantic_nodeDA language__abstract_language_tree 385 9 none]
+G c Z s s [dummy_semantic_nodeDF language__abstract_language_tree 385 9 none]
+G c Z s s [dummy_semantic_nodeIP language__abstract_language_tree 385 9 none]
+G c Z s s [dummy_semantic_treeDA language__abstract_language_tree 471 9 none]
+G c Z s s [dummy_semantic_treeDF language__abstract_language_tree 471 9 none]
+G c Z s s [dummy_semantic_treeIP language__abstract_language_tree 471 9 none]
+G c Z s s [dummy_semantic_node_arrayDA language__abstract_language_tree 365 9 none]
+G c Z s s [dummy_semantic_node_arrayDF language__abstract_language_tree 365 9 none]
+G c Z s s [dummy_semantic_node_arrayIP language__abstract_language_tree 365 9 none]
+G c Z s s [raw_sloc_tIP language__abstract_language_tree 112 9 none]
+G c Z s s [dummy_semantic_tree_iteratorDA language__abstract_language_tree 454 9 none]
+G c Z s s [dummy_semantic_tree_iteratorDF language__abstract_language_tree 454 9 none]
+G c Z s s [dummy_semantic_tree_iteratorIP language__abstract_language_tree 454 9 none]
+G r c none [name language__abstract_language_tree 273 13 none] [get gnatcoll__symbols 56 13 none]
+G r s semantic_node_info [info language__abstract_language_tree 327 13 none] [semantic_node_infoIP language 649 9 none]
+G r d virtual_file [file language__abstract_language_tree 442 24 none] [adjust gnatcoll__vfs 631 25 none]
+G r d virtual_file [file language__abstract_language_tree 487 24 none] [adjust gnatcoll__vfs 631 25 none]
+X 1 ada.ads
+18K9*Ada 22e8 99|102r6 102r26
+X 7 a-chahan.ads
+209V13*To_Lower{character} 76|283i21
+224V13*To_Upper{character} 76|285i21
+X 9 a-contai.ads
+16K13*Containers 28e19 99|102w10 102r30
+19M9*Hash_Type 99|311r36 334r40 440r42
+X 10 a-cdlili.ads
+54R9*List<24|43R9>
+X 14 a-conhel.ads
+84R12 Reference_Control_Type<24|43R9>
+X 17 a-ciorse.ads
+57R9*Set<24|43R9>
+X 26 a-iteint.ads
+24h9 Forward_Iterator
+32h9 Reversible_Iterator<24R9[17|76]>
+X 44 basic_types.ads
+110I12*Visible_Column_Type{84|169I9} 99|115r21
+X 61 gnatcoll.ads
+24K9*GNATCOLL 27e13 99|181r17 211r36 269r36 298r14 316r36 320r34 419r42 432r56
+. 433r10 443r42 444r8 447r42 448r10 488r42 489r7
+X 68 gnatcoll-projects.ads
+468V25*"="{boolean} 22|65i19
+X 69 gnatcoll-refcount.ads
+123R12*Ref<24|43R9>
+351R12*Ref<24|43R9>
+X 72 gnatcoll-sql_impl.ads
+457H12 Base_Field<333R9>
+607R12*Field<333R9>
+X 77 gnatcoll-symbols.ads
+34K18*Symbols 108e21 99|269r45 298r23 320r43 419r51 432r65 433r19 447r51
+. 448r19
+42P9*Symbol<81|46P9> 99|269r53 298r31 320r51 419r59 432r73 447r59
+43p4*No_Symbol{42P9} 99|420r8 100|39r34 39r67
+44p4*Empty_String{42P9} 99|433r27 448r27
+56V13*Get{81|46P9} 99|277s12
+X 81 gnatcoll-utils.ads
+46P9*Cst_String_Access(string)
+X 82 gnatcoll-vfs.ads
+62K18*VFS 673e17 99|181r26 211r45 316r45 443r51 444r17 488r51 489r16
+97R9*Virtual_File<24|43R9> 627e14 99|181r30 211r49 316r49 443r55 488r55
+98r4*No_File{97R9} 99|444r21 489r20
+334V25*"="{boolean} 13|50i19
+X 84 gnatcoll-xref.ads
+169I9*Visible_Column<integer>
+189V14*"<"{boolean} 20|45i19
+190V14*"="{boolean} 20|46i19
+X 98 language.ads
+30K9*Language 978e13 99|101r6 101r25 104r9 512r5 100|18r14 48r5
+411E9*Language_Category 487e19 99|245r36 405r42
+412n7*Cat_Unknown{411E9} 99|405r64
+534E9*Construct_Visibility 537e25 99|324r34 398r42
+537n7*Visibility_Public{534E9} 99|399r10
+636M9*Offset_T
+638R9*Sloc_T 645e14 99|110r25 119r32 204r36 282r36 286r36 291r36 392r42 423r42
+. 424r8 427r42 428r8 483r31
+639i7*Line{natural} 99|123r15 123r28 124r24 124r37
+641i7*Column{44|110I12} 99|125r42 125r67
+643m7*Index{636M9} 99|120r15 120r41 121r17 121r31
+649R9*Semantic_Node_Info 677e14 99|329r50 100|26r50 29r18
+650e7*Category{411E9} 100|30m16
+653p7*Name{77|42P9} 100|31m16 39r27
+656p7*Profile{77|42P9} 100|32m16
+660p7*Unique_Id{77|42P9} 100|33m16 39r54
+663b7*Is_Decl{boolean} 100|34m16
+666e7*Visibility{534E9} 100|35m16
+669r7*Sloc_Start_No_Tab{638R9} 100|36m16
+673r7*Sloc_Def_No_Tab{638R9} 100|37m16
+X 99 language-abstract_language_tree.ads
+104K18*Abstract_Language_Tree 98|30k9 99|365E9 512l14 512e36 100|18b23 48l14
+. 48t36
+110r4*No_Sloc_T{98|638R9}
+112R9*Raw_Sloc_T 117e14
+113i7*Line{natural}
+115i7*Line_Offset{44|110I12}
+119V14*"<"{boolean} 119b14 119>18 119>24
+119r18 Left{98|638R9} 120r10 121r12 123r10 124r19 125r37
+119r24 Right{98|638R9} 120r35 121r25 123r22 124r31 125r61
+127h9*Semantic_Tree_Provider
+127r9 Semantic_Tree_Provider{127R9}
+127r9 Semantic_Tree_Provider{127R9}
+127h9*Semantic_Tree_Provider 129r18 178p13 179r24
+128P9*Semantic_Tree_Provider_Access(127R9)
+135r9 Semantic_Tree{135R9}
+135r9 Semantic_Tree{135R9}
+135h9*Semantic_Tree 136r53 181r51 193p13 194r14 196p13 197r14 203p13 204r14
+. 210p13 211r14 214p14 214r36 218p14 218r42 221p13 221r30 355r32 471r36 506r32
+136P9*Semantic_Tree_Access(135R9)
+139r9 Semantic_Node{139R9}
+139r9 Semantic_Node{139R9}
+139h9*Semantic_Node 140r53 151r30 159r43 164r60 206r14 238p13 239r12 244p13
+. 245r14 249p13 250r14 255p13 256r19 261p13 262r14 262r36 264p13 265r14 265r36
+. 268p13 269r14 274r14 281p13 282r14 285p13 286r14 290p13 291r14 295p13 296r26
+. 303p13 304r14 304r36 310p13 311r14 315p13 316r14 319p13 320r12 323p13 324r12
+. 328r26 334r12 338p13 339r12 349r43 354r32 369r38 378r43 385r36 388r42 415r42
+. 436r42 461r49 485r14 503r32 100|25r26
+140P9*Semantic_Node_Access(139R9)
+143h9*Semantic_Node_Array
+143r9 Semantic_Node_Array{143R9}
+143r9 Semantic_Node_Array{143R9}
+143h9*Semantic_Node_Array 157p14 158r21 163p13 164r14 169p13 170r14 197r36
+. 256r41 356r38 365r42 411r42 478r42 509r38
+148h9*Semantic_Tree_Iterator 194r36 346p14 346r32 348p13 349r12 351p13 352r12
+. 357r46 455r11 474r42 100|43r46
+150P9*Sort_Pred(boolean) 151>23 151>26
+151c23 L<139R9>
+151c26 R<139R9>
+157x14*Sort 158=7 159^7
+158r7 Self{143R9}
+159p7 Less_Than(boolean)
+159c36 L<139R9>
+159c39 R<139R9>
+163y13*Get{139C9} 164>7 164>35
+164r7 Self{143R9}
+164i35 Index{positive}
+169y13*Length{natural} 170>7
+170r7 Self{143R9}
+178y13*Get_Tree_For_File{135C9} 179=7 180>7 181>7
+179r7 Self{127R9}
+180a7 Context{string}
+181r7 File{82|97R9}
+193y13*Root_Iterator{148C9} 194>7
+194r7 Self{135R9}
+196y13*Root_Nodes{143C9} 197>7
+197r7 Self{135R9}
+203y13*Node_At{139C9} 204>7 204>29 205>7
+204r7 Self{135R9}
+204r29 Sloc{98|638R9}
+205a7 Category_Filter{101|121A9}
+210y13*File{82|97R9} 211>7
+211r7 Self{135R9}
+214x14*Update 214=22
+214r22 Self{135R9}
+218x14*Update_Async 218=28
+218r28 Self{135R9}
+221y13*Is_Ready{boolean} 221>23
+221r23 Self{135R9}
+238y13*Is_Valid{boolean} 239>7 246R30 252R30 258R30 270R30 276R15 292R30
+. 299R30 305R30 312R30
+239r7 SN{139R9}
+244y13*Category{98|411E9} 245>7 100|30R33
+245r7 Self{139R9} 246r25
+249y13*Is_Declaration{boolean} 250>7 100|34R35
+250r7 Self{139R9} 252r25
+255y13*Children{143C9} 256>7
+256r7 Self{139R9} 258r25
+261y13*First_Child{139C9} 262>7
+262r7 Self{139R9}
+264y13*Parent{139C9} 265>7
+265r7 Self{139R9}
+268y13*Name{77|42P9} 269>7 277R22 100|31R33
+269r7 Self{139R9} 270r25
+273V13*Name{string} 273b13 274>7
+274c7 Self<139R9> 276r10 277r17
+281y13*Sloc_Start{98|638R9} 282>7 100|36R42
+282r7 Self{139R9}
+285y13*Sloc_Def{98|638R9} 286>7 100|37R42
+286r7 Self{139R9}
+290y13*Sloc_End{98|638R9} 291>7
+291r7 Self{139R9} 292r25
+295y13*Profile{77|42P9} 296>7 297>7 100|32R33
+296r7 Self{139R9} 299r25
+297b7 Show_Param_Names{boolean} 100|32r42
+303y13*Definition{139C9} 304>7
+304r7 Self{139R9} 305r25
+310y13*Get_Hash{9|19M9} 311>7 335R10
+311r7 Self{139R9} 312r25
+315y13*File{82|97R9} 316>7
+316r7 Self{139R9}
+319y13*Unique_Id{77|42P9} 320>7 100|33R35
+320r7 SN{139R9}
+323y13*Visibility{98|534E9} 324>7 100|35R35
+324r7 SN{139R9}
+327V13*Info{98|649R9} 328>7 329>7 100|24b13 41l8 41t12
+328c7 Self<139R9> 100|25b7 30r28 31r28 32r28 33r30 34r30 35r30 36r37 37r37
+329b7 Show_Param_Names{boolean} 100|26b7 32r62
+333V13*Hash{9|19M9} 333b13 334>7
+334c7 SN<139R9> 335r7
+338y13*Documentation_Header{string} 339>7
+339r7 SN{139R9}
+346x14*Next 346=20
+346r20 It{148R9}
+348y13*Element{139C9} 349>7
+349r7 It{148R9}
+351y13*Has_Element{boolean} 352>7
+352r7 It{148R9}
+354c4*No_Semantic_Node<139R9> 370r8 389r8 416r8 437r8 462r8 485r38 503c4
+355c4*No_Semantic_Tree<135R9> 506c4
+356c4*No_Semantic_Node_Array<143R9> 412r8 479r11 509c4
+357V13*No_Semantic_Tree_Iterator{148C9} 475s8 100|43b13 46l8 46t33
+365R9 Dummy_Semantic_Node_Array<143R9> 365e78 367P24 368r21 372P24 373r14
+. 376P25 377r21 510r6
+367V24 Get{139C9}<163p13> 367b24 368>7 369>7
+368r7 Self{365R9}
+369i7 Dummy_Index{positive}
+372V24 Length{natural}<169p13> 372b24 373>7
+373r7 Self{365R9}
+376U25 Sort<157p14> 377=7 378^7
+377r7 Self{365R9}
+378p7 Less_Than(boolean)
+378c36 L<139R9>
+378c39 R<139R9>
+385R9 Dummy_Semantic_Node<139R9> 385e66 387P24 388r14 391P24 392r14 394P24
+. 395r12 397P24 398r14 401P24 402r12 404P24 405r14 407P24 408r14 410P24 411r14
+. 414P24 415r14 418P24 419r14 422P24 423r14 426P24 427r14 430P24 431r32 435P24
+. 436r14 439P24 440r14 442P24 443r14 446P24 447r14 504r6
+387V24 First_Child{139C9}<261p13> 387b24 388>7
+388r7 Self{385R9}
+391V24 Sloc_Def{98|638R9}<285p13> 391b24 392>7
+392r7 Self{385R9}
+394V24 Documentation_Header{string}<338p13> 394b24 395>7
+395r7 SN{385R9}
+397V24 Visibility{98|534E9}<323p13> 397b24 398>7
+398r7 Self{385R9}
+401V24 Is_Valid{boolean}<238p13> 246R30 252R30 258s30 270R30 292R30 299R30
+. 305R30 312R30 401b24 402>7
+402r7 SN{385R9}
+404V24 Category{98|411E9}<244p13> 404b24 405>7
+405r7 Self{385R9} 246r25
+407V24 Is_Declaration{boolean}<249p13> 407b24 408>7
+408r7 Self{385R9} 252r25
+410V24 Children{143C9}<255p13> 410b24 411>7
+411r7 Self{385R9} 258r25
+414V24 Parent{139C9}<264p13> 414b24 415>7
+415r7 Self{385R9}
+418V24 Name{77|42P9}<268p13> 418b24 419>7
+419r7 Self{385R9} 270r25
+422V24 Sloc_Start{98|638R9}<281p13> 422b24 423>7
+423r7 Self{385R9}
+426V24 Sloc_End{98|638R9}<290p13> 426b24 427>7
+427r7 Self{385R9} 292r25
+430V24 Profile{77|42P9}<295p13> 430b24 431>7 432>7
+431r7 Self{385R9} 299r25
+432b7 Dummy_Show_Param_Names{boolean}
+435V24 Definition{139C9}<303p13> 435b24 436>7
+436r7 Self{385R9} 305r25
+439V24 Get_Hash{9|19M9}<310p13> 439b24 440>7
+440r7 Self{385R9} 312r25
+442V24 File{82|97R9}<315p13> 442b24 443>7
+443r7 Self{385R9}
+446V24 Unique_Id{77|42P9}<319p13> 446b24 447>7
+447r7 Self{385R9}
+454R9 Dummy_Semantic_Tree_Iterator<148R9> 455e50 457P25 458r19 460P24 461r12
+. 464P24 465r12 100|45r23
+457U25 Next<346p14> 458=7
+458r7 It{454R9}
+460V24 Element{139C9}<348p13> 460b24 461>7
+461r7 It{454R9}
+464V24 Has_Element{boolean}<351p13> 464b24 465>7
+465r7 It{454R9}
+471R9 Dummy_Semantic_Tree<135R9> 471e66 473P24 474r14 477P24 478r14 481P24
+. 482r31 487P24 488r14 491P25 491r47 493P25 494r21 496P24 497r14 507r6
+473V24 Root_Iterator{148C9}<193p13> 473b24 474>7
+474r7 Self{471R9}
+477V24 Root_Nodes{143C9}<196p13> 477b24 478>7
+478r7 Self{471R9}
+481V24 Node_At{139C9}<203p13> 481b24 482>7 483>7 484>7
+482r7 Self{471R9}
+483r7 Dummy_Sloc{98|638R9}
+484a7 Dummy_Category_Filter{101|121A9}
+487V24 File{82|97R9}<210p13> 487b24 488>7
+488r7 Self{471R9}
+491U25 Update<214p14> 491=33
+491r33 Self{471R9}
+493U25 Update_Async<218p14> 494=7
+494r7 Self{471R9}
+496V24 Is_Ready{boolean}<221p13> 496b24 497>7
+497r7 Self{471R9}
+X 100 language-abstract_language_tree.adb
+29r14 A{98|649R9} 30m10 39r25 39r52
+45r14 Result{99|454R9}
+X 101 language-tree.ads
+21K18*Tree 99|101w15 101r34 101|600e18
+121A9*Category_Array(98|411E9)<integer> 99|205r25 484r31
+122a4*Null_Category_Array{121A9} 99|205r43 484r49
+X 146 s-stausa.ads
+207U14*Initialize 208i<c,__gnat_stack_usage_initialize>22
+272U14*Output_Results 276i<c,__gnat_stack_usage_output_results>22
+
