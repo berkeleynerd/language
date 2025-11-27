@@ -15,3 +15,10 @@ Dependencies
 Build (after split)
 - alr build -- -P gps_language_core.gpr
 
+## macOS toolchain fix
+
+If you are on macOS and just reinstalled GNAT via `alr` (for example after
+deleting `~/.alire`), run `./fix_toolchain.sh` in this directory before
+building. It cleans the toolchain’s `include-fixed` headers and re-points the
+SDK symlink so bundled C sources compile correctly. Linux/Windows hosts can
+ignore this step.
