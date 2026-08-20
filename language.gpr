@@ -1,5 +1,5 @@
-with "../common/common";
-with "../shared/gnatstudio_shared";
+with "common";
+with "gnatstudio_shared";
 with "gnatcoll_sqlite";
 with "gnatcoll_xref";
 
